@@ -1,0 +1,10 @@
+{
+  "name": "bfitp_workflow",
+  "version": "0.0.1",
+  "description": "Barefoot in the park website build - workflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edit-olah/barefoot-itp3.git"
+  },
+  "author": "Edit Olah"
+}
