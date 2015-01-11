@@ -1,0 +1,156 @@
+@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+/* line 5, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* 
+    Created on : 06-Jan-2015, 07:57:18
+    Author     : Edit
+*/
+/* 
+    Created on : 07-Jan-2015, 21:52:49
+    Author     : Edit
+*/
+/* 
+    Created on : 06-Jan-2015, 07:59:51
+    Author     : Edit
+*/
+/* 
+    Created on : 06-Jan-2015, 07:56:17
+    Author     : Edit
+*/
+/* line 10, ../components/sass/_base.scss */
+body {
+  background: #eddbba;
+  font-family: "Inika", serif;
+  font-size: 1.1em;
+}
+
+/* line 16, ../components/sass/_base.scss */
+p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* 
+    Created on : 06-Jan-2015, 08:02:58
+    Author     : Edit
+*/
+/*
+.featuredartists {
+  background: $darkGreenGold;
+  border-top: 20px solid $beige;
+  border-bottom: 50px solid $green;
+ 
+  h1 {
+    font-size: 3em;
+    color: darken($green, 20%);
+    @media (max-width: 700px) {
+      font-size: 2em;
+    }
+  } //h1
+ 
+  h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: darken($beige, 8%);
+    @media (max-width: 700px) {
+     display: none;
+    }
+  } //h2
+ 
+  p {
+    color: darken($green, 15%);
+  }
+ 
+ .artistlist {
+    padding-bottom: 20px;
+ 
+    h2 {
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: lighten($beige, 8%);
+    } //h2
+ 
+    .item {
+      min-width: 95px;
+      color: darken($darkGreenGold, 10%);
+      width: 18%;
+      float: left;
+      padding: 1%;
+      text-align: center;
+      position: relative;
+ 
+      >img {
+        max-width: 130px;
+        margin: 0 auto;
+        display: block;
+        @include border-radius(50%);
+        width: 100%;
+      } //img
+    } //item
+  } //artistlist
+} //featured artists
+ 
+*/
