@@ -1,7 +1,7 @@
 # Barefoot in the park portfolio website project
 
 This is the portfolio website of Edit Olah and Peter Whyte.
-Here we gather information on what we are working on and what strikes our interest.
+Here we gather information on what we are working on and what piques our interest.
 
 This website, in itself, is a portfolio project.
 
@@ -17,8 +17,14 @@ http://www.lynda.com/Web-Web-Design-tutorials/Web-Project-Workflows-Gulpjs-Git-B
 - - - - - - - - - - - - - -
 
 ## 2. SASS and Compass
-Responsive CSS with Sass and Compass with Ray Villalobos
+> Responsive CSS with Sass and Compass with Ray Villalobos
 http://www.lynda.com/CSS-tutorials/Responsive-CSS-Sass-Compass/140777-2.html
+
+> SASS documentation
+http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+
+> SASS basics
+http://sass-lang.com/guide
 
 - - - - - - - - - - - - - -
 
@@ -94,3 +100,50 @@ http://www.barrelny.com/blog/text-align-justify-and-rwd/
 
 - - - - - - - - - - - - - -
 
+## 6. fluid, dynamic element height with padding-top trick
+Creating Intrinsic Ratios for Video - by THIERRY KOBLENTZ May 26, 2009
+http://alistapart.com/article/creating-intrinsic-ratios-for-video
+> 'set padding in a percentage, based on the width of the containing block' - 'a container that proportionally resizes itself depending on the width of its parent'
+
+- - - - - - - - - - - - - -
+
+## 7. text-size-adjust CSS property
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+
+> browser compatibility:
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust#Browser_compatibility
+
+> vendor prefixes
+https://wiki.mozilla.org/CSS/text-size-adjust
+
+- - - - - - - - - - - - - -
+
+## 8. viewport meta tag
+Creating a Mobile-First Responsive Web Design
+http://www.html5rocks.com/en/mobile/responsivedesign/#toc-style-mobilefirst
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+> Configuring the Viewport
+https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
+
+>Responsive Web Design: Layouts and Media Queries - 23rd Apr 2012, Stéphanie Walter
+http://www.onextrapixel.com/2012/04/23/responsive-web-design-layouts-and-media-queries/
+'You’ll need a viewport meta tag to make the media queries work. The viewport meta tag enables you to take control of the viewport of the device. Basically, if no viewport is set, mobile device will try to fit the whole page on the screen, resulting in very small websites.'
+
+
+
+## 9. Media Queries
+http://www.w3.org/TR/css3-mediaqueries/
+
+> 'HTML5 [HTML5] (at the moment of writing still work in progress) references the Media Queries specification directly and thus updates the rules for HTML.' (http://www.w3.org/TR/css3-mediaqueries/#HTML5)
+
+- - - - - - - - - - - - - -
+
+## 10. horizontal menu  with justify
+http://stackoverflow.com/questions/49536/how-do-i-really-justify-a-horizontal-menu-in-htmlcss
+
+- - - - - - - - - - - - - -
+
+## 11. 
+- - - - - - - - - - - - - -

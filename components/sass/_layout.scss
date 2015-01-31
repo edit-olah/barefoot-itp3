@@ -5,3 +5,138 @@
 */
 // _layout
 // ========
+
+/*=================================GLOBAL LAYOUTS=============================================*/
+
+html {
+    width:100%;
+}
+
+.container, 
+#HeaderWrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+/**************************** fluid grid MAIN NAVIGATION ************************/
+// needs work on the responsiveness
+
+
+#MainNav {
+    margin-top: 10px;
+}
+
+.nav {
+    width: 57%;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify; 
+    font-size: 0.1px; // adjusting typographic CSS properties that affect the site layout's whitespace
+}
+
+.nav li {
+    display: inline;
+    width: 19%;
+    padding-top: 3%;
+    margin-bottom: 1%;
+    font-size: 13px;
+    line-height: 2;
+    text-align: center;
+}
+
+.nav:after { // lacking support in IE6/7
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.nav a {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 20px 12px;
+    line-height: 1;
+    text-decoration: none;
+    color: #bfcabc;
+    font-weight: 700;
+    font-size: 1.4em;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    
+    
+}
+
+.nav a:hover,
+.nav li.current a {
+    color: #dbedd6;
+    background-color: lighten($primaryBG, 10);
+    border-radius: 3px;
+    border: 2px dashed lighten($primaryBG, 5);
+   
+}
+
+/*.nav .placeholder {
+    padding: 0;
+}*/
+
+/**************************** intrinsic ration HERO PANEL ************************/
+
+#Home {
+    position: relative;
+    padding-bottom: 33%;
+    height: 0;
+}
+
+#HomeHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/bfitp_hero_panel_bg_1300x404_flipped.jpg) 0 0 no-repeat;
+    background-size: 100% auto;
+
+}
+
+
+#HomeHero h1,
+#HomeHero h2,
+#HomeHero p {
+    position: absolute;
+    left: 11%;
+    width: 35%;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+}
+
+
+#HomeHero h1 {
+    top: 5%;
+    font-size: 1.5em;
+}
+
+#HomeHero h2 {
+    top: 27%;
+
+}
+
+#HomeHero p {
+    top: 43%;
+}
+
+/*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .nav li {
+	    width: 23%;
+	    padding-top: 2%;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .nav li {
+	    width: 17%;
+	    padding-top: 1%;
+    }
+}

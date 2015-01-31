@@ -1,4 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700";
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700);
 /* line 5, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,7 +83,6 @@ html {
 
 /* line 12, ../components/sass/_base.scss */
 body {
-  /*background: lighten($beige, 10%);*/
   background: #3A3F39;
   font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -91,9 +90,20 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   color: #B9C8B5;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
 }
 
-/* line 23, ../components/sass/_base.scss */
+/* line 25, ../components/sass/_base.scss */
+.clear {
+  clear: both;
+  width: 100%;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* line 32, ../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #85E14F;
@@ -101,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: #122F00 1px 1px;
 }
 
-/* line 30, ../components/sass/_base.scss */
+/* line 39, ../components/sass/_base.scss */
 h1 {
   font-size: 1.8em;
   color: #a3e87b;
@@ -109,48 +119,185 @@ h1 {
   line-height: 1.3em;
 }
 
-/* line 37, ../components/sass/_base.scss */
+/* line 46, ../components/sass/_base.scss */
 h2 {
   font-size: 1.3em;
   color: #85E14F;
   margin-bottom: .6em;
 }
 
-/* line 44, ../components/sass/_base.scss */
+/* line 53, ../components/sass/_base.scss */
 h3 {
   font-size: 1.2em;
   margin-bottom: .5em;
 }
 
-/* line 51, ../components/sass/_base.scss */
+/* line 58, ../components/sass/_base.scss */
 a, p, li {
   font-size: 1em;
   margin-bottom: .5em;
 }
 
-/* line 57, ../components/sass/_base.scss */
-a {
+/* line 63, ../components/sass/_base.scss */
+ul, li {
+  list-style-type: none;
+}
+
+/* line 67, ../components/sass/_base.scss */
+#HeaderWrapper .container h1 {
+  float: left;
+  margin-top: 0;
+}
+
+/* line 72, ../components/sass/_base.scss */
+#HeaderWrapper .container h1 span {
+  display: block;
+  width: 290px;
+  height: 70px;
+  background: url(/images/logo_with_text_290x70.png) 0 0 no-repeat;
   text-decoration: none;
-  color: #DC6E2A;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-/* line 64, ../components/sass/_base.scss */
-a:hover {
-  color: #FF9959;
-}
-
-/* line 68, ../components/sass/_base.scss */
-.nav a {
-  font-size: 1.15em;
-  text-shadow: #361500 1px 1px;
+  text-indent: -9999px;
+  margin-top: 10px;
 }
 
 /* 
     Created on : 07-Jan-2015, 21:52:49
     Author     : Edit
 */
+/*=================================GLOBAL LAYOUTS=============================================*/
+/* line 11, ../components/sass/_layout.scss */
+html {
+  width: 100%;
+}
+
+/* line 15, ../components/sass/_layout.scss */
+.container,
+#HeaderWrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/**************************** fluid grid MAIN NAVIGATION ************************/
+/* line 26, ../components/sass/_layout.scss */
+#MainNav {
+  margin-top: 10px;
+}
+
+/* line 30, ../components/sass/_layout.scss */
+.nav {
+  width: 57%;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+/* line 39, ../components/sass/_layout.scss */
+.nav li {
+  display: inline;
+  width: 19%;
+  padding-top: 3%;
+  margin-bottom: 1%;
+  font-size: 13px;
+  line-height: 2;
+  text-align: center;
+}
+
+/* line 49, ../components/sass/_layout.scss */
+.nav:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 55, ../components/sass/_layout.scss */
+.nav a {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 20px 12px;
+  line-height: 1;
+  text-decoration: none;
+  color: #bfcabc;
+  font-weight: 700;
+  font-size: 1.4em;
+  white-space: nowrap;
+  border: 2px solid transparent;
+}
+
+/* line 70, ../components/sass/_layout.scss */
+.nav a:hover,
+.nav li.current a {
+  color: #dbedd6;
+  background-color: #535a51;
+  border-radius: 3px;
+  border: 2px dashed #464c45;
+}
+
+/*.nav .placeholder {
+    padding: 0;
+}*/
+/**************************** intrinsic ration HERO PANEL ************************/
+/* line 85, ../components/sass/_layout.scss */
+#Home {
+  position: relative;
+  padding-bottom: 33%;
+  height: 0;
+}
+
+/* line 91, ../components/sass/_layout.scss */
+#HomeHero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/bfitp_hero_panel_bg_1300x404_flipped.jpg) 0 0 no-repeat;
+  background-size: 100% auto;
+}
+
+/* line 103, ../components/sass/_layout.scss */
+#HomeHero h1,
+#HomeHero h2,
+#HomeHero p {
+  position: absolute;
+  left: 11%;
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+/* line 114, ../components/sass/_layout.scss */
+#HomeHero h1 {
+  top: 5%;
+  font-size: 1.5em;
+}
+
+/* line 119, ../components/sass/_layout.scss */
+#HomeHero h2 {
+  top: 27%;
+}
+
+/* line 124, ../components/sass/_layout.scss */
+#HomeHero p {
+  top: 43%;
+}
+
+/*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* line 131, ../components/sass/_layout.scss */
+  .nav li {
+    width: 23%;
+    padding-top: 2%;
+  }
+}
+@media screen and (max-width: 639px) {
+  /* line 138, ../components/sass/_layout.scss */
+  .nav li {
+    width: 17%;
+    padding-top: 1%;
+  }
+}
 /* 
     Created on : 06-Jan-2015, 08:02:58
     Author     : Edit
