@@ -1,4 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+@import "http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700";
 /* line 5, ../../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,10 +69,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     Author     : Edit
 */
 /* 
-    Created on : 07-Jan-2015, 21:52:49
-    Author     : Edit
-*/
-/* 
     Created on : 06-Jan-2015, 07:59:51
     Author     : Edit
 */
@@ -81,18 +77,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     Author     : Edit
 */
 /* line 10, ../components/sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 12, ../components/sass/_base.scss */
 body {
-  background: #eddbba;
-  font-family: "Inika", serif;
-  font-size: 1.1em;
+  /*background: lighten($beige, 10%);*/
+  background: #3A3F39;
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #B9C8B5;
 }
 
-/* line 16, ../components/sass/_base.scss */
-p {
-  font-size: 12px;
-  line-height: 2;
+/* line 23, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #85E14F;
+  font-weight: 600;
+  text-shadow: #122F00 1px 1px;
 }
 
+/* line 30, ../components/sass/_base.scss */
+h1 {
+  font-size: 1.8em;
+  color: #a3e87b;
+  margin-bottom: .7em;
+  line-height: 1.3em;
+}
+
+/* line 37, ../components/sass/_base.scss */
+h2 {
+  font-size: 1.3em;
+  color: #85E14F;
+  margin-bottom: .6em;
+}
+
+/* line 44, ../components/sass/_base.scss */
+h3 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+/* line 51, ../components/sass/_base.scss */
+a, p, li {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+/* line 57, ../components/sass/_base.scss */
+a {
+  text-decoration: none;
+  color: #DC6E2A;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 64, ../components/sass/_base.scss */
+a:hover {
+  color: #FF9959;
+}
+
+/* line 68, ../components/sass/_base.scss */
+.nav a {
+  font-size: 1.15em;
+  text-shadow: #361500 1px 1px;
+}
+
+/* 
+    Created on : 07-Jan-2015, 21:52:49
+    Author     : Edit
+*/
 /* 
     Created on : 06-Jan-2015, 08:02:58
     Author     : Edit

@@ -7,13 +7,65 @@
 // _base.scss
 // ==============
 
+html { font-size: $baseFontSize; } 
+
 body {
-  background: lighten($beige, 10%);
-  font-family: $bodyFont;
-  font-size: 1.1em;
+  /*background: lighten($beige, 10%);*/
+  background: $primaryBG;
+  font-family: $baseFont;
+  font-weight: $normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: $primaryFontColor;
 }
 
-p {
-    font-size: 12px;
-    line-height: 2;
+#{headings()} {
+    font-family: $baseFont;
+    color: $semiLightGreen;
+    font-weight: $semi-bold;
+    @include text-shadow($darkGreen 1px 1px);
+}
+
+h1 {
+    font-size: 1.8em;
+    color: lighten($semiLightGreen, 10);
+    margin-bottom: .7em;
+    line-height: 1.3em;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: $semiLightGreen;
+    margin-bottom: .6em;
+
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+
+
+a, p, li {
+    font-size: 1em;
+    margin-bottom: .5em;
+}
+
+
+a {
+    text-decoration: none;
+    color: $orangeBG;
+    font-weight: $bold;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: $semiLightOrange;
+}
+
+.nav a {
+    font-size: 1.15em;
+    @include text-shadow($darkOrange 1px 1px);
 }

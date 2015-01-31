@@ -6,10 +6,57 @@
 // _variables.scss
 // =================
 
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
- 
-$beige         : #E3C691;
+@import "http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700";
 
- 
-//$headFont : 'Patua One', sans-serif;
-$bodyFont : 'Inika', serif;
+
+
+// Font family and size
+$baseFont	    : 'Source Code Pro',"Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseFontSize	    : 62.5%; //if browser default is 16px (font-size on <html> level), this equals 10px -> 10px = 0.625rem
+
+
+// Font weights
+$light	    : 300;
+$normal	    : 400;
+$semi-bold  : 600;
+$bold	    : 700;
+
+ // background colors
+$primaryBG	    : #3A3F39;
+$secondaryBG	    : #899787;
+$greenBG	    : #5FC124;
+$turqBG		    : #1C926E;
+$orangeBG	    : #DC6E2A;
+$magnetaBG	    : #C1255C;
+
+//font colors
+$primaryFontColor   : #B9C8B5;
+$secondaryFontColor : #859900;
+//$headings-fontColor : #ABEC9A;
+
+//other colors
+$lightGreen	    : #ABF381;
+$semiLightGreen	    : #85E14F;
+$semiDarkGreen	    : #39820E;
+$darkGreen	    : #122F00;
+
+$lightTurq	    : #76DFC0;
+$semiLightTurq	    : #3DAF8C;
+$semiDarkTurq	    : #0A6248;
+$darkTurq	    : #002419;
+
+$lightOrange	    : #FFB587;
+$semiLightOrange    : #FF9959;
+$semiDarkOrange	    : #954310;
+$darkOrange	    : #361500;
+
+$lightMagneta	    : #F481A9;
+$semiLightMagneta   : #E24F83;
+$semiDarkMagneta    : #830E37;
+$darkMagneta	    : #2F0011;
+
+
+
+
+
+
