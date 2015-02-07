@@ -76,12 +76,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     Created on : 06-Jan-2015, 07:56:17
     Author     : Edit
 */
-/* line 10, ../components/sass/_base.scss */
+/*================================= GLOBAL LAYOUTS BASE =============================================*/
+/* line 11, ../components/sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 12, ../components/sass/_base.scss */
+/* line 13, ../components/sass/_base.scss */
 body {
   background: #3A3F39;
   font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -93,9 +94,11 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
-/* line 25, ../components/sass/_base.scss */
+/* line 28, ../components/sass/_base.scss */
 .clear {
   clear: both;
   width: 100%;
@@ -103,97 +106,40 @@ body {
   font-size: 0;
 }
 
-/* line 32, ../components/sass/_base.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #85E14F;
-  font-weight: 600;
-  text-shadow: #122F00 1px 1px;
-}
-
-/* line 39, ../components/sass/_base.scss */
-h1 {
-  font-size: 1.8em;
-  color: #a3e87b;
-  margin-bottom: .7em;
-  line-height: 1.3em;
-}
-
-/* line 46, ../components/sass/_base.scss */
-h2 {
-  font-size: 1.3em;
-  color: #85E14F;
-  margin-bottom: .6em;
-}
-
-/* line 53, ../components/sass/_base.scss */
-h3 {
-  font-size: 1.2em;
-  margin-bottom: .5em;
-}
-
-/* line 58, ../components/sass/_base.scss */
-a, p, li {
-  font-size: 1em;
-  margin-bottom: .5em;
-}
-
-/* line 63, ../components/sass/_base.scss */
-ul, li {
-  list-style-type: none;
-}
-
-/* line 67, ../components/sass/_base.scss */
-#HeaderWrapper .container h1 {
-  float: left;
-  margin-top: 0;
-}
-
-/* line 72, ../components/sass/_base.scss */
-#HeaderWrapper .container h1 span {
-  display: block;
-  width: 290px;
-  height: 70px;
-  background: url(/images/logo_with_text_290x70.png) 0 0 no-repeat;
-  text-decoration: none;
-  text-indent: -9999px;
-  margin-top: 10px;
-}
-
 /* 
     Created on : 07-Jan-2015, 21:52:49
     Author     : Edit
 */
-/*=================================GLOBAL LAYOUTS=============================================*/
+/*=================================GLOBAL LAYOUTS LAYOUT =============================================*/
 /* line 11, ../components/sass/_layout.scss */
 html {
   width: 100%;
 }
 
-/* line 15, ../components/sass/_layout.scss */
+/* line 16, ../components/sass/_layout.scss */
 .container,
 #HeaderWrapper {
-  width: 1024px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  margin: 10px auto;
 }
 
 /**************************** fluid grid MAIN NAVIGATION ************************/
-/* line 26, ../components/sass/_layout.scss */
+/* line 28, ../components/sass/_layout.scss */
 #MainNav {
   margin-top: 10px;
 }
 
-/* line 30, ../components/sass/_layout.scss */
+/* line 36, ../components/sass/_layout.scss */
 .nav {
-  width: 57%;
+  width: 60%;
   float: right;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: justify;
   font-size: 0.1px;
 }
-
-/* line 39, ../components/sass/_layout.scss */
+/* line 44, ../components/sass/_layout.scss */
 .nav li {
   display: inline;
   width: 19%;
@@ -203,15 +149,7 @@ html {
   line-height: 2;
   text-align: center;
 }
-
-/* line 49, ../components/sass/_layout.scss */
-.nav:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-/* line 55, ../components/sass/_layout.scss */
+/* line 54, ../components/sass/_layout.scss */
 .nav a {
   display: inline-block;
   margin-bottom: 0;
@@ -226,6 +164,13 @@ html {
 }
 
 /* line 70, ../components/sass/_layout.scss */
+.nav:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 78, ../components/sass/_layout.scss */
 .nav a:hover,
 .nav li.current a {
   color: #dbedd6;
@@ -237,15 +182,68 @@ html {
 /*.nav .placeholder {
     padding: 0;
 }*/
-/**************************** intrinsic ration HERO PANEL ************************/
-/* line 85, ../components/sass/_layout.scss */
+@media screen and (min-width: 640px) and (max-width: 678px) {
+  /* line 93, ../components/sass/_layout.scss */
+  .nav {
+    width: 50%;
+  }
+  /* line 96, ../components/sass/_layout.scss */
+  .nav a {
+    font-size: .9em;
+    padding: 20px 3px;
+  }
+}
+@media screen and (min-width: 679px) and (max-width: 708px) {
+  /* line 106, ../components/sass/_layout.scss */
+  .nav {
+    width: 53%;
+  }
+  /* line 109, ../components/sass/_layout.scss */
+  .nav a {
+    font-size: 1em;
+    padding: 20px 5px;
+  }
+}
+@media screen and (min-width: 709px) and (max-width: 789px) {
+  /* line 121, ../components/sass/_layout.scss */
+  .nav {
+    width: 55%;
+  }
+  /* line 124, ../components/sass/_layout.scss */
+  .nav a {
+    font-size: 1em;
+    padding: 20px 7px;
+  }
+}
+@media screen and (min-width: 790px) and (max-width: 869px) {
+  /* line 134, ../components/sass/_layout.scss */
+  .nav {
+    width: 57%;
+  }
+  /* line 137, ../components/sass/_layout.scss */
+  .nav a {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 870px) and (max-width: 890px) {
+  /* line 147, ../components/sass/_layout.scss */
+  .nav {
+    width: 55%;
+  }
+  /* line 150, ../components/sass/_layout.scss */
+  .nav a {
+    font-size: 1.2em;
+  }
+}
+/**************************** intrinsic ratio HERO PANEL ************************/
+/* line 161, ../components/sass/_layout.scss */
 #Home {
   position: relative;
-  padding-bottom: 33%;
+  padding-bottom: 32%;
   height: 0;
 }
 
-/* line 91, ../components/sass/_layout.scss */
+/* line 168, ../components/sass/_layout.scss */
 #HomeHero {
   position: absolute;
   top: 0;
@@ -255,47 +253,511 @@ html {
   background: url(/images/bfitp_hero_panel_bg_1300x404_flipped.jpg) 0 0 no-repeat;
   background-size: 100% auto;
 }
-
-/* line 103, ../components/sass/_layout.scss */
-#HomeHero h1,
-#HomeHero h2,
-#HomeHero p {
-  position: absolute;
-  left: 11%;
-  width: 35%;
+/* line 178, ../components/sass/_layout.scss */
+#HomeHero #HeroText {
+  width: 44%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+/* line 185, ../components/sass/_layout.scss */
+#HomeHero h1, #HomeHero h2, #HomeHero p {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
+  color: #f0f3f0;
 }
-
-/* line 114, ../components/sass/_layout.scss */
+/* line 192, ../components/sass/_layout.scss */
 #HomeHero h1 {
-  top: 5%;
   font-size: 1.5em;
 }
 
-/* line 119, ../components/sass/_layout.scss */
-#HomeHero h2 {
-  top: 27%;
+/**************************** ABOUT US -home page- ************************/
+/* line 201, ../components/sass/_layout.scss */
+#AboutUsContentHolder {
+  padding: 25px;
+  background-color: #4b524a;
+  border-radius: 3px;
+  border: 2px dashed #3f443e;
 }
 
-/* line 124, ../components/sass/_layout.scss */
-#HomeHero p {
-  top: 43%;
+/**************************** PORTFOLIO -home page- ************************/
+/* line 210, ../components/sass/_layout.scss */
+#GridHomePortfolio {
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+/* line 215, ../components/sass/_layout.scss */
+#GridHomePortfolio li {
+  display: inline-block;
+  width: 49%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 2.5%;
+  background-color: #535a51;
+  border-radius: 3px;
+  border: 2px dashed #464c45;
+  vertical-align: top;
+}
+
+/* line 228, ../components/sass/_layout.scss */
+#GridHomePortfolio:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 235, ../components/sass/_layout.scss */
+.gridContentHolder {
+  font-size: 10px;
+  padding: 0px 25px 10px 25px;
+}
+/* line 239, ../components/sass/_layout.scss */
+.gridContentHolder img {
+  width: 12em;
+  height: auto;
+  float: left;
+  margin-right: 3%;
+}
+
+/**************************** FOOTER ************************/
+/* line 248, ../components/sass/_layout.scss */
+#Footer {
+  clear: both;
+  background: #2e322d;
+}
+/* line 252, ../components/sass/_layout.scss */
+#Footer .container {
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+/* line 256, ../components/sass/_layout.scss */
+#Footer .container p {
+  margin-bottom: 0;
+  padding: 20px 0px;
 }
 
 /*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 131, ../components/sass/_layout.scss */
+@media screen and (max-width: 639px) {
+  /* line 272, ../components/sass/_layout.scss */
+  .container, #HeaderWrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* line 277, ../components/sass/_layout.scss */
+  .page {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+
+  /* line 283, ../components/sass/_layout.scss */
+  #MainNav {
+    margin-top: 0;
+  }
+
+  /* line 287, ../components/sass/_layout.scss */
+  .nav {
+    clear: both;
+    width: 100%;
+    background: #2e322d;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+  }
+  /* line 294, ../components/sass/_layout.scss */
   .nav li {
-    width: 23%;
-    padding-top: 2%;
+    padding-top: 0%;
+  }
+  /* line 299, ../components/sass/_layout.scss */
+  .nav a:link {
+    padding: 20px 5%;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  /* line 306, ../components/sass/_layout.scss */
+  .nav a:hover {
+    border: 2px dashed #464c45;
+  }
+  /* line 310, ../components/sass/_layout.scss */
+  .nav a:active {
+    border: 2px dashed #464c45;
+  }
+  /* line 314, ../components/sass/_layout.scss */
+  .nav a:visited {
+    border: 2px dashed #464c45;
+  }
+
+  /* line 319, ../components/sass/_layout.scss */
+  #Home {
+    height: 1%;
+    padding-bottom: 0%;
+  }
+
+  /* line 325, ../components/sass/_layout.scss */
+  #HomeHero {
+    position: static;
+  }
+  /* line 328, ../components/sass/_layout.scss */
+  #HomeHero #HeroText {
+    clear: both;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding-top: 33%;
+  }
+  /* line 338, ../components/sass/_layout.scss */
+  #HomeHero h1, #HomeHero h2, #HomeHero p {
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #d5ded2;
+    box-sizing: border-box;
+  }
+  /* line 345, ../components/sass/_layout.scss */
+  #HomeHero h1 {
+    display: none;
+  }
+  /* line 351, ../components/sass/_layout.scss */
+  #HomeHero h2 {
+    font-size: 1.25em;
+  }
+  /* line 355, ../components/sass/_layout.scss */
+  #HomeHero p {
+    border-bottom: 2px dashed #3c423b;
+  }
+
+  /* line 361, ../components/sass/_layout.scss */
+  #AboutUsContentHolder {
+    padding: 15px;
+  }
+
+  /* line 365, ../components/sass/_layout.scss */
+  #GridHomePortfolio li {
+    width: 100%;
+    padding-top: 1%;
+    margin-bottom: 2.5%;
+    box-sizing: border-box;
+  }
+  /* line 371, ../components/sass/_layout.scss */
+  #GridHomePortfolio li .gridContentHolder {
+    padding: 0px 15px 10px 15px;
+  }
+  /* line 374, ../components/sass/_layout.scss */
+  #GridHomePortfolio li .gridContentHolder img {
+    width: 11em;
+    margin-right: 3%;
+  }
+
+  /* line 381, ../components/sass/_layout.scss */
+  #Footer .container {
+    padding: 0 15px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 547px) {
+  /* line 389, ../components/sass/_layout.scss */
+  .nav a:link {
+    padding: 20px 1%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* line 398, ../components/sass/_layout.scss */
+  #GridHomePortfolio li {
+    width: 48.5%;
+    padding-top: 3%;
+    margin-bottom: 4%;
+    box-sizing: border-box;
+  }
+  /* line 404, ../components/sass/_layout.scss */
+  #GridHomePortfolio li .gridContentHolder {
+    min-height: 156px;
+    box-sizing: border-box;
+  }
+
+  /* line 410, ../components/sass/_layout.scss */
+  #Footer .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 760px) {
+  /* line 421, ../components/sass/_layout.scss */
+  #HomeHero #HeroText {
+    width: 78%;
+  }
+  /* line 425, ../components/sass/_layout.scss */
+  #HomeHero h1 {
+    font-size: 1.1em;
+    margin-bottom: .3em;
+  }
+  /* line 430, ../components/sass/_layout.scss */
+  #HomeHero h2 {
+    font-size: 1em;
+    margin-bottom: .3em;
+  }
+  /* line 435, ../components/sass/_layout.scss */
+  #HomeHero h1, #HomeHero h2, #HomeHero p {
+    padding: 7px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 790px) {
+  /* line 446, ../components/sass/_layout.scss */
+  #HomeHero #HeroText {
+    width: 78%;
+  }
+  /* line 450, ../components/sass/_layout.scss */
+  #HomeHero h1 {
+    font-size: 1.2em;
+    margin-bottom: .4em;
+  }
+  /* line 455, ../components/sass/_layout.scss */
+  #HomeHero h2 {
+    font-size: 1.1em;
+    margin-bottom: .4em;
+  }
+  /* line 460, ../components/sass/_layout.scss */
+  #HomeHero h1, #HomeHero h2, #HomeHero p {
+    padding: 9px;
+  }
+}
+@media screen and (min-width: 791px) and (max-width: 850px) {
+  /* line 470, ../components/sass/_layout.scss */
+  #HomeHero #HeroText {
+    width: 78%;
+  }
+  /* line 474, ../components/sass/_layout.scss */
+  #HomeHero h1 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+  }
+  /* line 479, ../components/sass/_layout.scss */
+  #HomeHero h2 {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+  /* line 484, ../components/sass/_layout.scss */
+  #HomeHero h1, #HomeHero h2, #HomeHero p {
+    padding: 11px;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 895px) {
+  /* line 492, ../components/sass/_layout.scss */
+  #HomeHero #HeroText {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 896px) and (max-width: 990px) {
+  /* line 499, ../components/sass/_layout.scss */
+  #HomeHero #HeroText {
+    width: 50%;
+  }
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03-Feb-2015, 08:01:36
+    Author     : Edit
+*/
+/**************************************** texts *********************************/
+/* line 13, ../components/sass/_texts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #85E14F;
+  font-weight: 600;
+}
+
+/* line 20, ../components/sass/_texts.scss */
+h1 {
+  font-size: 1.8em;
+  color: #a3e87b;
+  margin-bottom: .7em;
+  line-height: 1.3em;
+}
+
+/* line 27, ../components/sass/_texts.scss */
+h2 {
+  font-size: 1.3em;
+  color: #85E14F;
+  margin-bottom: .6em;
+}
+
+/* line 34, ../components/sass/_texts.scss */
+h3 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+/* line 39, ../components/sass/_texts.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 41, ../components/sass/_texts.scss */
+a, p, li {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+/* line 46, ../components/sass/_texts.scss */
+ul, li {
+  list-style-type: none;
+}
+
+/********** Bfitp logo *******/
+/* line 52, ../components/sass/_texts.scss */
+#HeaderWrapper .container h1 {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+/* line 58, ../components/sass/_texts.scss */
+#HeaderWrapper .container h1 span {
+  display: block;
+  width: 290px;
+  height: 70px;
+  background: url(/images/logo_with_text_290x70.png) no-repeat;
+  text-decoration: none;
+  text-indent: -9999px;
+  margin-top: 5px;
+  background-position: 0%;
+}
+
+/* line 71, ../components/sass/_texts.scss */
+#GridHomePortfolio li h3,
+#GridHomePortfolio li h4,
+#GridHomePortfolio li p {
+  text-align: left;
+}
+
+/* line 78, ../components/sass/_texts.scss */
+#GridHomePortfolio li h3 {
+  font-size: 1.9em;
+  margin-bottom: .5em;
+  color: #ABF381;
+}
+
+/* line 85, ../components/sass/_texts.scss */
+#GridHomePortfolio li h4 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+/* line 92, ../components/sass/_texts.scss */
+#GridHomePortfolio li p a {
+  font-size: 1.6em;
+}
+
+/* line 97, ../components/sass/_texts.scss */
+#GridHomePortfolio li p a {
+  font-size: 1.4em;
+  color: #dbedd6;
+  background-color: #6b7569;
+  border-radius: 3px;
+  border: 2px dashed #464c45;
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* line 108, ../components/sass/_texts.scss */
+#GridHomePortfolio li p a:hover {
+  background-color: #464c45;
+  border: 2px dashed #6b7569;
+}
+
 @media screen and (max-width: 639px) {
-  /* line 138, ../components/sass/_layout.scss */
-  .nav li {
-    width: 17%;
-    padding-top: 1%;
+  /* line 116, ../components/sass/_texts.scss */
+  #HeaderWrapper .container h1 {
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  /* line 122, ../components/sass/_texts.scss */
+  #HeaderWrapper .container h1 span {
+    width: 100%;
+    background-position: 50%;
+    margin-top: 5px;
+  }
+
+  /* line 132, ../components/sass/_texts.scss */
+  #GridHomePortfolio li h3 {
+    margin-top: 1.3em;
+  }
+  /* line 136, ../components/sass/_texts.scss */
+  #GridHomePortfolio li h4 {
+    margin-bottom: .8em;
+  }
+  /* line 140, ../components/sass/_texts.scss */
+  #GridHomePortfolio li p {
+    clear: both;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  /* line 148, ../components/sass/_texts.scss */
+  #GridHomePortfolio li p a {
+    color: #dbedd6;
+    background-color: #6b7569;
+    border-radius: 3px;
+    border: 2px dashed #464c45;
+    padding: 5px 10px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 160, ../components/sass/_texts.scss */
+  #GridHomePortfolio li p a:hover {
+    background-color: #464c45;
+    border: 2px dashed #6b7569;
+  }
+
+  /* line 167, ../components/sass/_texts.scss */
+  #Footer .container p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* line 176, ../components/sass/_texts.scss */
+  #GridHomePortfolio li h3 {
+    font-size: 1.7em;
+    margin-bottom: .7em;
+    padding-top: 7px;
+  }
+
+  /* line 183, ../components/sass/_texts.scss */
+  #GridHomePortfolio li h4 {
+    font-size: 1.6em;
+    margin-bottom: .5em;
+  }
+
+  /* line 189, ../components/sass/_texts.scss */
+  #GridHomePortfolio li p a {
+    font-size: 1.4em;
+    color: #dbedd6;
+    background-color: #6b7569;
+    border-radius: 3px;
+    border: 2px dashed #464c45;
+    width: 100%;
+    white-space: nowrap;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    clear: both;
+  }
+
+  /* line 204, ../components/sass/_texts.scss */
+  #GridHomePortfolio li p a:hover {
+    background-color: #464c45;
+    border: 2px dashed #6b7569;
+  }
+
+  /* line 210, ../components/sass/_texts.scss */
+  .gridContentHolder img {
+    padding-bottom: 15px;
   }
 }
 /* 
