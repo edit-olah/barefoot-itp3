@@ -145,5 +145,15 @@ http://stackoverflow.com/questions/49536/how-do-i-really-justify-a-horizontal-me
 
 - - - - - - - - - - - - - -
 
-## 11. 
+## 11.  Scalable and Modular Architecture for CSS - Jonathan Snook
+(SMACSS)
+'Categorizing CSS
+rules, we begin to see patterns and can define better practices
+around each of these patterns.
+There are five types of categories:
+1. Base
+2. Layout
+3. Module
+4. State
+5. Theme'
 - - - - - - - - - - - - - -

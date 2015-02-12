@@ -5,63 +5,356 @@
 // _modules.scss
 // ============
 
+/*================================= GRIDS =================================*/
 
-/*
-.featuredartists {
-  background: $darkGreenGold;
-  border-top: 20px solid $beige;
-  border-bottom: 50px solid $green;
- 
-  h1 {
-    font-size: 3em;
-    color: darken($green, 20%);
-    @media (max-width: 700px) {
-      font-size: 2em;
-    }
-  } //h1
- 
-  h2 {
-    margin-top: 20px;
-    font-size: 1.8em;
-    color: darken($beige, 8%);
-    @media (max-width: 700px) {
-     display: none;
-    }
-  } //h2
- 
-  p {
-    color: darken($green, 15%);
+/****************** Default grid - beginning **********************/
+
+.grid {
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+  
+  li {
+    display: inline-block;
+    width: 49%;
+    padding-top: 3%; 
+    padding-bottom: 3%;
+    margin-bottom: 1%;
+    background-color: lighten($primaryBG, 10);
+    border-radius: 3px;
+    border: 2px dashed lighten($primaryBG, 5);
+    vertical-align: top;
   }
- 
- .artistlist {
-    padding-bottom: 20px;
- 
-    h2 {
-      margin-top: 5px;
-      font-size: 1.2em;
-      color: lighten($beige, 8%);
-    } //h2
- 
-    .item {
-      min-width: 95px;
-      color: darken($darkGreenGold, 10%);
-      width: 18%;
-      float: left;
-      padding: 1%;
-      text-align: center;
-      position: relative;
- 
-      >img {
-        max-width: 130px;
-        margin: 0 auto;
-        display: block;
-        @include border-radius(50%);
-        width: 100%;
-      } //img
-    } //item
-  } //artistlist
-} //featured artists
- 
-*/
- 
+}
 
+.grid:after { // lacking support in IE6/7
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+.grid-contentHolder {
+    font-size:10px;
+    padding: 0px 25px 10px 25px;
+    box-sizing: border-box;
+    
+    img {
+	width: 12em;
+	height: auto;
+	float: left;
+	margin-right: 3%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 639px) {
+
+    .grid li {
+	width: 100%;
+	padding-top: 1%;
+	margin-bottom: 1%;
+	box-sizing: border-box;
+
+	.grid-contentHolder {
+	    padding: 0px 15px 10px 15px;
+
+	    img {
+		width: 11em;
+		margin-right: 3%;
+	    }
+	}
+    }
+    
+    
+    
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+
+    .grid {
+    
+	li {
+	    width: 48.5%;
+	    padding-top: 3%;
+	    margin-bottom: 2%;
+	    box-sizing: border-box;
+	}
+	
+	.grid-contentHolder {
+	    min-height: 156px;
+	    box-sizing: border-box;
+	    
+	    img {
+		padding-bottom: 15px;
+	    }
+	}
+    }
+
+}
+
+/**** Default grid - beginning ****/
+
+
+
+/********** Stretched / full width / blog-section grid - beginning ***************/
+
+.grid.grid-stretched-layout {
+    
+    li {
+	 width: 32%;
+	 padding-bottom: 0%;
+	 
+	 p.button a {
+	    width: 100%;
+	    display: block;
+	    box-sizing: border-box;
+	 }
+    }
+    
+    img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 4%;
+	float: none;
+	display: block;
+    }
+    
+    
+    .grid-contentHolder {
+	width: 100%;
+    
+	.socialIcons {
+	    padding: 5px;
+	    margin-bottom: 6%;
+	    
+	    img {
+		width: 14%;
+		height: auto;
+		padding: 5px;
+		margin: 0;
+		display: inline;
+	     }
+	}
+	
+
+    }  
+    
+}
+
+.grid.grid-stretched-layout > li:last-child {
+    border: 2px dashed darken($primaryBG, 2);
+    background-color: lighten($primaryBG, 5);
+}
+.grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li {
+    background-color: lighten($primaryBG, 5);
+    
+}
+
+.grid.grid-full-width > li {
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px dashed lighten($primaryBG, 10);
+}
+
+.grid.grid-full-width > li:first-child {
+    padding-top: 0;
+}
+
+.grid-stretched-layout .grid-full-width.blog-section p.button a {
+    padding: 4px;
+    
+}
+.grid-full-width.blog-section {
+    margin-bottom: 0px;
+}
+
+/**** Stretched / full width / blog-section grid - beginning  - end ****/
+
+
+
+
+
+
+/*================================= HERO PANEL =================================*/
+
+
+/**************************** intrinsic ratio HERO PANEL - beginning ************************/
+
+#Hero {
+    position: relative;
+    padding-bottom: 32%;
+    height: 0;
+    
+}
+
+.heroContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/bfitp_hero_panel_bg_1300x404_flipped.jpg) 0 0 no-repeat;
+    background-size: 100% auto;
+    
+
+    .heroText {
+	width: 44%;
+	margin-left: 3%;
+	margin-top: 2%;
+    }
+    
+    
+    h1, h2, p {
+	background-color: rgba(0,0,0,0.6);
+	padding: 15px;
+	color: lighten($primaryFontColor, 20);
+	
+    }
+
+    h1 {
+	font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+    
+    #Hero {
+	//position: static;
+	height: 1%;
+	padding-bottom: 0%;
+    }
+    
+    .heroContent {
+	position: static;
+	
+	.heroText {
+	    
+	    clear: both;
+	    width: 100%;
+	    margin-left: 0%;
+	    margin-top: 0%;
+	    padding-top: 33%;
+	    
+	}
+	
+	 h1, h2, p {
+	    padding: 10px 15px;
+	    background-color: rgba(0,0,0,0.2);
+	    color: lighten($primaryFontColor, 10);
+	    box-sizing: border-box;
+	}
+	
+	h1 {
+	    display: none;
+	}
+	
+	
+	
+	h2 {
+	     font-size: 1.25em;
+	}
+	
+	p {
+	    border-bottom: 2px dashed lighten($primaryBG, 1);
+	}
+    }
+}
+
+
+
+@media screen and (min-width: 640px) and (max-width:760px) {
+
+    .heroContent {
+    
+	.heroText {
+	    width: 78%;
+	}
+
+	h1 {
+	    font-size: 1.1em;
+	    margin-bottom: .3em;
+	}
+
+	h2 {
+	    font-size: 1em;
+	    margin-bottom: .3em;
+	}
+	
+	h1, h2, p {
+	    padding: 7px;
+	}
+    }
+}
+
+
+@media screen and (min-width: 761px) and (max-width:790px) {
+
+    .heroContent {
+    
+	.heroText {
+	    width: 78%;
+	}
+
+	h1 {
+	    font-size: 1.2em;
+	    margin-bottom: .4em;
+	}
+
+	h2 {
+	    font-size: 1.1em;
+	    margin-bottom: .4em;
+	}
+	
+	h1, h2, p {
+	    padding: 9px;
+	}
+    }
+}
+
+
+@media screen and (min-width: 791px) and (max-width:850px) {
+    .heroContent {
+    
+	.heroText {
+	    width: 78%;
+	}
+    
+	h1 {
+	    font-size: 1.3em;
+	    margin-bottom: .5em;
+	}
+
+	h2 {
+	    font-size: 1.2em;
+	    margin-bottom: .5em;
+	}
+
+	h1, h2, p {
+	    padding: 11px;
+	}
+    }
+}
+
+
+@media screen and (min-width: 851px) and (max-width:895px) {
+    .heroContent .heroText {
+	width: 65%;
+    }
+}
+
+
+@media screen and (min-width: 896px) and (max-width:990px) {
+    .heroContent .heroText {
+	width: 50%;
+    }
+}
+
+/********* intrinsic ratio HERO PANEL - end **************/

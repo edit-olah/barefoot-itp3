@@ -6,20 +6,27 @@
 // _variables.scss
 // =================
 
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700);
 
+
+
+
+//@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700);
 
 
 // Font family and size
-$baseFont	    : 'Source Code Pro',"Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseFont	    : sourceCodeProNormal,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    //$baseFont	    : 'Source Code Pro',"Helvetica Neue", Helvetica, Arial, sans-serif;
 $baseFontSize	    : 62.5%; //if browser default is 16px (font-size on <html> level), this equals 10px -> 10px = 0.625rem
 
 
 // Font weights
+
 $light	    : 300;
 $normal	    : 400;
+$medium	    : 500;
 $semi-bold  : 600;
 $bold	    : 700;
+
 
  // background colors
 $primaryBG	    : #3A3F39;
