@@ -100,23 +100,23 @@ ul, li {
 
     }
 
-    p a {
-	font-size: 1.6em;
+    p {
+	font-size: 1.3em;
     }
 
     .email {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	a {
-	   font-size: 1.1em;
+	   font-size: 1em;
 	   word-wrap:break-word;
        }
     }
     
     p.button a {
 	 width: 300px;
-	 padding: 10px;
+	 padding: 10px 19%;
 	 margin-top: 20px;
-	 font-size: 1.4em;
+	 font-size: 1.1em;
 	 color: #dbedd6;
 	 background-color: lighten($primaryBG, 20);
 	 border: 2px dashed lighten($primaryBG, 5);
@@ -126,6 +126,7 @@ ul, li {
      p.button a:hover {
 	 background-color: lighten($primaryBG, 5);
 	 border: 2px dashed lighten($primaryBG, 20);
+	 text-decoration:none;
      } 
 }
 
@@ -151,6 +152,7 @@ ul, li {
 	width: 100%;
 	height: auto;
 	margin-bottom: 0px;
+	padding: 0;
 	
 	span {
 	    width: 100%;
@@ -174,9 +176,8 @@ ul, li {
 	    clear: both;
 	    padding-top: 10px;
 	    margin: 0;
-	    text-align: center;
-	    white-space: nowrap;
 	}
+	
 	
 	p.button a {
 	    padding: 5px 10px;
@@ -184,6 +185,8 @@ ul, li {
 	    display: block;
 	    box-sizing: border-box;
 	    margin: 0 auto;
+	    text-align: center;
+	    white-space: nowrap;
 	}
     
     }
@@ -216,11 +219,20 @@ ul, li {
 	    width: 100%;
 	    white-space: nowrap;
 	    display: block;
-	    padding: 5px;
+	    padding: 5px 10px; // used to be just 5px for all sides
 	    box-sizing: border-box;
 	    clear:both;
 	}
     } 
     
 
+}
+
+@media screen and (min-width: 1002px) and (max-width:1040px){
+    .email {
+	a {
+	   font-size: 1em;
+	   white-space: nowrap;
+       }
+    }
 }
