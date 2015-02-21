@@ -140,6 +140,10 @@ ul, li {
 	font-size: 1.2em;
     }   
 }
+.grid.grid-stretched-layout > li > h2 {
+    font-size: 1.9rem;
+    padding: 0 25px;
+}
 
 
 /*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
@@ -187,8 +191,15 @@ ul, li {
 	    margin: 0 auto;
 	    text-align: center;
 	    white-space: nowrap;
+	    font-size: 1em;
 	}
     
+    }
+    
+    .grid.grid-stretched-layout > li > h2 {
+	font-size: 1.9rem;
+	padding: 10px 15px 0 15px;
+	margin-bottom: 0;
     }
     
     #Footer .container p {
