@@ -17,9 +17,20 @@ html {
 #HeaderWrapper {
     width:100%;
     max-width: 1024px;
-    margin: 10px auto;
 }
 
+.container {
+    margin: 0 auto;
+}
+
+#HeaderWrapper{
+    margin: 0 auto;
+}
+
+.page {
+    padding: $defaultPadding;
+    box-sizing: border-box;
+}
 
 /**************************** fluid grid MAIN NAVIGATION ************************/
 // needs work on the responsiveness, check for correct font-sizing
@@ -29,22 +40,25 @@ html {
     margin-top: 10px;
 }
 
-.nav {
+ .nav {
     width: 60%;
     float: right;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify; 
-    font-size: 0.1px; // adjusting typographic CSS properties that affect the site layout's whitespace
+    font-family: $zerowidthFont;
+    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+
 
     li {
 	display: inline;
 	width: 19%;
 	padding-top: 3%;
 	margin-bottom: 1%;
-	font-size: 13px;
+	font-size: 1.3rem;
 	line-height: 2;
 	text-align: center;
+	font-family: $baseFont;
     }
 
     a {
@@ -56,6 +70,7 @@ html {
 	color: #bfcabc;
 	font-weight: 700;
 	font-size: 1.4em;
+	font-family: $baseFont;
 	white-space: nowrap;
 	border: 2px solid transparent;
     }
@@ -104,7 +119,7 @@ html {
 	    padding: 20px 5%;
 	    line-height: 1;
 	    font-weight: $normal;
-	    font-size: 0.9em;
+	    font-size: 0.85em;
 	    
 	}
 	a:hover {
@@ -115,9 +130,9 @@ html {
 	   border: 2px dashed lighten($primaryBG, 5);
 	}
 	
-	a:visited {
+	/*a:visited {
 	   border: 2px dashed lighten($primaryBG, 5);
-	}
+	}*/
     }
 }
 
@@ -315,7 +330,16 @@ html {
     }
 }
 
+/*========================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS ====================================*/
 
+
+#About, #Skills, #Portfolio, #ContactIndi {
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+    background-color: lighten($primaryBG, 7);
+    border-radius: 3px;
+    border: 2px dashed lighten($primaryBG, 2);
+}
 
 
 /*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
@@ -334,6 +358,7 @@ html {
 	float: left;
 	clear: both;
 	width: 100%;
+	padding: $minPadding;
     }
      
     #AboutUsContentHolder {
@@ -368,5 +393,8 @@ html {
 	padding: 0 15px;
     }
     
+    .page {
+	padding: $secondaryPadding;
+    }
 }
 

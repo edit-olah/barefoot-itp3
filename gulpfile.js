@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
-    minifyHTML = require('gulp-minify-html'),
+    //minifyHTML = require('gulp-minify-html'),
     browserify = require('gulp-browserify');
     
 var env,
@@ -31,10 +31,10 @@ if (env==='development') {
 // source variables
   
 jsSources = [  // order of the files are important
+    'components/scripts/jquery.mixitup.js',
     'components/scripts/base.js'
+    //'components/scripts/#.js',
     //'components/scripts/#.js'
-    //'components/scripts/#.js',
-    //'components/scripts/#.js',
   
 ];    
 sassSources = ['components/sass/style.scss'];
@@ -67,7 +67,7 @@ gulp.task('compass', function(){
 
 gulp.task('html', function () {
      gulp.src('builds/development/*.html')
-     .pipe(gulpif(env === 'production', minifyHTML()))
+     //.pipe(gulpif(env === 'production', minifyHTML()))
      .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
       .pipe(connect.reload());
 });

@@ -8,16 +8,18 @@
 
 
 
+// Font files have been added to the project to be able to work off-line. 
+// Uncomment this section and the relevant variables below, and don't include font files before production/going live takes place'
 
-
-//@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700);
-
+    // @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700);
+    // @import url('//cdn.jsdelivr.net/font-zero-width/latest/zero-width.css');
 
 // Font family and size
 $baseFont	    : sourceCodeProNormal,"Helvetica Neue", Helvetica, Arial, sans-serif;
     //$baseFont	    : 'Source Code Pro',"Helvetica Neue", Helvetica, Arial, sans-serif;
 $baseFontSize	    : 62.5%; //if browser default is 16px (font-size on <html> level), this equals 10px -> 10px = 0.625rem
-
+    
+$zerowidthFont : 'zero-width';
 
 // Font weights
 
@@ -31,6 +33,7 @@ $bold	    : 700;
  // background colors
 $primaryBG	    : #3A3F39;
 $secondaryBG	    : #899787;
+$greenBG2	    : #bdde37;
 $greenBG	    : #5FC124;
 $turqBG		    : #1C926E;
 $orangeBG	    : #DC6E2A;
@@ -62,8 +65,9 @@ $semiLightMagneta   : #E24F83;
 $semiDarkMagneta    : #830E37;
 $darkMagneta	    : #2F0011;
 
-$defaultPadding	    : 15px 25px;
-$secondaryPadding   : 15px;
+$defaultPadding	    : 15px 25px 0;
+$secondaryPadding   : 15px 15px 0;
+$minPadding	    : 15px 0;
 
 
 

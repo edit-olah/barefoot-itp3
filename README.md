@@ -100,14 +100,24 @@ http://www.barrelny.com/blog/text-align-justify-and-rwd/
 
 - - - - - - - - - - - - - -
 
-## 6. fluid, dynamic element height with padding-top trick
+## 6. Zero-width Web Font
+'Zero-width web fonts allow us to clear the whitespace between inline-block elements without having to declare font-size: 0; on the parent element.'
+https://github.com/patrickkunka/zero-width
+
+'Various IE versions do not like font-size: 0; so font-size: 0.1px; is often suggested as an alternative. However, FireFox does not like font-size: 0.1px and rounds it up, negating its use. Using a "zero-width" font on our element provides us with whitespace clearing accross all font-face compatible browsers.'
+
+'Once the files and CSS have been correctly included in your project, you may apply the font to whichever element you which to clear whitespace on. This is typically the parent element that contains inline-block elements.'
+
+
+
+## 7. fluid, dynamic element height with padding-top trick
 Creating Intrinsic Ratios for Video - by THIERRY KOBLENTZ May 26, 2009
 http://alistapart.com/article/creating-intrinsic-ratios-for-video
 > 'set padding in a percentage, based on the width of the containing block' - 'a container that proportionally resizes itself depending on the width of its parent'
 
 - - - - - - - - - - - - - -
 
-## 7. text-size-adjust CSS property
+## 8. text-size-adjust CSS property
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
 
 > browser compatibility:
@@ -118,7 +128,7 @@ https://wiki.mozilla.org/CSS/text-size-adjust
 
 - - - - - - - - - - - - - -
 
-## 8. viewport meta tag
+## 9. viewport meta tag
 Creating a Mobile-First Responsive Web Design
 http://www.html5rocks.com/en/mobile/responsivedesign/#toc-style-mobilefirst
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -133,19 +143,19 @@ http://www.onextrapixel.com/2012/04/23/responsive-web-design-layouts-and-media-q
 
 
 
-## 9. Media Queries
+## 10. Media Queries
 http://www.w3.org/TR/css3-mediaqueries/
 
 > 'HTML5 [HTML5] (at the moment of writing still work in progress) references the Media Queries specification directly and thus updates the rules for HTML.' (http://www.w3.org/TR/css3-mediaqueries/#HTML5)
 
 - - - - - - - - - - - - - -
 
-## 10. horizontal menu  with justify
+## 11. horizontal menu  with justify
 http://stackoverflow.com/questions/49536/how-do-i-really-justify-a-horizontal-menu-in-htmlcss
 
 - - - - - - - - - - - - - -
 
-## 11.  Scalable and Modular Architecture for CSS - Jonathan Snook
+## 12.  Scalable and Modular Architecture for CSS - Jonathan Snook
 (SMACSS)
 'Categorizing CSS
 rules, we begin to see patterns and can define better practices
@@ -157,3 +167,5 @@ There are five types of categories:
 4. State
 5. Theme'
 - - - - - - - - - - - - - -
+
+

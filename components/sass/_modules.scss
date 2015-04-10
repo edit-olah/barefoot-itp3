@@ -5,6 +5,152 @@
 // _modules.scss
 // ============
 
+/*================================= TOP-NAV =================================*/
+#HeaderWrapper.full-width {
+    width: 100%;
+}
+
+#TopBanner {
+    width: 100%;
+}
+
+.topNav {
+    width: 45%;
+    padding: 0 6%;
+    box-sizing: border-box;
+    margin-top: 3%;
+    
+    li {
+	padding-top: 0;
+    }
+    a {
+	border: 2px dashed rgba(189, 222, 55, 0.1);
+    }
+    a:link {
+	padding: 2% 5%;
+	font-size: 1.2em;
+	
+    }
+}
+
+@media screen and (max-width: 639px) {
+    
+    
+    #TopBanner .logo-container {
+	clear: initial;
+	margin-left: 0;
+	
+	.logo {
+	    padding: 2% 0;
+	    margin: 0;    
+	}
+	
+	
+    }
+    .nav.topNav {
+	clear: both;
+	width:100%;
+	margin-top: 0%;
+	margin-bottom: 0;
+	padding: 1%;
+	//background: #bdde37;
+	//background: rgba(189, 222, 55, 0.2);
+	box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+
+
+	a:link {
+	    padding: 1% 4%;
+	    margin: 0 2%;
+	    font-size: 1em;
+	}
+    }
+    
+    
+}
+
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    #TopBanner .logo-container {
+	margin-left: 1.7%;
+	margin-bottom: 1%;
+    }
+    .nav.topNav {
+	width: 48%;
+	padding: 0 .5%;
+	margin-top: 4.5%;
+	
+	a:link {
+	    font-size: 1em;
+
+	}
+    }
+}
+
+
+
+/*================================= FULL-WIDTH PAGE NAV =================================*/
+
+#PageNav {
+    background: $greenBG2;
+    background: rgba(189,222,55, .8);
+    //margin-top: -1.1%;
+    margin-bottom: 1%;
+}
+
+.nav.full-width {
+    float: initial;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: .5% 0;
+    box-sizing: border-box;
+    background: transparent;
+    
+    li {
+	padding-top: 0;
+    }
+    a {
+	color: $primaryBG;
+	padding: .5% 3%;
+	
+    }
+    
+}
+
+.nav.full-width a:hover,
+.nav.full-width li.current a {
+    color: lighten($greenBG2, 25);
+    background: $primaryBG;
+    background-color: rgba(83,90,81,.5);
+    border: 2px dashed rgba(189,222,55, .3);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 639px) {
+    #PageNav {
+	clear: both;
+    }
+    .nav.full-width {
+	background: transparent;
+	padding: .5% 1%;
+	a {
+	    padding: .7% .5%;
+	}
+    }
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .nav.full-width {
+	background: transparent;
+	a {
+	    font-size: 1.1em;
+	}
+    }
+}
+
+
 /*================================= GRIDS =================================*/
 
 
@@ -16,11 +162,14 @@
 /****************** Default grid - beginning **********************/
 
 .grid {
-  margin-bottom: 3%;
-  text-align: justify;
-  font-size: 0.1px;
+    margin-bottom: 3%;
+    text-align: justify;
+    font-family: $zerowidthFont;
+    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
   
   li {
+    font-family: $baseFont;
+    font-size: 1.2rem;
     display: inline-block;
     width: 49%;
     padding-top: 3%; 
@@ -41,7 +190,7 @@
 
 
 .grid-contentHolder {
-    font-size:10px;
+    font-size:1rem;
     padding: 0px 25px 10px 25px;
     box-sizing: border-box;
     
@@ -51,10 +200,13 @@
 	float: left;
 	margin-right: 3%;
     }
+    
 }
+
+
 /**** Default grid - end ****/
 
-/********** Stretched / full width / blog-section grid - beginning ***************/
+/********** Stretched / full width / blog-section grid (contact us page) - beginning ***************/
 
 .grid.grid-stretched-layout {
     
@@ -292,10 +444,38 @@
 
 
 
-
 /**** Grids media queries - end ****/
 
+/**** Our blog-posts - Default grid extension for our blog page - beginning ****/
 
+.blog-post {
+    h3, h4 {
+	clear: both;
+	min-height: 3.1em;
+	font-size: 1.5em;
+	line-height: 1.5;
+	padding-top: .4em;
+    }
+
+    .blog-summary {
+	min-height: 8em;
+      }
+}
+
+@media screen and (min-width: 640px) and (max-width: 764px) {
+    .blog-post {
+	h3, h4 {
+	    min-height: 4.5em;
+	}
+
+	.blog-summary {
+	    min-height: 11em;
+	  }
+    }
+    
+}
+
+/**** Our blog-posts - Default grid extension for our blog page - end ****/
 
 
 /*================================= HERO PANEL =================================*/
@@ -305,7 +485,7 @@
 
 #Hero {
     position: relative;
-    padding-bottom: 32%;
+    padding-bottom: 31%;
     height: 0;
     
 }
@@ -474,3 +654,165 @@
 }
 
 /********* intrinsic ratio HERO PANEL - end **************/
+
+/*================================= MIX IT UP =================================*/
+
+/********* mix it up control bar - beginning **************/
+
+.control-bar {
+    background: #768174;
+    background: rgba(185, 200, 181, .4);
+    margin-bottom: 1%;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.control-bar label {
+  margin: 0 5px 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  display: inline-block;
+}
+.control-bar .group {
+  display: inline-block;
+}
+
+.nav.full-width {
+    float: initial;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: .5% 0;
+    box-sizing: border-box;
+    background: transparent;
+    
+    li {
+	padding-top: 0;
+    }
+    a {
+	color: $primaryBG;
+	padding: .5% 3%;
+	
+    }
+    
+}
+
+.nav.full-width a:hover,
+.nav.full-width li.current a {
+    color: lighten($greenBG2, 25);
+    background: $primaryBG;
+    background-color: rgba(83,90,81,.5);
+    border: 2px dashed rgba(189,222,55, .3);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 639px) {
+    #PageNav {
+	clear: both;
+    }
+    .nav.full-width {
+	background: transparent;
+	padding: .5% 1%;
+	a {
+	    padding: .7% .5%;
+	}
+    }
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .nav.full-width {
+	background: transparent;
+	a {
+	    font-size: 1.1em;
+	}
+    }
+}
+
+/********* mix it up buttons - end **************/
+
+/********* mix it up grid - beginning **************/
+
+#Container .mix{
+    display: none;
+}
+
+#Container {
+    text-align: justify;
+    font-family: $zerowidthFont;
+    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#Container > * {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: $baseFont;
+  font-size: 1rem;
+}
+
+
+#Container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+#Container .mix {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 2%;
+  vertical-align: top;
+  min-height: 110px;
+  border: 2px dashed lighten($primaryBG, 12);
+  p {
+    line-height: 1.4em;
+    font-size: 1.7rem;
+    padding: 1em;
+  }
+}
+#Container .mix:before {
+  content: '';
+  display: inline-block;
+  padding-top: 5%;
+  vertical-align: middle;
+}
+#Container .mix:after {
+  content: '';
+  position: absolute;
+  border: 20px solid transparent;
+  border-right-color: white;
+  top: -20px;
+  left: -20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#Container .mix.webdev:after {
+  border-right-color: $lightGreen;
+}
+#Container .mix.threeD:after {
+  border-right-color: $lightTurq;
+}
+#Container .mix.animation:after {
+  border-right-color: $lightOrange;
+}
+#Container .mix.drawing:after {
+  border-right-color: $lightMagneta;
+}
+#Container .gap,
+#Container .mix {
+  width: 23%;
+}
+
+/********* mix it up grid - end **************/
+

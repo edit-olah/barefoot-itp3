@@ -1,4 +1,8 @@
-var $;
-
-$ = require('jquery');
-
+$( document ).ready(function() {
+    
+    // Instantiate MixItUp:
+    
+    $('#Container').mixItUp();
+    
+    
+});
