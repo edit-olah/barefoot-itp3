@@ -63,6 +63,128 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* 
+    Created on : 06-Jan-2015, 07:56:17
+    Author     : Edit
+*/
+/*=========================== RESET - beginning ============================*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 21, ../components/sass/_base.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 42, ../components/sass/_base.scss */
+body {
+  line-height: 1;
+}
+
+/* line 46, ../components/sass/_base.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 51, ../components/sass/_base.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 55, ../components/sass/_base.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 59, ../components/sass/_base.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 65, ../components/sass/_base.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 74, ../components/sass/_base.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 81, ../components/sass/_base.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 88, ../components/sass/_base.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 92, ../components/sass/_base.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 97, ../components/sass/_base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 103, ../components/sass/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 112, ../components/sass/_base.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/*=========================== RESET - beginning ============================*/
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -112,16 +234,17 @@ and open the template in the editor.
     Author     : Edit
 */
 /* 
-    Created on : 06-Jan-2015, 07:56:17
+    Created on : 07-Jan-2015, 21:52:49
     Author     : Edit
 */
-/*================================= GLOBAL LAYOUTS BASE =============================================*/
-/* line 11, ../components/sass/_base.scss */
+/*================== GLOBAL LAYOUTS BASE - beginning ========================*/
+/* line 11, ../components/sass/_layout.scss */
 html {
+  width: 100%;
   font-size: 62.5%;
 }
 
-/* line 13, ../components/sass/_base.scss */
+/* line 16, ../components/sass/_layout.scss */
 body {
   background: #3A3F39;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -138,7 +261,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 29, ../components/sass/_base.scss */
+/* line 32, ../components/sass/_layout.scss */
 .clear {
   clear: both;
   width: 100%;
@@ -146,46 +269,127 @@ body {
   font-size: 0;
 }
 
-/* 
-    Created on : 07-Jan-2015, 21:52:49
-    Author     : Edit
-*/
-/*=================================GLOBAL LAYOUT =============================================*/
-/* line 11, ../components/sass/_layout.scss */
-html {
-  width: 100%;
+/*================== GLOBAL LAYOUTS BASE - end ========================*/
+/*============ GLOBAL TEXTS - beginning ===============*/
+/* line 46, ../components/sass/_layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #85E14F;
+  font-weight: 600;
 }
 
-/* line 16, ../components/sass/_layout.scss */
+/* line 52, ../components/sass/_layout.scss */
+h1 {
+  font-size: 1.8em;
+  color: #a3e87b;
+  margin-bottom: .7em;
+  line-height: 1.3em;
+}
+
+/* line 59, ../components/sass/_layout.scss */
+h2 {
+  font-size: 1.3em;
+  color: #85E14F;
+  margin-bottom: .6em;
+}
+
+/* line 66, ../components/sass/_layout.scss */
+h3 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+/* line 71, ../components/sass/_layout.scss */
+a {
+  text-decoration: none;
+  color: #85E14F;
+  font-weight: 400;
+}
+
+/* line 77, ../components/sass/_layout.scss */
+a:hover {
+  text-decoration: underline;
+  color: #ABF381;
+}
+
+/* line 82, ../components/sass/_layout.scss */
+a, p, li {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+/* line 87, ../components/sass/_layout.scss */
+ul, li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 639px) {
+  /* line 94, ../components/sass/_layout.scss */
+  h1 {
+    margin-top: 5%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1002px) and (max-width: 1040px) {
+  /* line 103, ../components/sass/_layout.scss */
+  .email a {
+    font-size: 1em;
+    white-space: nowrap;
+  }
+}
+/*============ GLOBAL TEXTS - end ===============*/
+/*====================== GLOBAL LAYOUT - beginning ========================*/
+/* line 117, ../components/sass/_layout.scss */
 .container,
 #HeaderWrapper {
   width: 100%;
   max-width: 1024px;
 }
 
-/* line 22, ../components/sass/_layout.scss */
+/* line 123, ../components/sass/_layout.scss */
 .container {
   margin: 0 auto;
 }
 
-/* line 26, ../components/sass/_layout.scss */
+/* line 127, ../components/sass/_layout.scss */
 #HeaderWrapper {
   margin: 0 auto;
 }
 
-/* line 30, ../components/sass/_layout.scss */
+/* line 131, ../components/sass/_layout.scss */
 .page {
   padding: 15px 25px 0;
   box-sizing: border-box;
 }
 
-/**************************** fluid grid MAIN NAVIGATION ************************/
-/* line 39, ../components/sass/_layout.scss */
+@media screen and (max-width: 639px) {
+  /* line 138, ../components/sass/_layout.scss */
+  .container, #HeaderWrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* line 143, ../components/sass/_layout.scss */
+  .page {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* line 154, ../components/sass/_layout.scss */
+  .page {
+    padding: 15px 15px 0;
+  }
+}
+/***************============= fluid grid MAIN NAVIGATION - beginning ==============**************/
+/* line 161, ../components/sass/_layout.scss */
 #MainNav {
   margin-top: 10px;
 }
 
-/* line 43, ../components/sass/_layout.scss */
+/* line 165, ../components/sass/_layout.scss */
 .nav {
   width: 60%;
   float: right;
@@ -195,7 +399,7 @@ html {
   font-family: "zero-width";
   font-size: 0;
 }
-/* line 53, ../components/sass/_layout.scss */
+/* line 175, ../components/sass/_layout.scss */
 .nav li {
   display: inline;
   width: 19%;
@@ -206,7 +410,7 @@ html {
   text-align: center;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 64, ../components/sass/_layout.scss */
+/* line 186, ../components/sass/_layout.scss */
 .nav a {
   display: inline-block;
   margin-bottom: 0;
@@ -221,14 +425,14 @@ html {
   border: 2px solid transparent;
 }
 
-/* line 80, ../components/sass/_layout.scss */
+/* line 202, ../components/sass/_layout.scss */
 .nav:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 87, ../components/sass/_layout.scss */
+/* line 209, ../components/sass/_layout.scss */
 .nav a:hover,
 .nav li.current a {
   color: #dbedd6;
@@ -242,12 +446,12 @@ html {
     padding: 0;
 }*/
 @media screen and (max-width: 639px) {
-  /* line 102, ../components/sass/_layout.scss */
+  /* line 224, ../components/sass/_layout.scss */
   #MainNav {
     margin-top: 0;
   }
 
-  /* line 106, ../components/sass/_layout.scss */
+  /* line 228, ../components/sass/_layout.scss */
   .nav {
     clear: both;
     width: 100%;
@@ -258,105 +462,125 @@ html {
        border: 2px dashed lighten($primaryBG, 5);
     }*/
   }
-  /* line 113, ../components/sass/_layout.scss */
+  /* line 235, ../components/sass/_layout.scss */
   .nav li {
     padding-top: 0%;
   }
-  /* line 118, ../components/sass/_layout.scss */
+  /* line 240, ../components/sass/_layout.scss */
   .nav a:link {
     padding: 20px 5%;
     line-height: 1;
     font-weight: 400;
     font-size: 0.85em;
   }
-  /* line 125, ../components/sass/_layout.scss */
+  /* line 247, ../components/sass/_layout.scss */
   .nav a:hover {
     border: 2px dashed #464c45;
   }
-  /* line 129, ../components/sass/_layout.scss */
+  /* line 251, ../components/sass/_layout.scss */
   .nav a:active {
     border: 2px dashed #464c45;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 548px) {
-  /* line 143, ../components/sass/_layout.scss */
+  /* line 265, ../components/sass/_layout.scss */
   .nav a:link {
     padding: 20px 1%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 678px) {
-  /* line 151, ../components/sass/_layout.scss */
+  /* line 273, ../components/sass/_layout.scss */
   .nav {
     width: 50%;
   }
-  /* line 154, ../components/sass/_layout.scss */
+  /* line 276, ../components/sass/_layout.scss */
   .nav a {
     font-size: .9em;
     padding: 20px 3px;
   }
 }
 @media screen and (min-width: 679px) and (max-width: 708px) {
-  /* line 164, ../components/sass/_layout.scss */
+  /* line 286, ../components/sass/_layout.scss */
   .nav {
     width: 53%;
   }
-  /* line 167, ../components/sass/_layout.scss */
+  /* line 289, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1em;
     padding: 20px 5px;
   }
 }
 @media screen and (min-width: 709px) and (max-width: 789px) {
-  /* line 179, ../components/sass/_layout.scss */
+  /* line 301, ../components/sass/_layout.scss */
   .nav {
     width: 55%;
   }
-  /* line 182, ../components/sass/_layout.scss */
+  /* line 304, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1em;
     padding: 20px 7px;
   }
 }
 @media screen and (min-width: 790px) and (max-width: 869px) {
-  /* line 192, ../components/sass/_layout.scss */
+  /* line 314, ../components/sass/_layout.scss */
   .nav {
     width: 56%;
   }
-  /* line 195, ../components/sass/_layout.scss */
+  /* line 317, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1.05em;
   }
 }
 @media screen and (min-width: 870px) and (max-width: 890px) {
-  /* line 205, ../components/sass/_layout.scss */
+  /* line 327, ../components/sass/_layout.scss */
   .nav {
     width: 57%;
   }
-  /* line 208, ../components/sass/_layout.scss */
+  /* line 330, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1.2em;
   }
 }
-/**************************** FOOTER ************************/
-/* line 217, ../components/sass/_layout.scss */
+/***************============= fluid grid MAIN NAVIGATION - end ==============**************/
+/***************============= FOOTER - beginning ==============**************/
+/* line 341, ../components/sass/_layout.scss */
 #Footer {
   clear: both;
   background: #2e322d;
 }
-/* line 221, ../components/sass/_layout.scss */
+/* line 345, ../components/sass/_layout.scss */
 #Footer .container {
   margin-bottom: 0;
   box-sizing: border-box;
 }
-/* line 225, ../components/sass/_layout.scss */
+/* line 349, ../components/sass/_layout.scss */
 #Footer .container p {
   margin-bottom: 0;
   padding: 20px 0px;
 }
 
-/*================================= HOME PAGE LAYOUT =============================================*/
+@media screen and (max-width: 639px) {
+  /* line 359, ../components/sass/_layout.scss */
+  #Footer .container {
+    padding: 0 15px;
+  }
+
+  /* line 363, ../components/sass/_layout.scss */
+  #Footer .container p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  /* line 370, ../components/sass/_layout.scss */
+  #Footer .container {
+    padding: 0 15px;
+  }
+}
+/***************============= FOOTER - end ==============**************/
+/*============================ GLOBAL LAYOUT - end ==============================*/
+/*=========================== HOME PAGE LAYOUT - beginning =================================*/
 /**************************** ABOUT US -home page- ************************/
-/* line 238, ../components/sass/_layout.scss */
+/* line 387, ../components/sass/_layout.scss */
 #AboutUsContentHolder {
   padding: 15px 25px 0;
   background-color: #4b524a;
@@ -364,32 +588,46 @@ html {
   border: 2px dashed #3f443e;
 }
 
-/* line 245, ../components/sass/_layout.scss */
+/* line 394, ../components/sass/_layout.scss */
 #HomePortfolio .grid li p.button a {
   padding: 5px 10px;
 }
 
-/*================================= OUR PORTFOLIO PAGE LAYOUT =============================================*/
-/* line 253, ../components/sass/_layout.scss */
+@media screen and (max-width: 639px) {
+  /* line 400, ../components/sass/_layout.scss */
+  #AboutUsContentHolder {
+    padding: 15px 15px 0;
+  }
+}
+/*=========================== HOME PAGE LAYOUT - end =================================*/
+/*======================= OUR PORTFOLIO PAGE LAYOUT - beginning ============================*/
+/* line 411, ../components/sass/_layout.scss */
 #OurPortfolioContentHolder {
   padding: 15px 25px 0;
 }
 
-/*================================= OUR BLOG PAGE LAYOUT =============================================*/
-/* line 261, ../components/sass/_layout.scss */
+@media screen and (max-width: 639px) {
+  /* line 418, ../components/sass/_layout.scss */
+  #OurPortfolioContentHolder {
+    padding: 15px 15px 0;
+  }
+}
+/*======================= OUR PORTFOLIO PAGE LAYOUT - end ============================*/
+/*========================== OUR BLOG PAGE LAYOUT - beginning ============================*/
+/* line 431, ../components/sass/_layout.scss */
 #OurBlogGrid h2 {
   padding: 15px 25px 0;
 }
-/* line 268, ../components/sass/_layout.scss */
+/* line 438, ../components/sass/_layout.scss */
 #OurBlogGrid .grid-contentHolder img {
   width: 100%;
   margin-bottom: 1%;
 }
-/* line 275, ../components/sass/_layout.scss */
+/* line 445, ../components/sass/_layout.scss */
 #OurBlogGrid .grid li {
   padding-bottom: 1%;
 }
-/* line 279, ../components/sass/_layout.scss */
+/* line 449, ../components/sass/_layout.scss */
 #OurBlogGrid p.button a {
   width: 100%;
   display: block;
@@ -397,19 +635,26 @@ html {
   padding: 5px 10px;
 }
 
-/*================================= CONTACT US PAGE LAYOUT =============================================*/
-/* line 289, ../components/sass/_layout.scss */
+@media screen and (max-width: 639px) {
+  /* line 462, ../components/sass/_layout.scss */
+  #OurBlogGrid h2 {
+    padding: 15px 15px 0;
+  }
+}
+/*========================== OUR BLOG PAGE LAYOUT - end ============================*/
+/*====================== CONTACT US PAGE LAYOUT - beginning ======================*/
+/* line 475, ../components/sass/_layout.scss */
 .contactText {
   padding: 15px 25px 0;
 }
 
-/* line 294, ../components/sass/_layout.scss */
+/* line 480, ../components/sass/_layout.scss */
 .wrapper-decoImg {
   position: relative;
   height: 0;
 }
 
-/* line 299, ../components/sass/_layout.scss */
+/* line 485, ../components/sass/_layout.scss */
 .container-decoImg {
   position: relative;
   left: -106%;
@@ -417,7 +662,7 @@ html {
   height: 0;
   width: 205%;
 }
-/* line 306, ../components/sass/_layout.scss */
+/* line 492, ../components/sass/_layout.scss */
 .container-decoImg .decoImg {
   position: absolute;
   top: 6%;
@@ -429,21 +674,28 @@ html {
   border: 2px dashed #6b7569;
 }
 
+@media screen and (max-width: 639px) {
+  /* line 507, ../components/sass/_layout.scss */
+  .contactText {
+    padding: 15px 15px 0;
+  }
+}
 @media screen and (max-width: 900px) {
-  /* line 320, ../components/sass/_layout.scss */
+  /* line 514, ../components/sass/_layout.scss */
   .wrapper-decoImg {
     display: none;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1023px) {
-  /* line 327, ../components/sass/_layout.scss */
+  /* line 521, ../components/sass/_layout.scss */
   .container-decoImg {
     left: -108%;
     width: 207%;
   }
 }
-/*========================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS ====================================*/
-/* line 336, ../components/sass/_layout.scss */
+/*====================== CONTACT US PAGE LAYOUT - end ======================*/
+/*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning =======================*/
+/* line 534, ../components/sass/_layout.scss */
 #About, #Skills, #Portfolio, #ContactIndi {
   margin-bottom: 2%;
   padding-bottom: 1%;
@@ -452,126 +704,22 @@ html {
   border: 2px dashed #3f443e;
 }
 
-/*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
-@media screen and (max-width: 639px) {
-  /* line 352, ../components/sass/_layout.scss */
-  .container, #HeaderWrapper {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  /* line 357, ../components/sass/_layout.scss */
-  .page {
-    float: left;
-    clear: both;
-    width: 100%;
-    padding: 15px 0;
-  }
-
-  /* line 364, ../components/sass/_layout.scss */
-  #AboutUsContentHolder {
-    padding: 15px 15px 0;
-  }
-
-  /* line 368, ../components/sass/_layout.scss */
-  #OurPortfolioContentHolder {
-    padding: 15px 15px 0;
-  }
-
-  /* line 374, ../components/sass/_layout.scss */
-  #OurBlogGrid h2 {
-    padding: 15px 15px 0;
-  }
-
-  /* line 379, ../components/sass/_layout.scss */
-  .contactText {
-    padding: 15px 15px 0;
-  }
-
-  /* line 384, ../components/sass/_layout.scss */
-  #Footer .container {
-    padding: 0 15px;
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 392, ../components/sass/_layout.scss */
-  #Footer .container {
-    padding: 0 15px;
-  }
-
-  /* line 396, ../components/sass/_layout.scss */
-  .page {
-    padding: 15px 15px 0;
-  }
-}
+/*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 03-Feb-2015, 08:01:36
+    Created on : 10-Apr-2015, 14:52:01
     Author     : Edit
 */
-/*================================= GLOBAL TEXTS =================================*/
-/* line 18, ../components/sass/_texts.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #85E14F;
-  font-weight: 600;
-}
-
-/* line 24, ../components/sass/_texts.scss */
-h1 {
-  font-size: 1.8em;
-  color: #a3e87b;
-  margin-bottom: .7em;
-  line-height: 1.3em;
-}
-
-/* line 31, ../components/sass/_texts.scss */
-h2 {
-  font-size: 1.3em;
-  color: #85E14F;
-  margin-bottom: .6em;
-}
-
-/* line 38, ../components/sass/_texts.scss */
-h3 {
-  font-size: 1.2em;
-  margin-bottom: .5em;
-}
-
-/* line 43, ../components/sass/_texts.scss */
-a {
-  text-decoration: none;
-  color: #85E14F;
-  font-weight: 400;
-}
-
-/* line 49, ../components/sass/_texts.scss */
-a:hover {
-  text-decoration: underline;
-  color: #ABF381;
-}
-
-/* line 54, ../components/sass/_texts.scss */
-a, p, li {
-  font-size: 1em;
-  margin-bottom: .5em;
-}
-
-/* line 59, ../components/sass/_texts.scss */
-ul, li {
-  list-style-type: none;
-}
-
-/********** Bfitp logo *******/
-/* line 65, ../components/sass/_texts.scss */
+/*================================= BFITP LOGO =================================*/
+/* line 17, ../components/sass/_logo.scss */
 .logo-container {
   float: left;
 }
-/* line 68, ../components/sass/_texts.scss */
+/* line 20, ../components/sass/_logo.scss */
 .logo-container .logo {
   display: block;
   width: 290px;
@@ -583,93 +731,19 @@ ul, li {
   background-position: 0%;
 }
 
-/* line 81, ../components/sass/_texts.scss */
+/* line 33, ../components/sass/_logo.scss */
 #HeaderWrapper .container .logo-container {
   margin-bottom: 0;
   padding: 0 10px;
 }
 
-/* line 87, ../components/sass/_texts.scss */
+/* line 39, ../components/sass/_logo.scss */
 #TopBanner .logo-container {
   margin: 1% 0 1% 10%;
 }
 
-/********** grid *******/
-/* line 94, ../components/sass/_texts.scss */
-.grid li h3, .grid li h4, .grid li p {
-  text-align: left;
-}
-/* line 99, ../components/sass/_texts.scss */
-.grid li h3 {
-  font-size: 1.9em;
-  margin-bottom: .5em;
-  color: #ABF381;
-}
-/* line 105, ../components/sass/_texts.scss */
-.grid li h4 {
-  font-size: 1.8em;
-  margin-bottom: .8em;
-}
-/* line 111, ../components/sass/_texts.scss */
-.grid li p {
-  font-size: 1.3em;
-}
-/* line 115, ../components/sass/_texts.scss */
-.grid li .email {
-  font-size: 1.3em;
-}
-/* line 117, ../components/sass/_texts.scss */
-.grid li .email a {
-  font-size: 1em;
-  word-wrap: break-word;
-}
-/* line 123, ../components/sass/_texts.scss */
-.grid li p.button a {
-  width: 300px;
-  padding: 10px 19%;
-  margin-top: 10px;
-  font-size: 1.1em;
-  color: #dbedd6;
-  background-color: #6b7569;
-  border: 2px dashed #464c45;
-  border-radius: 3px;
-}
-/* line 134, ../components/sass/_texts.scss */
-.grid li p.button a:hover {
-  background-color: #464c45;
-  border: 2px dashed #6b7569;
-  text-decoration: none;
-}
-
-/********** grid - blog-section *******/
-/* line 143, ../components/sass/_texts.scss */
-.blog-section li h3 {
-  font-size: 1.3em;
-}
-/* line 147, ../components/sass/_texts.scss */
-.blog-section li h4 {
-  font-size: 1.2em;
-}
-/* line 151, ../components/sass/_texts.scss */
-.blog-section li p.button a:hover {
-  background-color: #3f443e;
-}
-
-/* line 155, ../components/sass/_texts.scss */
-.grid.grid-stretched-layout > li > h2 {
-  font-size: 1.9rem;
-  padding: 0 25px;
-}
-
-/*========================== MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS ====================================*/
 @media screen and (max-width: 639px) {
-  /* line 166, ../components/sass/_texts.scss */
-  h1 {
-    margin-top: 5%;
-    font-size: 1.5em;
-  }
-
-  /* line 174, ../components/sass/_texts.scss */
+  /* line 46, ../components/sass/_logo.scss */
   .logo-container {
     clear: both;
     width: 100%;
@@ -678,131 +752,67 @@ ul, li {
     margin-bottom: 0;
     padding: 0;
   }
-  /* line 182, ../components/sass/_texts.scss */
+  /* line 54, ../components/sass/_logo.scss */
   .logo-container .logo {
     width: 100%;
     background-position: 50%;
     margin-top: 5px;
   }
-
-  /* line 192, ../components/sass/_texts.scss */
-  .grid li h3 {
-    margin-top: 1.3em;
-    font-size: 1.8em;
-  }
-  /* line 197, ../components/sass/_texts.scss */
-  .grid li h4 {
-    margin-bottom: .8em;
-    font-size: 1.5em;
-  }
-  /* line 202, ../components/sass/_texts.scss */
-  .grid li p {
-    clear: both;
-    padding-top: 10px;
-    margin: 0;
-  }
-  /* line 209, ../components/sass/_texts.scss */
-  .grid li p.button a {
-    padding: 5px 10px;
-    width: 90%;
-    display: block;
-    box-sizing: border-box;
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    font-size: 1em;
-  }
-
-  /* line 222, ../components/sass/_texts.scss */
-  .grid.grid-stretched-layout > li > h2 {
-    font-size: 1.9rem;
-    padding: 10px 15px 0 15px;
-    margin-bottom: 0;
-  }
-
-  /* line 228, ../components/sass/_texts.scss */
-  #Footer .container p {
-    font-size: 0.7em;
-  }
 }
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 239, ../components/sass/_texts.scss */
-  .grid li h3 {
-    font-size: 1.7em;
-    margin-bottom: .7em;
-    padding-top: 7px;
-  }
-  /* line 246, ../components/sass/_texts.scss */
-  .grid li h4 {
-    font-size: 1.4em;
-    margin-bottom: .5em;
-  }
-  /* line 252, ../components/sass/_texts.scss */
-  .grid li p.button a {
-    width: 100%;
-    white-space: nowrap;
-    display: block;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    clear: both;
-  }
-}
-@media screen and (min-width: 1002px) and (max-width: 1040px) {
-  /* line 267, ../components/sass/_texts.scss */
-  .email a {
-    font-size: 1em;
-    white-space: nowrap;
-  }
-}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
 /* 
-    Created on : 06-Jan-2015, 08:02:58
+    Created on : 10-Apr-2015, 14:53:39
     Author     : Edit
 */
 /*================================= TOP-NAV =================================*/
-/* line 9, ../components/sass/_modules.scss */
+/* line 15, ../components/sass/_topnav.scss */
 #HeaderWrapper.full-width {
   width: 100%;
 }
 
-/* line 13, ../components/sass/_modules.scss */
+/* line 19, ../components/sass/_topnav.scss */
 #TopBanner {
   width: 100%;
 }
 
-/* line 17, ../components/sass/_modules.scss */
+/* line 23, ../components/sass/_topnav.scss */
 .topNav {
   width: 45%;
   padding: 0 6%;
   box-sizing: border-box;
   margin-top: 3%;
 }
-/* line 23, ../components/sass/_modules.scss */
+/* line 29, ../components/sass/_topnav.scss */
 .topNav li {
   padding-top: 0;
 }
-/* line 26, ../components/sass/_modules.scss */
+/* line 32, ../components/sass/_topnav.scss */
 .topNav a {
   border: 2px dashed rgba(189, 222, 55, 0.1);
 }
-/* line 29, ../components/sass/_modules.scss */
+/* line 35, ../components/sass/_topnav.scss */
 .topNav a:link {
   padding: 2% 5%;
   font-size: 1.2em;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 39, ../components/sass/_modules.scss */
+  /* line 45, ../components/sass/_topnav.scss */
   #TopBanner .logo-container {
     clear: initial;
     margin-left: 0;
   }
-  /* line 43, ../components/sass/_modules.scss */
+  /* line 49, ../components/sass/_topnav.scss */
   #TopBanner .logo-container .logo {
     padding: 2% 0;
     margin: 0;
   }
 
-  /* line 50, ../components/sass/_modules.scss */
+  /* line 56, ../components/sass/_topnav.scss */
   .nav.topNav {
     clear: both;
     width: 100%;
@@ -811,7 +821,7 @@ ul, li {
     padding: 1%;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
   }
-  /* line 61, ../components/sass/_modules.scss */
+  /* line 67, ../components/sass/_topnav.scss */
   .nav.topNav a:link {
     padding: 1% 4%;
     margin: 0 2%;
@@ -819,32 +829,41 @@ ul, li {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 74, ../components/sass/_modules.scss */
+  /* line 80, ../components/sass/_topnav.scss */
   #TopBanner .logo-container {
     margin-left: 1.7%;
     margin-bottom: 1%;
   }
 
-  /* line 78, ../components/sass/_modules.scss */
+  /* line 84, ../components/sass/_topnav.scss */
   .nav.topNav {
     width: 48%;
     padding: 0 .5%;
     margin-top: 4.5%;
   }
-  /* line 83, ../components/sass/_modules.scss */
+  /* line 89, ../components/sass/_topnav.scss */
   .nav.topNav a:link {
     font-size: 1em;
   }
 }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Apr-2015, 14:56:39
+    Author     : Edit
+*/
 /*================================= FULL-WIDTH PAGE NAV =================================*/
-/* line 94, ../components/sass/_modules.scss */
+/* line 17, ../components/sass/_pagenav.scss */
 #PageNav {
   background: #bdde37;
   background: rgba(189, 222, 55, 0.8);
   margin-bottom: 1%;
 }
 
-/* line 101, ../components/sass/_modules.scss */
+/* line 24, ../components/sass/_pagenav.scss */
 .nav.full-width {
   float: initial;
   width: 100%;
@@ -854,17 +873,17 @@ ul, li {
   box-sizing: border-box;
   background: transparent;
 }
-/* line 110, ../components/sass/_modules.scss */
+/* line 33, ../components/sass/_pagenav.scss */
 .nav.full-width li {
   padding-top: 0;
 }
-/* line 113, ../components/sass/_modules.scss */
+/* line 36, ../components/sass/_pagenav.scss */
 .nav.full-width a {
   color: #3A3F39;
   padding: .5% 3%;
 }
 
-/* line 121, ../components/sass/_modules.scss */
+/* line 44, ../components/sass/_pagenav.scss */
 .nav.full-width a:hover,
 .nav.full-width li.current a {
   color: #e1f0a4;
@@ -875,41 +894,207 @@ ul, li {
 }
 
 @media screen and (max-width: 639px) {
-  /* line 131, ../components/sass/_modules.scss */
+  /* line 54, ../components/sass/_pagenav.scss */
   #PageNav {
     clear: both;
   }
 
-  /* line 134, ../components/sass/_modules.scss */
+  /* line 57, ../components/sass/_pagenav.scss */
   .nav.full-width {
     background: transparent;
     padding: .5% 1%;
   }
-  /* line 137, ../components/sass/_modules.scss */
+  /* line 60, ../components/sass/_pagenav.scss */
   .nav.full-width a {
     padding: .7% .5%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 145, ../components/sass/_modules.scss */
+  /* line 68, ../components/sass/_pagenav.scss */
   .nav.full-width {
     background: transparent;
   }
-  /* line 147, ../components/sass/_modules.scss */
+  /* line 70, ../components/sass/_pagenav.scss */
   .nav.full-width a {
     font-size: 1.1em;
   }
 }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Apr-2015, 15:00:27
+    Author     : Edit
+*/
+/*================================= HERO PANEL =================================*/
+/**************************** intrinsic ratio HERO PANEL - beginning ************************/
+/* line 18, ../components/sass/_heropanel.scss */
+#Hero {
+  position: relative;
+  padding-bottom: 31%;
+  height: 0;
+}
+
+/* line 25, ../components/sass/_heropanel.scss */
+.heroContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/bfitp_hero_panel_bg_1300x404_flipped.jpg) 0 0 no-repeat;
+  background-size: 100% auto;
+}
+/* line 35, ../components/sass/_heropanel.scss */
+.heroContent .heroText {
+  width: 44%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+/* line 42, ../components/sass/_heropanel.scss */
+.heroContent h1, .heroContent h2, .heroContent p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  color: #f0f3f0;
+}
+/* line 49, ../components/sass/_heropanel.scss */
+.heroContent h1 {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 639px) {
+  /* line 57, ../components/sass/_heropanel.scss */
+  #Hero {
+    height: 1%;
+    padding-bottom: 0%;
+  }
+
+  /* line 63, ../components/sass/_heropanel.scss */
+  .heroContent {
+    position: static;
+  }
+  /* line 66, ../components/sass/_heropanel.scss */
+  .heroContent .heroText {
+    clear: both;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding-top: 33%;
+  }
+  /* line 76, ../components/sass/_heropanel.scss */
+  .heroContent h1, .heroContent h2, .heroContent p {
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #d5ded2;
+    box-sizing: border-box;
+  }
+  /* line 83, ../components/sass/_heropanel.scss */
+  .heroContent h1 {
+    display: none;
+  }
+  /* line 89, ../components/sass/_heropanel.scss */
+  .heroContent h2 {
+    font-size: 1.25em;
+  }
+  /* line 93, ../components/sass/_heropanel.scss */
+  .heroContent p {
+    border-bottom: 2px dashed #3c423b;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 760px) {
+  /* line 105, ../components/sass/_heropanel.scss */
+  .heroContent .heroText {
+    width: 78%;
+  }
+  /* line 109, ../components/sass/_heropanel.scss */
+  .heroContent h1 {
+    font-size: 1.1em;
+    margin-bottom: .3em;
+  }
+  /* line 114, ../components/sass/_heropanel.scss */
+  .heroContent h2 {
+    font-size: 1em;
+    margin-bottom: .3em;
+  }
+  /* line 119, ../components/sass/_heropanel.scss */
+  .heroContent h1, .heroContent h2, .heroContent p {
+    padding: 7px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 790px) {
+  /* line 130, ../components/sass/_heropanel.scss */
+  .heroContent .heroText {
+    width: 78%;
+  }
+  /* line 134, ../components/sass/_heropanel.scss */
+  .heroContent h1 {
+    font-size: 1.2em;
+    margin-bottom: .4em;
+  }
+  /* line 139, ../components/sass/_heropanel.scss */
+  .heroContent h2 {
+    font-size: 1.1em;
+    margin-bottom: .4em;
+  }
+  /* line 144, ../components/sass/_heropanel.scss */
+  .heroContent h1, .heroContent h2, .heroContent p {
+    padding: 9px;
+  }
+}
+@media screen and (min-width: 791px) and (max-width: 850px) {
+  /* line 154, ../components/sass/_heropanel.scss */
+  .heroContent .heroText {
+    width: 78%;
+  }
+  /* line 158, ../components/sass/_heropanel.scss */
+  .heroContent h1 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+  }
+  /* line 163, ../components/sass/_heropanel.scss */
+  .heroContent h2 {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+  /* line 168, ../components/sass/_heropanel.scss */
+  .heroContent h1, .heroContent h2, .heroContent p {
+    padding: 11px;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 895px) {
+  /* line 176, ../components/sass/_heropanel.scss */
+  .heroContent .heroText {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 896px) and (max-width: 990px) {
+  /* line 183, ../components/sass/_heropanel.scss */
+  .heroContent .heroText {
+    width: 50%;
+  }
+}
+/********* intrinsic ratio HERO PANEL - end **************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Apr-2015, 14:57:52
+    Author     : Edit
+*/
 /*================================= GRIDS =================================*/
 /****************** Default grid - beginning **********************/
-/* line 164, ../components/sass/_modules.scss */
+/* line 18, ../components/sass/_grid.scss */
 .grid {
   margin-bottom: 3%;
   text-align: justify;
   font-family: "zero-width";
   font-size: 0;
 }
-/* line 170, ../components/sass/_modules.scss */
+/* line 24, ../components/sass/_grid.scss */
 .grid li {
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
@@ -923,21 +1108,66 @@ ul, li {
   border: 2px dashed #464c45;
   vertical-align: top;
 }
+/* line 37, ../components/sass/_grid.scss */
+.grid li h3, .grid li h4, .grid li p {
+  text-align: left;
+}
+/* line 42, ../components/sass/_grid.scss */
+.grid li h3 {
+  font-size: 1.9em;
+  margin-bottom: .5em;
+  color: #ABF381;
+}
+/* line 48, ../components/sass/_grid.scss */
+.grid li h4 {
+  font-size: 1.8em;
+  margin-bottom: .8em;
+}
+/* line 54, ../components/sass/_grid.scss */
+.grid li p {
+  font-size: 1.3em;
+}
+/* line 58, ../components/sass/_grid.scss */
+.grid li .email {
+  font-size: 1.3em;
+}
+/* line 60, ../components/sass/_grid.scss */
+.grid li .email a {
+  font-size: 1em;
+  word-wrap: break-word;
+}
+/* line 66, ../components/sass/_grid.scss */
+.grid li p.button a {
+  width: 300px;
+  padding: 10px 17%;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #dbedd6;
+  background-color: #6b7569;
+  border: 2px dashed #464c45;
+  border-radius: 3px;
+}
+/* line 77, ../components/sass/_grid.scss */
+.grid li p.button a:hover {
+  background-color: #464c45;
+  border: 2px dashed #6b7569;
+  text-decoration: none;
+}
 
-/* line 185, ../components/sass/_modules.scss */
+/* line 85, ../components/sass/_grid.scss */
 .grid:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 192, ../components/sass/_modules.scss */
+/* line 92, ../components/sass/_grid.scss */
 .grid-contentHolder {
   font-size: 1rem;
   padding: 0px 25px 10px 25px;
   box-sizing: border-box;
 }
-/* line 197, ../components/sass/_modules.scss */
+/* line 97, ../components/sass/_grid.scss */
 .grid-contentHolder img {
   width: 12em;
   height: auto;
@@ -947,18 +1177,19 @@ ul, li {
 
 /**** Default grid - end ****/
 /********** Stretched / full width / blog-section grid (contact us page) - beginning ***************/
-/* line 213, ../components/sass/_modules.scss */
+/********** grid - blog-section *******/
+/* line 118, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout li {
   width: 32%;
   padding-bottom: 0%;
 }
-/* line 217, ../components/sass/_modules.scss */
+/* line 122, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout li p.button a {
   width: 100%;
   display: block;
   box-sizing: border-box;
 }
-/* line 224, ../components/sass/_modules.scss */
+/* line 129, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout img {
   width: 100%;
   height: auto;
@@ -966,46 +1197,46 @@ ul, li {
   float: none;
   display: block;
 }
-/* line 233, ../components/sass/_modules.scss */
+/* line 138, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder {
   width: 100%;
 }
-/* line 236, ../components/sass/_modules.scss */
+/* line 141, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder p.min-height-applied {
   min-height: 70px;
   box-sizing: border-box;
 }
-/* line 241, ../components/sass/_modules.scss */
+/* line 146, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .email {
   min-height: 60px;
   box-sizing: border-box;
 }
-/* line 245, ../components/sass/_modules.scss */
+/* line 150, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .socialIcons {
   padding: 5px;
   margin-bottom: 6%;
 }
-/* line 249, ../components/sass/_modules.scss */
+/* line 154, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .socialIcons img {
   width: 13%;
   height: auto;
-  padding: 5px;
+  padding: 4px;
   margin: 0;
   display: inline;
 }
 
-/* line 263, ../components/sass/_modules.scss */
+/* line 168, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child {
   border: 2px dashed #353a34;
   background-color: #464c45;
 }
 
-/* line 267, ../components/sass/_modules.scss */
+/* line 172, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li {
   background-color: #464c45;
 }
 
-/* line 272, ../components/sass/_modules.scss */
+/* line 177, ../components/sass/_grid.scss */
 .grid.grid-full-width > li {
   width: 100%;
   border-top: 0;
@@ -1015,45 +1246,77 @@ ul, li {
   padding-top: 15px;
 }
 
-/* line 281, ../components/sass/_modules.scss */
+/* line 186, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li:last-child {
   border-bottom: 0;
 }
 
-/* line 285, ../components/sass/_modules.scss */
+/* line 190, ../components/sass/_grid.scss */
 .grid.grid-full-width > li:first-child {
   padding-top: 0;
 }
 
-/* line 289, ../components/sass/_modules.scss */
+/* line 194, ../components/sass/_grid.scss */
+.grid.grid-stretched-layout > li > h2 {
+  font-size: 1.9rem;
+  line-height: 2rem;
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+/* line 201, ../components/sass/_grid.scss */
 .grid-stretched-layout .grid-full-width.blog-section p.button a {
   padding: 5px 10px;
 }
 
-/* line 293, ../components/sass/_modules.scss */
+/* line 206, ../components/sass/_grid.scss */
 .grid-full-width.blog-section {
   margin-bottom: 0px;
 }
+/* line 210, ../components/sass/_grid.scss */
+.grid-full-width.blog-section li img {
+  margin-bottom: 1.4em;
+}
+/* line 214, ../components/sass/_grid.scss */
+.grid-full-width.blog-section li h3 {
+  font-size: 1.3em;
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+/* line 220, ../components/sass/_grid.scss */
+.grid-full-width.blog-section li h4 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+/* line 226, ../components/sass/_grid.scss */
+.grid-full-width.blog-section li p {
+  margin-bottom: 1em;
+}
+/* line 230, ../components/sass/_grid.scss */
+.grid-full-width.blog-section li p.button a:hover {
+  background-color: #3f443e;
+}
 
-/**** Stretched / full width / blog-section grid - beginning  - end ****/
+/**** Stretched / full width / blog-section grid (contac us page) - beginning  - end ****/
 /**** Grids media queries - beginning ****/
 @media screen and (max-width: 900px) {
-  /* line 308, ../components/sass/_modules.scss */
+  /* line 247, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li {
     width: 49%;
   }
 
-  /* line 314, ../components/sass/_modules.scss */
+  /* line 253, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li:last-child {
     clear: both;
     width: 100%;
   }
 
-  /* line 319, ../components/sass/_modules.scss */
+  /* line 258, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li {
     width: 100%;
   }
-  /* line 322, ../components/sass/_modules.scss */
+  /* line 261, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li img {
     width: 50%;
     height: auto;
@@ -1063,60 +1326,94 @@ ul, li {
     padding-bottom: 0;
     margin-bottom: 1%;
   }
-  /* line 332, ../components/sass/_modules.scss */
+  /* line 271, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li p {
     clear: both;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 342, ../components/sass/_modules.scss */
+  /* line 281, ../components/sass/_grid.scss */
   .grid li {
     width: 100%;
     padding-top: 1%;
     margin-bottom: 2%;
     box-sizing: border-box;
   }
-  /* line 348, ../components/sass/_modules.scss */
+  /* line 287, ../components/sass/_grid.scss */
+  .grid li h3 {
+    margin-top: 1.3em;
+    font-size: 1.8em;
+    min-height: initial;
+  }
+  /* line 293, ../components/sass/_grid.scss */
+  .grid li h4 {
+    margin-bottom: .8em;
+    font-size: 1.5em;
+    min-height: initial;
+  }
+  /* line 299, ../components/sass/_grid.scss */
+  .grid li p {
+    clear: both;
+    padding-top: 10px;
+    margin: 0;
+    min-height: initial;
+  }
+  /* line 307, ../components/sass/_grid.scss */
+  .grid li p.button a {
+    padding: 5px 10px;
+    width: 90%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1em;
+  }
+  /* line 318, ../components/sass/_grid.scss */
   .grid li .grid-contentHolder {
     padding: 0px 15px 10px 15px;
   }
-  /* line 351, ../components/sass/_modules.scss */
+  /* line 321, ../components/sass/_grid.scss */
   .grid li .grid-contentHolder img {
     width: 11em;
     margin-right: 3%;
   }
 
-  /* line 360, ../components/sass/_modules.scss */
+  /* line 328, ../components/sass/_grid.scss */
+  .grid.grid-stretched-layout {
+    margin-bottom: 1%;
+  }
+  /* line 332, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li {
     clear: both;
     width: 100%;
     padding-bottom: 5%;
   }
-  /* line 368, ../components/sass/_modules.scss */
+  /* line 340, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder img {
     width: 100%;
     margin-top: 3%;
   }
-  /* line 372, ../components/sass/_modules.scss */
+  /* line 344, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .email {
     min-height: 70px;
     box-sizing: border-box;
   }
-  /* line 377, ../components/sass/_modules.scss */
+  /* line 349, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .socialIcons {
     margin-bottom: 1%;
   }
-  /* line 379, ../components/sass/_modules.scss */
+  /* line 351, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .socialIcons img {
     padding: 2%;
   }
 
-  /* line 387, ../components/sass/_modules.scss */
+  /* line 360, ../components/sass/_grid.scss */
   .grid.grid-full-width > li {
     padding-top: 0%;
   }
 
-  /* line 392, ../components/sass/_modules.scss */
+  /* line 365, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li img {
     padding-top: 0%;
     margin-top: 0%;
@@ -1124,34 +1421,57 @@ ul, li {
     margin-bottom: 4%;
   }
 
-  /* line 401, ../components/sass/_modules.scss */
-  .grid.grid-stretched-layout {
-    margin-bottom: 1%;
+  /* line 374, ../components/sass/_grid.scss */
+  .grid.grid-stretched-layout > li > h2 {
+    font-size: 1.9rem;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 0;
   }
-  /* line 405, ../components/sass/_modules.scss */
+
+  /* line 380, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li:last-child {
     padding-bottom: 1%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 419, ../components/sass/_modules.scss */
+  /* line 391, ../components/sass/_grid.scss */
   .grid li {
     width: 49%;
     padding-top: 3%;
     margin-bottom: 2%;
     box-sizing: border-box;
   }
-  /* line 426, ../components/sass/_modules.scss */
+  /* line 397, ../components/sass/_grid.scss */
+  .grid li h3 {
+    font-size: 1.7em;
+    margin-bottom: .7em;
+    padding-top: 7px;
+  }
+  /* line 404, ../components/sass/_grid.scss */
+  .grid li h4 {
+    font-size: 1.4em;
+    margin-bottom: .5em;
+  }
+  /* line 410, ../components/sass/_grid.scss */
+  .grid li p.button a {
+    width: 100%;
+    white-space: nowrap;
+    display: block;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    clear: both;
+  }
+  /* line 422, ../components/sass/_grid.scss */
   .grid .grid-contentHolder {
     min-height: 156px;
     box-sizing: border-box;
   }
-  /* line 430, ../components/sass/_modules.scss */
+  /* line 426, ../components/sass/_grid.scss */
   .grid .grid-contentHolder img {
     padding-bottom: 15px;
   }
 
-  /* line 436, ../components/sass/_modules.scss */
+  /* line 432, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li p.button a {
     width: 100%;
     display: block;
@@ -1161,7 +1481,7 @@ ul, li {
 }
 /**** Grids media queries - end ****/
 /**** Our blog-posts - Default grid extension for our blog page - beginning ****/
-/* line 452, ../components/sass/_modules.scss */
+/* line 448, ../components/sass/_grid.scss */
 .blog-post h3, .blog-post h4 {
   clear: both;
   min-height: 3.1em;
@@ -1169,173 +1489,35 @@ ul, li {
   line-height: 1.5;
   padding-top: .4em;
 }
-/* line 460, ../components/sass/_modules.scss */
+/* line 456, ../components/sass/_grid.scss */
 .blog-post .blog-summary {
   min-height: 8em;
 }
 
+@media screen and (max-width: 639px) {
+  /* line 463, ../components/sass/_grid.scss */
+  .blog-post .blog-summary {
+    min-height: initial;
+  }
+}
 @media screen and (min-width: 640px) and (max-width: 764px) {
-  /* line 467, ../components/sass/_modules.scss */
+  /* line 471, ../components/sass/_grid.scss */
   .blog-post h3, .blog-post h4 {
     min-height: 4.5em;
   }
-  /* line 471, ../components/sass/_modules.scss */
+  /* line 475, ../components/sass/_grid.scss */
   .blog-post .blog-summary {
     min-height: 11em;
   }
 }
 /**** Our blog-posts - Default grid extension for our blog page - end ****/
-/*================================= HERO PANEL =================================*/
-/**************************** intrinsic ratio HERO PANEL - beginning ************************/
-/* line 486, ../components/sass/_modules.scss */
-#Hero {
-  position: relative;
-  padding-bottom: 31%;
-  height: 0;
-}
-
-/* line 493, ../components/sass/_modules.scss */
-.heroContent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/images/bfitp_hero_panel_bg_1300x404_flipped.jpg) 0 0 no-repeat;
-  background-size: 100% auto;
-}
-/* line 503, ../components/sass/_modules.scss */
-.heroContent .heroText {
-  width: 44%;
-  margin-left: 3%;
-  margin-top: 2%;
-}
-/* line 510, ../components/sass/_modules.scss */
-.heroContent h1, .heroContent h2, .heroContent p {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  color: #f0f3f0;
-}
-/* line 517, ../components/sass/_modules.scss */
-.heroContent h1 {
-  font-size: 1.5em;
-}
-
-@media screen and (max-width: 639px) {
-  /* line 525, ../components/sass/_modules.scss */
-  #Hero {
-    height: 1%;
-    padding-bottom: 0%;
-  }
-
-  /* line 531, ../components/sass/_modules.scss */
-  .heroContent {
-    position: static;
-  }
-  /* line 534, ../components/sass/_modules.scss */
-  .heroContent .heroText {
-    clear: both;
-    width: 100%;
-    margin-left: 0%;
-    margin-top: 0%;
-    padding-top: 33%;
-  }
-  /* line 544, ../components/sass/_modules.scss */
-  .heroContent h1, .heroContent h2, .heroContent p {
-    padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #d5ded2;
-    box-sizing: border-box;
-  }
-  /* line 551, ../components/sass/_modules.scss */
-  .heroContent h1 {
-    display: none;
-  }
-  /* line 557, ../components/sass/_modules.scss */
-  .heroContent h2 {
-    font-size: 1.25em;
-  }
-  /* line 561, ../components/sass/_modules.scss */
-  .heroContent p {
-    border-bottom: 2px dashed #3c423b;
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 760px) {
-  /* line 573, ../components/sass/_modules.scss */
-  .heroContent .heroText {
-    width: 78%;
-  }
-  /* line 577, ../components/sass/_modules.scss */
-  .heroContent h1 {
-    font-size: 1.1em;
-    margin-bottom: .3em;
-  }
-  /* line 582, ../components/sass/_modules.scss */
-  .heroContent h2 {
-    font-size: 1em;
-    margin-bottom: .3em;
-  }
-  /* line 587, ../components/sass/_modules.scss */
-  .heroContent h1, .heroContent h2, .heroContent p {
-    padding: 7px;
-  }
-}
-@media screen and (min-width: 761px) and (max-width: 790px) {
-  /* line 598, ../components/sass/_modules.scss */
-  .heroContent .heroText {
-    width: 78%;
-  }
-  /* line 602, ../components/sass/_modules.scss */
-  .heroContent h1 {
-    font-size: 1.2em;
-    margin-bottom: .4em;
-  }
-  /* line 607, ../components/sass/_modules.scss */
-  .heroContent h2 {
-    font-size: 1.1em;
-    margin-bottom: .4em;
-  }
-  /* line 612, ../components/sass/_modules.scss */
-  .heroContent h1, .heroContent h2, .heroContent p {
-    padding: 9px;
-  }
-}
-@media screen and (min-width: 791px) and (max-width: 850px) {
-  /* line 622, ../components/sass/_modules.scss */
-  .heroContent .heroText {
-    width: 78%;
-  }
-  /* line 626, ../components/sass/_modules.scss */
-  .heroContent h1 {
-    font-size: 1.3em;
-    margin-bottom: .5em;
-  }
-  /* line 631, ../components/sass/_modules.scss */
-  .heroContent h2 {
-    font-size: 1.2em;
-    margin-bottom: .5em;
-  }
-  /* line 636, ../components/sass/_modules.scss */
-  .heroContent h1, .heroContent h2, .heroContent p {
-    padding: 11px;
-  }
-}
-@media screen and (min-width: 851px) and (max-width: 895px) {
-  /* line 644, ../components/sass/_modules.scss */
-  .heroContent .heroText {
-    width: 65%;
-  }
-}
-@media screen and (min-width: 896px) and (max-width: 990px) {
-  /* line 651, ../components/sass/_modules.scss */
-  .heroContent .heroText {
-    width: 50%;
-  }
-}
-/********* intrinsic ratio HERO PANEL - end **************/
+/* 
+    Created on : 06-Jan-2015, 08:02:58
+    Author     : Edit
+*/
 /*================================= MIX IT UP =================================*/
 /********* mix it up control bar - beginning **************/
-/* line 662, ../components/sass/_modules.scss */
+/* line 13, ../components/sass/_mixitup.scss */
 .control-bar {
   background: #768174;
   background: rgba(185, 200, 181, 0.4);
@@ -1344,7 +1526,7 @@ ul, li {
   overflow: hidden;
 }
 
-/* line 670, ../components/sass/_modules.scss */
+/* line 21, ../components/sass/_mixitup.scss */
 .control-bar label {
   margin: 0 5px 0 15px;
   display: inline-block;
@@ -1352,12 +1534,12 @@ ul, li {
   display: inline-block;
 }
 
-/* line 676, ../components/sass/_modules.scss */
+/* line 27, ../components/sass/_mixitup.scss */
 .control-bar .group {
   display: inline-block;
 }
 
-/* line 680, ../components/sass/_modules.scss */
+/* line 31, ../components/sass/_mixitup.scss */
 .nav.full-width {
   float: initial;
   width: 100%;
@@ -1367,17 +1549,17 @@ ul, li {
   box-sizing: border-box;
   background: transparent;
 }
-/* line 689, ../components/sass/_modules.scss */
+/* line 40, ../components/sass/_mixitup.scss */
 .nav.full-width li {
   padding-top: 0;
 }
-/* line 692, ../components/sass/_modules.scss */
+/* line 43, ../components/sass/_mixitup.scss */
 .nav.full-width a {
   color: #3A3F39;
   padding: .5% 3%;
 }
 
-/* line 700, ../components/sass/_modules.scss */
+/* line 51, ../components/sass/_mixitup.scss */
 .nav.full-width a:hover,
 .nav.full-width li.current a {
   color: #e1f0a4;
@@ -1388,39 +1570,39 @@ ul, li {
 }
 
 @media screen and (max-width: 639px) {
-  /* line 710, ../components/sass/_modules.scss */
+  /* line 61, ../components/sass/_mixitup.scss */
   #PageNav {
     clear: both;
   }
 
-  /* line 713, ../components/sass/_modules.scss */
+  /* line 64, ../components/sass/_mixitup.scss */
   .nav.full-width {
     background: transparent;
     padding: .5% 1%;
   }
-  /* line 716, ../components/sass/_modules.scss */
+  /* line 67, ../components/sass/_mixitup.scss */
   .nav.full-width a {
     padding: .7% .5%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 724, ../components/sass/_modules.scss */
+  /* line 75, ../components/sass/_mixitup.scss */
   .nav.full-width {
     background: transparent;
   }
-  /* line 726, ../components/sass/_modules.scss */
+  /* line 77, ../components/sass/_mixitup.scss */
   .nav.full-width a {
     font-size: 1.1em;
   }
 }
 /********* mix it up buttons - end **************/
 /********* mix it up grid - beginning **************/
-/* line 736, ../components/sass/_modules.scss */
+/* line 87, ../components/sass/_mixitup.scss */
 #Container .mix {
   display: none;
 }
 
-/* line 740, ../components/sass/_modules.scss */
+/* line 91, ../components/sass/_mixitup.scss */
 #Container {
   text-align: justify;
   font-family: "zero-width";
@@ -1434,7 +1616,7 @@ ul, li {
   padding: 0;
 }
 
-/* line 753, ../components/sass/_modules.scss */
+/* line 104, ../components/sass/_mixitup.scss */
 #Container > * {
   display: inline-block;
   vertical-align: top;
@@ -1443,14 +1625,14 @@ ul, li {
   font-size: 1rem;
 }
 
-/* line 762, ../components/sass/_modules.scss */
+/* line 113, ../components/sass/_mixitup.scss */
 #Container:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 769, ../components/sass/_modules.scss */
+/* line 120, ../components/sass/_mixitup.scss */
 #Container .mix {
   position: relative;
   background: rgba(255, 255, 255, 0.2);
@@ -1459,14 +1641,14 @@ ul, li {
   min-height: 110px;
   border: 2px dashed #585f56;
 }
-/* line 776, ../components/sass/_modules.scss */
+/* line 127, ../components/sass/_mixitup.scss */
 #Container .mix p {
   line-height: 1.4em;
   font-size: 1.7rem;
   padding: 1em;
 }
 
-/* line 782, ../components/sass/_modules.scss */
+/* line 133, ../components/sass/_mixitup.scss */
 #Container .mix:before {
   content: '';
   display: inline-block;
@@ -1474,7 +1656,7 @@ ul, li {
   vertical-align: middle;
 }
 
-/* line 788, ../components/sass/_modules.scss */
+/* line 139, ../components/sass/_mixitup.scss */
 #Container .mix:after {
   content: '';
   position: absolute;
@@ -1488,27 +1670,27 @@ ul, li {
   transform: rotate(45deg);
 }
 
-/* line 800, ../components/sass/_modules.scss */
+/* line 151, ../components/sass/_mixitup.scss */
 #Container .mix.webdev:after {
   border-right-color: #ABF381;
 }
 
-/* line 803, ../components/sass/_modules.scss */
+/* line 154, ../components/sass/_mixitup.scss */
 #Container .mix.threeD:after {
   border-right-color: #76DFC0;
 }
 
-/* line 806, ../components/sass/_modules.scss */
+/* line 157, ../components/sass/_mixitup.scss */
 #Container .mix.animation:after {
   border-right-color: #FFB587;
 }
 
-/* line 809, ../components/sass/_modules.scss */
+/* line 160, ../components/sass/_mixitup.scss */
 #Container .mix.drawing:after {
   border-right-color: #F481A9;
 }
 
-/* line 812, ../components/sass/_modules.scss */
+/* line 163, ../components/sass/_mixitup.scss */
 #Container .gap,
 #Container .mix {
   width: 23%;

@@ -1,0 +1,482 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Apr-2015, 14:57:52
+    Author     : Edit
+*/
+// _grid.scss
+// ============
+
+
+/*================================= GRIDS =================================*/
+
+/****************** Default grid - beginning **********************/
+
+.grid {
+    margin-bottom: 3%;
+    text-align: justify;
+    font-family: $zerowidthFont;
+    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+  
+  li {
+    font-family: $baseFont;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 49%;
+    padding-top: 3%; 
+    padding-bottom: 5%;
+    margin-bottom: 1%;
+    background-color: lighten($primaryBG, 10);
+    border-radius: 3px;
+    border: 2px dashed lighten($primaryBG, 5);
+    vertical-align: top;
+    
+    h3, h4, p {
+	text-align: left;
+    
+    }
+
+    h3 {
+	font-size: 1.9em;
+	margin-bottom: .5em;
+	color: $lightGreen;
+    }
+
+    h4 {
+	font-size: 1.8em;
+	margin-bottom: .8em;
+
+    }
+
+    p {
+	font-size: 1.3em;
+    }
+
+    .email {
+	font-size: 1.3em;
+	a {
+	   font-size: 1em;
+	   word-wrap:break-word;
+       }
+    }
+    
+    p.button a {
+	 width: 300px;
+	 padding: 10px 17%;
+	 margin-top: 10px;
+	 font-size: 1.1em;
+	 color: #dbedd6;
+	 background-color: lighten($primaryBG, 20);
+	 border: 2px dashed lighten($primaryBG, 5);
+	 border-radius: 3px;
+     }
+
+     p.button a:hover {
+	 background-color: lighten($primaryBG, 5);
+	 border: 2px dashed lighten($primaryBG, 20);
+	 text-decoration:none;
+     } 
+  }
+}
+
+.grid:after { // lacking support in IE6/7
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+.grid-contentHolder {
+    font-size:1rem;
+    padding: 0px 25px 10px 25px;
+    box-sizing: border-box;
+    
+    img {
+	width: 12em;
+	height: auto;
+	float: left;
+	margin-right: 3%;
+    }
+    
+}
+
+
+/**** Default grid - end ****/
+
+/********** Stretched / full width / blog-section grid (contact us page) - beginning ***************/
+
+
+/********** grid - blog-section *******/
+
+
+
+.grid.grid-stretched-layout {
+    
+    li {
+	 width: 32%;
+	 padding-bottom: 0%;
+	 
+	 p.button a {
+	    width: 100%;
+	    display: block;
+	    box-sizing: border-box;
+	 }
+    }
+    
+    img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 4%;
+	float: none;
+	display: block;
+    }
+    
+    
+    .grid-contentHolder {
+	width: 100%;
+    
+	p.min-height-applied {
+	    min-height: 70px;
+	    box-sizing: border-box;
+	}
+	
+	.email {
+	    min-height: 60px;
+	    box-sizing: border-box;	    
+	}
+	.socialIcons {
+	    padding: 5px;
+	    margin-bottom: 6%;
+	    
+	    img {
+		width: 13%;
+		height: auto;
+		padding: 4px;
+		margin: 0;
+		display: inline;
+	     }
+	}
+	
+
+    }  
+    
+}
+
+.grid.grid-stretched-layout > li:last-child {
+    border: 2px dashed darken($primaryBG, 2);
+    background-color: lighten($primaryBG, 5);
+}
+.grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li {
+    background-color: lighten($primaryBG, 5);
+    
+}
+
+.grid.grid-full-width > li {
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px dashed darken($primaryBG, 7);
+    padding-top: 15px;
+}
+
+.grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li:last-child {
+    border-bottom: 0;
+}
+
+.grid.grid-full-width > li:first-child {
+    padding-top: 0;
+}
+
+.grid.grid-stretched-layout > li > h2 {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+
+.grid-stretched-layout .grid-full-width.blog-section p.button a {
+    padding: 5px 10px;
+    
+}
+
+.grid-full-width.blog-section {
+    margin-bottom: 0px;
+    
+    li {
+	img {
+	    margin-bottom: 1.4em;
+	}
+	
+	h3 {
+	    font-size: 1.3em;
+	    line-height: 1.3;
+	    margin-bottom: 1em;
+	}
+
+	h4 {
+	    font-size: 1.2em;
+	    line-height: 1.2;
+	    margin-bottom: 1em;
+	}  
+
+	p {
+	    margin-bottom: 1em;
+	}
+	
+	 p.button a:hover {
+	     background-color: lighten($primaryBG, 2);
+	 }
+    }
+}
+
+
+/**** Stretched / full width / blog-section grid (contac us page) - beginning  - end ****/
+
+/**** Grids media queries - beginning ****/
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .grid.grid-stretched-layout {
+    
+	li {
+	     width: 49%;
+	}
+    }
+    
+
+    .grid.grid-stretched-layout > li:last-child {
+	clear:both;
+	width: 100%;
+    }
+    
+    .grid.grid-stretched-layout > li .grid.grid-full-width > li {
+	width: 100%;
+	
+	img {
+	    width: 50%;
+	    height: auto;
+	    float: left;
+	    margin-right: 3%;
+	    padding-top: 12px;
+	    padding-bottom: 0;
+	    margin-bottom: 1%;
+	}
+	
+	p {
+	    clear: both;
+	}
+
+    }
+    
+}
+
+@media screen and (max-width: 639px) {
+
+    .grid li {
+	width: 100%;
+	padding-top: 1%;
+	margin-bottom: 2%;
+	box-sizing: border-box;
+	
+	h3 {
+	    margin-top: 1.3em;
+	    font-size: 1.8em;
+	    min-height: initial;
+	}
+    
+	h4 {
+	    margin-bottom: .8em;
+	    font-size: 1.5em;
+	    min-height: initial;
+	}
+    
+	p {
+	    clear: both;
+	    padding-top: 10px;
+	    margin: 0;
+	    min-height: initial;
+	}
+	
+	
+	p.button a {
+	    padding: 5px 10px;
+	    width: 90%;
+	    display: block;
+	    box-sizing: border-box;
+	    margin: 0 auto;
+	    text-align: center;
+	    white-space: nowrap;
+	    font-size: 1em;
+	}
+	
+	.grid-contentHolder {
+	    padding: 0px 15px 10px 15px;
+
+	    img {
+		width: 11em;
+		margin-right: 3%;
+	    }
+	}
+    }
+    
+    .grid.grid-stretched-layout {
+	
+	margin-bottom: 1%;
+	
+	li {
+	    clear:both;
+	    width: 100%;
+	    padding-bottom: 5%;
+	}
+	
+	.grid-contentHolder {
+	    
+	    img {
+		width: 100%;
+		margin-top: 3%;
+	    }
+	    .email {
+		min-height: 70px;
+		box-sizing: border-box;	    
+	    }
+	    
+	    .socialIcons {
+		margin-bottom: 1%;
+		img {
+		    
+		    padding: 2%;
+		 }
+
+	    }
+	}
+    }
+    
+    .grid.grid-full-width > li {
+	padding-top: 0%;
+    }
+    
+    .grid.grid-stretched-layout > li .grid.grid-full-width > li {
+	img {
+	    padding-top: 0%;
+	    margin-top: 0%;
+	    width: 100%;
+	    margin-bottom: 4%;
+	}
+	
+    }
+    
+    .grid.grid-stretched-layout > li > h2 {
+	font-size: 1.9rem;
+	padding: 10px 15px 0 15px;
+	margin-bottom: 0;
+    }
+    
+    .grid.grid-stretched-layout li:last-child {
+	    padding-bottom: 1%;
+	}
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+
+    .grid {
+    
+	li {
+	    width: 49%;
+	    padding-top: 3%;
+	    margin-bottom: 2%;
+	    box-sizing: border-box;
+	    
+	    h3 {
+		font-size: 1.7em;
+		margin-bottom: .7em;
+		padding-top: 7px;
+	    }
+
+
+	    h4 {
+		font-size: 1.4em;
+		margin-bottom: .5em;
+	    }
+
+
+	   p.button a {
+		width: 100%;
+		white-space: nowrap;
+		display: block;
+		padding: 5px 10px; // used to be just 5px for all sides
+		box-sizing: border-box;
+		clear:both;
+	    }
+	    
+	    
+	}
+	
+	.grid-contentHolder {
+	    min-height: 156px;
+	    box-sizing: border-box;
+	    
+	    img {
+		padding-bottom: 15px;
+	    }
+	}
+    }
+    
+    .grid.grid-stretched-layout li p.button a {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	font-size: 1.2em;
+     }
+
+}
+
+
+
+/**** Grids media queries - end ****/
+
+/**** Our blog-posts - Default grid extension for our blog page - beginning ****/
+
+.blog-post {
+    h3, h4 {
+	clear: both;
+	min-height: 3.1em;
+	font-size: 1.5em;
+	line-height: 1.5;
+	padding-top: .4em;
+    }
+
+    .blog-summary {
+	min-height: 8em;
+      }
+}
+
+@media screen and (max-width: 639px) {
+    .blog-post {
+	.blog-summary {
+	    min-height: initial;
+	}
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 764px) {
+    .blog-post {
+	h3, h4 {
+	    min-height: 4.5em;
+	}
+
+	.blog-summary {
+	    min-height: 11em;
+	  }
+    }
+    
+}
+
+/**** Our blog-posts - Default grid extension for our blog page - end ****/

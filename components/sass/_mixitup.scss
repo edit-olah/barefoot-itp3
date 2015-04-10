@@ -1,0 +1,169 @@
+/* 
+    Created on : 06-Jan-2015, 08:02:58
+    Author     : Edit
+*/
+// _mixitup.scss
+// ============
+
+
+/*================================= MIX IT UP =================================*/
+
+/********* mix it up control bar - beginning **************/
+
+.control-bar {
+    background: #768174;
+    background: rgba(185, 200, 181, .4);
+    margin-bottom: 1%;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.control-bar label {
+  margin: 0 5px 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  display: inline-block;
+}
+.control-bar .group {
+  display: inline-block;
+}
+
+.nav.full-width {
+    float: initial;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: .5% 0;
+    box-sizing: border-box;
+    background: transparent;
+    
+    li {
+	padding-top: 0;
+    }
+    a {
+	color: $primaryBG;
+	padding: .5% 3%;
+	
+    }
+    
+}
+
+.nav.full-width a:hover,
+.nav.full-width li.current a {
+    color: lighten($greenBG2, 25);
+    background: $primaryBG;
+    background-color: rgba(83,90,81,.5);
+    border: 2px dashed rgba(189,222,55, .3);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 639px) {
+    #PageNav {
+	clear: both;
+    }
+    .nav.full-width {
+	background: transparent;
+	padding: .5% 1%;
+	a {
+	    padding: .7% .5%;
+	}
+    }
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .nav.full-width {
+	background: transparent;
+	a {
+	    font-size: 1.1em;
+	}
+    }
+}
+
+/********* mix it up buttons - end **************/
+
+/********* mix it up grid - beginning **************/
+
+#Container .mix{
+    display: none;
+}
+
+#Container {
+    text-align: justify;
+    font-family: $zerowidthFont;
+    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#Container > * {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: $baseFont;
+  font-size: 1rem;
+}
+
+
+#Container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+#Container .mix {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 2%;
+  vertical-align: top;
+  min-height: 110px;
+  border: 2px dashed lighten($primaryBG, 12);
+  p {
+    line-height: 1.4em;
+    font-size: 1.7rem;
+    padding: 1em;
+  }
+}
+#Container .mix:before {
+  content: '';
+  display: inline-block;
+  padding-top: 5%;
+  vertical-align: middle;
+}
+#Container .mix:after {
+  content: '';
+  position: absolute;
+  border: 20px solid transparent;
+  border-right-color: white;
+  top: -20px;
+  left: -20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#Container .mix.webdev:after {
+  border-right-color: $lightGreen;
+}
+#Container .mix.threeD:after {
+  border-right-color: $lightTurq;
+}
+#Container .mix.animation:after {
+  border-right-color: $lightOrange;
+}
+#Container .mix.drawing:after {
+  border-right-color: $lightMagneta;
+}
+#Container .gap,
+#Container .mix {
+  width: 23%;
+}
+
+/********* mix it up grid - end **************/
+

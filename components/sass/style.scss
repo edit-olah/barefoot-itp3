@@ -7,13 +7,17 @@
 //@import "compass/css3/box-shadow";
  
 //Core partials
+@import "base";
 @import "fonts";
 @import "variables";
 @import "mixins";
-@import "base";
 @import "layout";
-@import "texts";
-@import "modules";
+@import "logo";
+@import "topnav";
+@import "pagenav";
+@import "heropanel";
+@import "grid";
+@import "mixitup";
  
 // JS partials
 //@import "pixgrid";
