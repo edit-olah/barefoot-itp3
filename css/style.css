@@ -184,7 +184,7 @@ input, select {
   vertical-align: middle;
 }
 
-/*=========================== RESET - beginning ============================*/
+/*=========================== RESET - end ============================*/
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -233,6 +233,28 @@ and open the template in the editor.
     Created on : 06-Jan-2015, 07:59:51
     Author     : Edit
 */
+ /*background: url($image) no-repeat 50% 20% ; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+ -webkit-transition: all 0.3s ease-out;
+ -moz-transition: all 0.3s ease-out;
+ -o-transition: all 0.3s ease-out;
+ transition: all 0.3s ease-out;
+
+ @media (min-width: 801px) {
+  height: 350px;
+ }
+
+ @media (max-width: 800px) {
+  height: 150px;
+ }
+
+ @media (max-width: 300px) {
+  height: 100px;
+ }*/
 /* 
     Created on : 07-Jan-2015, 21:52:49
     Author     : Edit
@@ -589,7 +611,7 @@ ul, li {
 }
 
 /* line 394, ../components/sass/_layout.scss */
-#HomePortfolio .grid li p.button a {
+#HomePortfolio .grid li p.button a, #HomePortfolio .grid li button a {
   padding: 5px 10px;
 }
 
@@ -628,7 +650,7 @@ ul, li {
   padding-bottom: 1%;
 }
 /* line 449, ../components/sass/_layout.scss */
-#OurBlogGrid p.button a {
+#OurBlogGrid p.button a, #OurBlogGrid button a {
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -704,6 +726,12 @@ ul, li {
   border: 2px dashed #3f443e;
 }
 
+@media screen and (max-width: 639px) {
+  /* line 548, ../components/sass/_layout.scss */
+  #About, #Skills, #Portfolio, #ContactIndi {
+    padding: 15px 15px 0;
+  }
+}
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1137,7 +1165,7 @@ and open the template in the editor.
   word-wrap: break-word;
 }
 /* line 66, ../components/sass/_grid.scss */
-.grid li p.button a {
+.grid li p.button a, .grid li button a {
   width: 300px;
   padding: 10px 17%;
   margin-top: 10px;
@@ -1148,7 +1176,7 @@ and open the template in the editor.
   border-radius: 3px;
 }
 /* line 77, ../components/sass/_grid.scss */
-.grid li p.button a:hover {
+.grid li p.button a:hover, .grid li button a:hover {
   background-color: #464c45;
   border: 2px dashed #6b7569;
   text-decoration: none;
@@ -1184,7 +1212,7 @@ and open the template in the editor.
   padding-bottom: 0%;
 }
 /* line 122, ../components/sass/_grid.scss */
-.grid.grid-stretched-layout li p.button a {
+.grid.grid-stretched-layout li p.button a, .grid.grid-stretched-layout li button a {
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -1265,7 +1293,7 @@ and open the template in the editor.
 }
 
 /* line 201, ../components/sass/_grid.scss */
-.grid-stretched-layout .grid-full-width.blog-section p.button a {
+.grid-stretched-layout .grid-full-width.blog-section p.button a, .grid-stretched-layout .grid-full-width.blog-section button a {
   padding: 5px 10px;
 }
 
@@ -1294,7 +1322,7 @@ and open the template in the editor.
   margin-bottom: 1em;
 }
 /* line 230, ../components/sass/_grid.scss */
-.grid-full-width.blog-section li p.button a:hover {
+.grid-full-width.blog-section li p.button a:hover, .grid-full-width.blog-section li button a:hover {
   background-color: #3f443e;
 }
 
@@ -1359,7 +1387,7 @@ and open the template in the editor.
     min-height: initial;
   }
   /* line 307, ../components/sass/_grid.scss */
-  .grid li p.button a {
+  .grid li p.button a, .grid li button a {
     padding: 5px 10px;
     width: 90%;
     display: block;
@@ -1453,7 +1481,7 @@ and open the template in the editor.
     margin-bottom: .5em;
   }
   /* line 410, ../components/sass/_grid.scss */
-  .grid li p.button a {
+  .grid li p.button a, .grid li button a {
     width: 100%;
     white-space: nowrap;
     display: block;
@@ -1472,7 +1500,7 @@ and open the template in the editor.
   }
 
   /* line 432, ../components/sass/_grid.scss */
-  .grid.grid-stretched-layout li p.button a {
+  .grid.grid-stretched-layout li p.button a, .grid.grid-stretched-layout li button a {
     width: 100%;
     display: block;
     box-sizing: border-box;
@@ -1520,89 +1548,127 @@ and open the template in the editor.
 /* line 13, ../components/sass/_mixitup.scss */
 .control-bar {
   background: #768174;
-  background: rgba(185, 200, 181, 0.4);
-  margin-bottom: 1%;
-  padding: 5px 10px;
+  background: #3A3F39;
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+  padding: 10px;
   overflow: hidden;
+  font-family: "zero-width";
+  font-size: 0;
+  position: relative;
 }
-
-/* line 21, ../components/sass/_mixitup.scss */
+/* line 25, ../components/sass/_mixitup.scss */
 .control-bar label {
+  color: #e1f0a4;
   margin: 0 5px 0 15px;
   display: inline-block;
   vertical-align: middle;
   display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-/* line 27, ../components/sass/_mixitup.scss */
+/* line 36, ../components/sass/_mixitup.scss */
 .control-bar .group {
   display: inline-block;
+  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
 }
-
-/* line 31, ../components/sass/_mixitup.scss */
-.nav.full-width {
-  float: initial;
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: .5% 0;
-  box-sizing: border-box;
-  background: transparent;
-}
-/* line 40, ../components/sass/_mixitup.scss */
-.nav.full-width li {
-  padding-top: 0;
-}
-/* line 43, ../components/sass/_mixitup.scss */
-.nav.full-width a {
-  color: #3A3F39;
-  padding: .5% 3%;
-}
-
-/* line 51, ../components/sass/_mixitup.scss */
-.nav.full-width a:hover,
-.nav.full-width li.current a {
-  color: #e1f0a4;
+/* line 41, ../components/sass/_mixitup.scss */
+.control-bar .group button {
+  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: #B9C8B5;
   background: #3A3F39;
   background-color: rgba(83, 90, 81, 0.5);
-  border: 2px dashed rgba(189, 222, 55, 0.3);
+  border: 2px dashed rgba(171, 243, 129, 0.1);
   text-decoration: none;
+  padding: 5px 10px;
+  min-width: 70px;
+  font-weight: 700;
+}
+/* line 54, ../components/sass/_mixitup.scss */
+.control-bar .group button:hover, .control-bar .group button:focus, .control-bar .group button.active {
+  background: #B9C8B5;
+  border: 2px dashed rgba(83, 90, 81, 0.5);
+  color: #3A3F39;
+}
+/* line 64, ../components/sass/_mixitup.scss */
+.control-bar .group .filter-buttons button {
+  position: relative;
+}
+/* line 13, ../components/sass/_mixins.scss */
+.control-bar .group .filter-buttons button:before {
+  content: '';
+  display: inline-block;
+  padding-top: 5%;
+  vertical-align: middle;
+}
+/* line 19, ../components/sass/_mixins.scss */
+.control-bar .group .filter-buttons button:after {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-right-color: white;
+  top: -10px;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 67, ../components/sass/_mixitup.scss */
+.control-bar .group .filter-buttons button[data-filter=".webdev"]:after {
+  border-right-color: #ABF381;
+}
+/* line 70, ../components/sass/_mixitup.scss */
+.control-bar .group .filter-buttons button[data-filter=".drupal"]:after {
+  border-right-color: #56c813;
+}
+/* line 73, ../components/sass/_mixitup.scss */
+.control-bar .group .filter-buttons button[data-filter=".threeD"]:after {
+  border-right-color: #FFB587;
+}
+/* line 76, ../components/sass/_mixitup.scss */
+.control-bar .group .filter-buttons button[data-filter=".animation"]:after {
+  border-right-color: #ff7621;
+}
+/* line 79, ../components/sass/_mixitup.scss */
+.control-bar .group .filter-buttons button[data-filter=".drawing"]:after {
+  border-right-color: #F481A9;
 }
 
-@media screen and (max-width: 639px) {
-  /* line 61, ../components/sass/_mixitup.scss */
-  #PageNav {
-    clear: both;
+@media screen and (min-width: 320px) and (max-width: 534px) {
+  /* line 89, ../components/sass/_mixitup.scss */
+  .control-bar .group.filter-buttons {
+    width: 100%;
   }
-
-  /* line 64, ../components/sass/_mixitup.scss */
-  .nav.full-width {
-    background: transparent;
-    padding: .5% 1%;
-  }
-  /* line 67, ../components/sass/_mixitup.scss */
-  .nav.full-width a {
-    padding: .7% .5%;
+  /* line 92, ../components/sass/_mixitup.scss */
+  .control-bar .group.filter-buttons button {
+    display: block;
+    min-width: initial;
+    width: 100%;
+    text-align: left;
+    margin-bottom: .7%;
   }
 }
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 75, ../components/sass/_mixitup.scss */
-  .nav.full-width {
-    background: transparent;
+@media screen and (max-width: 615px) {
+  /* line 106, ../components/sass/_mixitup.scss */
+  .control-bar label {
+    display: block;
+    margin: .4em .1em;
   }
-  /* line 77, ../components/sass/_mixitup.scss */
-  .nav.full-width a {
-    font-size: 1.1em;
+}
+@media screen and (max-width: 823px) {
+  /* line 114, ../components/sass/_mixitup.scss */
+  .control-bar .group:first-child {
+    margin-bottom: 1%;
   }
 }
 /********* mix it up buttons - end **************/
 /********* mix it up grid - beginning **************/
-/* line 87, ../components/sass/_mixitup.scss */
-#Container .mix {
-  display: none;
-}
-
-/* line 91, ../components/sass/_mixitup.scss */
+/* line 126, ../components/sass/_mixitup.scss */
 #Container {
   text-align: justify;
   font-family: "zero-width";
@@ -1615,48 +1681,32 @@ and open the template in the editor.
   overflow: hidden;
   padding: 0;
 }
-
-/* line 104, ../components/sass/_mixitup.scss */
-#Container > * {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-}
-
-/* line 113, ../components/sass/_mixitup.scss */
+/* line 138, ../components/sass/_mixitup.scss */
 #Container:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
-
-/* line 120, ../components/sass/_mixitup.scss */
+/* line 144, ../components/sass/_mixitup.scss */
 #Container .mix {
+  display: none;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
   margin-bottom: 2%;
   vertical-align: top;
-  min-height: 110px;
+  width: 23%;
+  min-height: 80px;
   border: 2px dashed #585f56;
+  position: relative;
 }
-/* line 127, ../components/sass/_mixitup.scss */
-#Container .mix p {
-  line-height: 1.4em;
-  font-size: 1.7rem;
-  padding: 1em;
-}
-
-/* line 133, ../components/sass/_mixitup.scss */
+/* line 13, ../components/sass/_mixins.scss */
 #Container .mix:before {
   content: '';
   display: inline-block;
   padding-top: 5%;
   vertical-align: middle;
 }
-
-/* line 139, ../components/sass/_mixitup.scss */
+/* line 19, ../components/sass/_mixins.scss */
 #Container .mix:after {
   content: '';
   position: absolute;
@@ -1669,31 +1719,95 @@ and open the template in the editor.
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+/* line 156, ../components/sass/_mixitup.scss */
+#Container .mix p {
+  line-height: 1.4em;
+  font-size: 1.4rem;
+  padding: .5em 1em;
+}
+/* line 163, ../components/sass/_mixitup.scss */
+#Container .gap {
+  width: 23%;
+}
 
-/* line 151, ../components/sass/_mixitup.scss */
+/* line 168, ../components/sass/_mixitup.scss */
+#Container > * {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* line 176, ../components/sass/_mixitup.scss */
 #Container .mix.webdev:after {
   border-right-color: #ABF381;
 }
 
-/* line 154, ../components/sass/_mixitup.scss */
-#Container .mix.threeD:after {
-  border-right-color: #76DFC0;
+/* line 180, ../components/sass/_mixitup.scss */
+#Container .mix.drupal:after {
+  border-right-color: #56c813;
 }
 
-/* line 157, ../components/sass/_mixitup.scss */
-#Container .mix.animation:after {
+/* line 184, ../components/sass/_mixitup.scss */
+#Container .mix.threeD:after {
   border-right-color: #FFB587;
 }
 
-/* line 160, ../components/sass/_mixitup.scss */
+/* line 187, ../components/sass/_mixitup.scss */
+#Container .mix.animation:after {
+  border-right-color: #ff7621;
+}
+
+/* line 190, ../components/sass/_mixitup.scss */
 #Container .mix.drawing:after {
   border-right-color: #F481A9;
 }
 
-/* line 163, ../components/sass/_mixitup.scss */
-#Container .gap,
-#Container .mix {
-  width: 23%;
+@media screen and (max-width: 459px) {
+  /* line 197, ../components/sass/_mixitup.scss */
+  #Container .mix {
+    width: 98%;
+    min-height: 44px;
+  }
+  /* line 200, ../components/sass/_mixitup.scss */
+  #Container .mix p {
+    padding: .1em 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  /* line 207, ../components/sass/_mixitup.scss */
+  #Container .gap {
+    width: 98%;
+  }
 }
-
+@media screen and (min-width: 460px) and (max-width: 551px) {
+  /* line 219, ../components/sass/_mixitup.scss */
+  #Container .mix {
+    width: 48%;
+    min-height: 60px;
+  }
+  /* line 223, ../components/sass/_mixitup.scss */
+  #Container .mix p {
+    padding: .1em 1.5em;
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  /* line 230, ../components/sass/_mixitup.scss */
+  #Container .gap {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 648px) {
+  /* line 242, ../components/sass/_mixitup.scss */
+  #Container .mix {
+    min-height: 117px;
+  }
+}
+@media screen and (min-width: 649px) and (max-width: 831px) {
+  /* line 251, ../components/sass/_mixitup.scss */
+  #Container .mix {
+    min-height: 94px;
+  }
+}
 /********* mix it up grid - end **************/

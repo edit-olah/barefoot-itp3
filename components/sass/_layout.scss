@@ -539,6 +539,17 @@ ul, li {
     border: 2px dashed lighten($primaryBG, 2);
 }
 
+button {
+    @extend p.button;
+}
+
+
+@media screen and (max-width: 639px) {
+    #About, #Skills, #Portfolio, #ContactIndi {
+	padding: $secondaryPadding;
+    }
+}
+
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 
 
