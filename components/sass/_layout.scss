@@ -36,6 +36,19 @@ body {
     font-size:0;
 }
 
+.button {
+    display: inline-block;
+    
+    a{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin-bottom: 0;
+    }
+}
+
 /*================== GLOBAL LAYOUTS BASE - end ========================*/
 
 
@@ -391,14 +404,65 @@ ul, li {
     border: 2px dashed lighten($primaryBG, 2);
 }
 
-#HomePortfolio .grid li p.button a {
-    padding: 5px 10px;
+#HomePortfolio {
+    .button {
+	width: 68%;
+	
+	a {
+	    padding: 5px 10px;
+	    font-size: 1.1em;
+	}
+    }
 }
+
+@media screen and (max-width: 430px) {
+    #HomePortfolio {
+	.button {
+		width: 100%;
+	}
+    }
+}
+
 
 @media screen and (max-width: 639px) {
         
     #AboutUsContentHolder {
 	padding: $secondaryPadding;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 834px) {
+    #HomePortfolio {
+
+	.button {
+	    width: 100%;
+
+	    a {
+		padding: 5px 7px;
+		font-size: 1.4rem;
+	    }
+	}
+    }  
+}
+
+
+@media screen and (min-width: 835px) and (max-width: 1023px) {
+    #HomePortfolio {
+	.grid{
+	    li {
+		h4{
+		    margin-bottom: 15px;
+		}
+	    }
+	}
+	.button {
+	    width: 60%;
+
+	    a {
+		padding: 5px 7px;
+		font-size: 1.2rem;
+	    }
+	}
     }
 }
 
@@ -446,12 +510,16 @@ ul, li {
 	padding-bottom: 1%;
     }
     
-    p.button a {
+    /*.button {
 	width: 100%;
-	display: block;
-	box-sizing: border-box;
-	padding: 5px 10px;
-     }
+	
+	a {
+	    width: 100%;
+	    display: block;
+	    box-sizing: border-box;
+	    padding: 5px 10px;
+	 }
+     }*/
 }
 
 

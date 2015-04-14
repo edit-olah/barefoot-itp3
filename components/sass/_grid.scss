@@ -21,72 +21,78 @@ and open the template in the editor.
     font-family: $zerowidthFont;
     font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
   
-  li {
-    font-family: $baseFont;
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 49%;
-    padding-top: 3%; 
-    padding-bottom: 5%;
-    margin-bottom: 1%;
-    background-color: lighten($primaryBG, 10);
-    border-radius: 3px;
-    border: 2px dashed lighten($primaryBG, 5);
-    vertical-align: top;
+    li {
+	font-family: $baseFont;
+	font-size: 1.2rem;
+	display: inline-block;
+	width: 49%;
+	padding-top: 3%; 
+	padding-bottom: 2%;
+	margin-bottom: 1%;
+	background-color: lighten($primaryBG, 10);
+	border-radius: 3px;
+	border: 2px dashed lighten($primaryBG, 5);
+	vertical-align: top;
+
+	h3, h4, p {
+	    text-align: left;
+
+	}
+
+	h3 {
+	    font-size: 1.9em;
+	    margin-bottom: .5em;
+	    color: $lightGreen;
+	}
+
+	h4 {
+	    font-size: 1.8em;
+	    margin-bottom: .8em;
+
+	}
+
+	p {
+	    font-size: 1.3em;
+	}
+
+	.email {
+	    font-size: 1.3em;
+	    a {
+	       font-size: 1em;
+	       word-wrap:break-word;
+	   }
+	}
+
+	.button {
+	    width: 100%;
+	    
+	    a {
+		 width: 100%;
+		 padding: 7px 15px;
+		 //margin-top: 10px;
+		 font-size: 1.2em;
+		 color: #dbedd6;
+		 background-color: lighten($primaryBG, 20);
+		 border: 2px dashed lighten($primaryBG, 5);
+		 border-radius: 3px;
+
+		 &:hover {
+		    background-color: lighten($primaryBG, 5);
+		    border: 2px dashed lighten($primaryBG, 20);
+		    text-decoration:none;
+		}
+	     }
+	 }
+    }
     
-    h3, h4, p {
-	text-align: left;
-    
+    &:after { // lacking support in IE6/7
+	content: '';
+	display: inline-block;
+	width: 100%;
     }
-
-    h3 {
-	font-size: 1.9em;
-	margin-bottom: .5em;
-	color: $lightGreen;
-    }
-
-    h4 {
-	font-size: 1.8em;
-	margin-bottom: .8em;
-
-    }
-
-    p {
-	font-size: 1.3em;
-    }
-
-    .email {
-	font-size: 1.3em;
-	a {
-	   font-size: 1em;
-	   word-wrap:break-word;
-       }
-    }
-    
-    p.button a {
-	 width: 300px;
-	 padding: 10px 17%;
-	 margin-top: 10px;
-	 font-size: 1.1em;
-	 color: #dbedd6;
-	 background-color: lighten($primaryBG, 20);
-	 border: 2px dashed lighten($primaryBG, 5);
-	 border-radius: 3px;
-     }
-
-     p.button a:hover {
-	 background-color: lighten($primaryBG, 5);
-	 border: 2px dashed lighten($primaryBG, 20);
-	 text-decoration:none;
-     } 
-  }
 }
 
-.grid:after { // lacking support in IE6/7
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
+
 
 
 .grid-contentHolder {
@@ -99,6 +105,7 @@ and open the template in the editor.
 	height: auto;
 	float: left;
 	margin-right: 3%;
+	margin-bottom: 10px;
     }
     
 }
@@ -118,12 +125,6 @@ and open the template in the editor.
     li {
 	 width: 32%;
 	 padding-bottom: 0%;
-	 
-	 p.button a {
-	    width: 100%;
-	    display: block;
-	    box-sizing: border-box;
-	 }
     }
     
     img {
@@ -224,11 +225,13 @@ and open the template in the editor.
 	}  
 
 	p {
-	    margin-bottom: 1em;
+	      margin-bottom: .84em;
 	}
 	
-	 p.button a:hover {
-	     background-color: lighten($primaryBG, 2);
+	 .button {
+	    a:hover {
+		background-color: lighten($primaryBG, 2);
+	    }
 	 }
     }
 }
@@ -278,49 +281,53 @@ and open the template in the editor.
 
 @media screen and (max-width: 639px) {
 
-    .grid li {
-	width: 100%;
-	padding-top: 1%;
-	margin-bottom: 2%;
-	box-sizing: border-box;
-	
-	h3 {
-	    margin-top: 1.3em;
-	    font-size: 1.8em;
-	    min-height: initial;
-	}
-    
-	h4 {
-	    margin-bottom: .8em;
-	    font-size: 1.5em;
-	    min-height: initial;
-	}
-    
-	p {
-	    clear: both;
-	    padding-top: 10px;
-	    margin: 0;
-	    min-height: initial;
-	}
-	
-	
-	p.button a {
-	    padding: 5px 10px;
-	    width: 90%;
-	    display: block;
+    .grid {
+	li {
+	    width: 100%;
+	    padding-top: 1%;
+	    margin-bottom: 2%;
 	    box-sizing: border-box;
-	    margin: 0 auto;
-	    text-align: center;
-	    white-space: nowrap;
-	    font-size: 1em;
-	}
-	
-	.grid-contentHolder {
-	    padding: 0px 15px 10px 15px;
 
-	    img {
-		width: 11em;
-		margin-right: 3%;
+	    h3 {
+		margin-top: 1.3em;
+		font-size: 1.8em;
+		min-height: initial;
+	    }
+
+	    h4 {
+		margin-bottom: .8em;
+		font-size: 1.5em;
+		min-height: initial;
+	    }
+
+	    p {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		min-height: initial;
+	    }
+
+
+	    .button {
+		a {
+		    padding: 5px 10px;
+		    width: 100%;
+		    display: block;
+		    box-sizing: border-box;
+		    margin: 0 auto;
+		    text-align: center;
+		    white-space: nowrap;
+		    font-size: 1.2em;
+		}
+	    }
+
+	    .grid-contentHolder {
+		padding: 0px 15px 10px 15px;
+
+		img {
+		    width: 11em;
+		    margin-right: 3%;
+		}
 	    }
 	}
     }
@@ -349,7 +356,6 @@ and open the template in the editor.
 	    .socialIcons {
 		margin-bottom: 1%;
 		img {
-		    
 		    padding: 2%;
 		 }
 
@@ -407,16 +413,18 @@ and open the template in the editor.
 	    }
 
 
-	   p.button a {
-		width: 100%;
-		white-space: nowrap;
-		display: block;
-		padding: 5px 10px; // used to be just 5px for all sides
-		box-sizing: border-box;
-		clear:both;
+	   .button {
+	       width: 100%;
+		a {
+		     width: 100%;
+		     white-space: nowrap;
+		     display: block;
+		     padding: 5px 10px; // used to be just 5px for all sides
+		     box-sizing: border-box;
+		     clear:both;
+		 }
+	    
 	    }
-	    
-	    
 	}
 	
 	.grid-contentHolder {
@@ -462,6 +470,7 @@ and open the template in the editor.
     .blog-post {
 	.blog-summary {
 	    min-height: initial;
+	    margin-bottom: 10px;
 	}
     }
 }
