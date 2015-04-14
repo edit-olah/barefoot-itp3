@@ -291,30 +291,16 @@ body {
   font-size: 0;
 }
 
-/* line 39, ../components/sass/_layout.scss */
-.button {
-  display: inline-block;
-}
-/* line 42, ../components/sass/_layout.scss */
-.button a {
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 5px 10px;
-  border-radius: 3px;
-  margin-bottom: 0;
-}
-
 /*================== GLOBAL LAYOUTS BASE - end ========================*/
 /*============ GLOBAL TEXTS - beginning ===============*/
-/* line 59, ../components/sass/_layout.scss */
+/* line 48, ../components/sass/_layout.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #85E14F;
   font-weight: 600;
 }
 
-/* line 65, ../components/sass/_layout.scss */
+/* line 54, ../components/sass/_layout.scss */
 h1 {
   font-size: 1.8em;
   color: #a3e87b;
@@ -322,52 +308,75 @@ h1 {
   line-height: 1.3em;
 }
 
-/* line 72, ../components/sass/_layout.scss */
+/* line 61, ../components/sass/_layout.scss */
 h2 {
   font-size: 1.3em;
   color: #85E14F;
   margin-bottom: .6em;
 }
 
-/* line 79, ../components/sass/_layout.scss */
+/* line 68, ../components/sass/_layout.scss */
 h3 {
   font-size: 1.2em;
   margin-bottom: .5em;
 }
 
-/* line 84, ../components/sass/_layout.scss */
+/* line 73, ../components/sass/_layout.scss */
 a {
   text-decoration: none;
-  color: #85E14F;
-  font-weight: 400;
+  color: #6adcba;
+  font-weight: 600;
 }
 
-/* line 90, ../components/sass/_layout.scss */
+/* line 80, ../components/sass/_layout.scss */
 a:hover {
   text-decoration: underline;
-  color: #ABF381;
+  color: #B9C8B5;
 }
 
-/* line 95, ../components/sass/_layout.scss */
+/* line 86, ../components/sass/_layout.scss */
 a, p, li {
   font-size: 1em;
   margin-bottom: .5em;
 }
 
-/* line 100, ../components/sass/_layout.scss */
+/* line 91, ../components/sass/_layout.scss */
 ul, li {
   list-style-type: none;
 }
 
+/* line 95, ../components/sass/_layout.scss */
+.button {
+  display: inline-block;
+}
+/* line 98, ../components/sass/_layout.scss */
+.button a {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  background-color: #6b7569;
+  border: 2px dashed #464c45;
+  border-radius: 3px;
+}
+/* line 109, ../components/sass/_layout.scss */
+.button a:hover {
+  background-color: #464c45;
+  border: 2px dashed #6b7569;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 639px) {
-  /* line 107, ../components/sass/_layout.scss */
+  /* line 119, ../components/sass/_layout.scss */
   h1 {
     margin-top: 5%;
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1002px) and (max-width: 1040px) {
-  /* line 116, ../components/sass/_layout.scss */
+  /* line 128, ../components/sass/_layout.scss */
   .email a {
     font-size: 1em;
     white-space: nowrap;
@@ -375,37 +384,37 @@ ul, li {
 }
 /*============ GLOBAL TEXTS - end ===============*/
 /*====================== GLOBAL LAYOUT - beginning ========================*/
-/* line 130, ../components/sass/_layout.scss */
+/* line 142, ../components/sass/_layout.scss */
 .container,
 #HeaderWrapper {
   width: 100%;
   max-width: 1024px;
 }
 
-/* line 136, ../components/sass/_layout.scss */
+/* line 148, ../components/sass/_layout.scss */
 .container {
   margin: 0 auto;
 }
 
-/* line 140, ../components/sass/_layout.scss */
+/* line 152, ../components/sass/_layout.scss */
 #HeaderWrapper {
   margin: 0 auto;
 }
 
-/* line 144, ../components/sass/_layout.scss */
+/* line 156, ../components/sass/_layout.scss */
 .page {
   padding: 15px 25px 0;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 151, ../components/sass/_layout.scss */
+  /* line 163, ../components/sass/_layout.scss */
   .container, #HeaderWrapper {
     width: 100%;
     margin-top: 0;
   }
 
-  /* line 156, ../components/sass/_layout.scss */
+  /* line 168, ../components/sass/_layout.scss */
   .page {
     float: left;
     clear: both;
@@ -414,18 +423,18 @@ ul, li {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 167, ../components/sass/_layout.scss */
+  /* line 179, ../components/sass/_layout.scss */
   .page {
     padding: 15px 15px 0;
   }
 }
 /***************============= fluid grid MAIN NAVIGATION - beginning ==============**************/
-/* line 174, ../components/sass/_layout.scss */
+/* line 186, ../components/sass/_layout.scss */
 #MainNav {
   margin-top: 10px;
 }
 
-/* line 178, ../components/sass/_layout.scss */
+/* line 190, ../components/sass/_layout.scss */
 .nav {
   width: 60%;
   float: right;
@@ -435,7 +444,7 @@ ul, li {
   font-family: "zero-width";
   font-size: 0;
 }
-/* line 188, ../components/sass/_layout.scss */
+/* line 200, ../components/sass/_layout.scss */
 .nav li {
   display: inline;
   width: 19%;
@@ -446,7 +455,7 @@ ul, li {
   text-align: center;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 199, ../components/sass/_layout.scss */
+/* line 211, ../components/sass/_layout.scss */
 .nav a {
   display: inline-block;
   margin-bottom: 0;
@@ -461,14 +470,14 @@ ul, li {
   border: 2px solid transparent;
 }
 
-/* line 215, ../components/sass/_layout.scss */
+/* line 227, ../components/sass/_layout.scss */
 .nav:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 222, ../components/sass/_layout.scss */
+/* line 234, ../components/sass/_layout.scss */
 .nav a:hover,
 .nav li.current a {
   color: #dbedd6;
@@ -482,12 +491,12 @@ ul, li {
     padding: 0;
 }*/
 @media screen and (max-width: 639px) {
-  /* line 237, ../components/sass/_layout.scss */
+  /* line 249, ../components/sass/_layout.scss */
   #MainNav {
     margin-top: 0;
   }
 
-  /* line 241, ../components/sass/_layout.scss */
+  /* line 253, ../components/sass/_layout.scss */
   .nav {
     clear: both;
     width: 100%;
@@ -498,116 +507,116 @@ ul, li {
        border: 2px dashed lighten($primaryBG, 5);
     }*/
   }
-  /* line 248, ../components/sass/_layout.scss */
+  /* line 260, ../components/sass/_layout.scss */
   .nav li {
     padding-top: 0%;
   }
-  /* line 253, ../components/sass/_layout.scss */
+  /* line 265, ../components/sass/_layout.scss */
   .nav a:link {
     padding: 20px 5%;
     line-height: 1;
     font-weight: 400;
     font-size: 0.85em;
   }
-  /* line 260, ../components/sass/_layout.scss */
+  /* line 272, ../components/sass/_layout.scss */
   .nav a:hover {
     border: 2px dashed #464c45;
   }
-  /* line 264, ../components/sass/_layout.scss */
+  /* line 276, ../components/sass/_layout.scss */
   .nav a:active {
     border: 2px dashed #464c45;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 548px) {
-  /* line 278, ../components/sass/_layout.scss */
+  /* line 290, ../components/sass/_layout.scss */
   .nav a:link {
     padding: 20px 1%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 678px) {
-  /* line 286, ../components/sass/_layout.scss */
+  /* line 298, ../components/sass/_layout.scss */
   .nav {
     width: 50%;
   }
-  /* line 289, ../components/sass/_layout.scss */
+  /* line 301, ../components/sass/_layout.scss */
   .nav a {
     font-size: .9em;
     padding: 20px 3px;
   }
 }
 @media screen and (min-width: 679px) and (max-width: 708px) {
-  /* line 299, ../components/sass/_layout.scss */
+  /* line 311, ../components/sass/_layout.scss */
   .nav {
     width: 53%;
   }
-  /* line 302, ../components/sass/_layout.scss */
+  /* line 314, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1em;
     padding: 20px 5px;
   }
 }
 @media screen and (min-width: 709px) and (max-width: 789px) {
-  /* line 314, ../components/sass/_layout.scss */
+  /* line 326, ../components/sass/_layout.scss */
   .nav {
     width: 55%;
   }
-  /* line 317, ../components/sass/_layout.scss */
+  /* line 329, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1em;
     padding: 20px 7px;
   }
 }
 @media screen and (min-width: 790px) and (max-width: 869px) {
-  /* line 327, ../components/sass/_layout.scss */
+  /* line 339, ../components/sass/_layout.scss */
   .nav {
     width: 56%;
   }
-  /* line 330, ../components/sass/_layout.scss */
+  /* line 342, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1.05em;
   }
 }
 @media screen and (min-width: 870px) and (max-width: 890px) {
-  /* line 340, ../components/sass/_layout.scss */
+  /* line 352, ../components/sass/_layout.scss */
   .nav {
     width: 57%;
   }
-  /* line 343, ../components/sass/_layout.scss */
+  /* line 355, ../components/sass/_layout.scss */
   .nav a {
     font-size: 1.2em;
   }
 }
 /***************============= fluid grid MAIN NAVIGATION - end ==============**************/
 /***************============= FOOTER - beginning ==============**************/
-/* line 354, ../components/sass/_layout.scss */
+/* line 366, ../components/sass/_layout.scss */
 #Footer {
   clear: both;
   background: #2e322d;
 }
-/* line 358, ../components/sass/_layout.scss */
+/* line 370, ../components/sass/_layout.scss */
 #Footer .container {
   margin-bottom: 0;
   box-sizing: border-box;
 }
-/* line 362, ../components/sass/_layout.scss */
+/* line 374, ../components/sass/_layout.scss */
 #Footer .container p {
   margin-bottom: 0;
   padding: 20px 0px;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 372, ../components/sass/_layout.scss */
+  /* line 384, ../components/sass/_layout.scss */
   #Footer .container {
     padding: 0 15px;
   }
 
-  /* line 376, ../components/sass/_layout.scss */
+  /* line 388, ../components/sass/_layout.scss */
   #Footer .container p {
     font-size: 0.7em;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 383, ../components/sass/_layout.scss */
+  /* line 395, ../components/sass/_layout.scss */
   #Footer .container {
     padding: 0 15px;
   }
@@ -616,7 +625,7 @@ ul, li {
 /*============================ GLOBAL LAYOUT - end ==============================*/
 /*=========================== HOME PAGE LAYOUT - beginning =================================*/
 /**************************** ABOUT US -home page- ************************/
-/* line 400, ../components/sass/_layout.scss */
+/* line 412, ../components/sass/_layout.scss */
 #AboutUsContentHolder {
   padding: 15px 25px 0;
   background-color: #4b524a;
@@ -624,49 +633,49 @@ ul, li {
   border: 2px dashed #3f443e;
 }
 
-/* line 408, ../components/sass/_layout.scss */
+/* line 420, ../components/sass/_layout.scss */
 #HomePortfolio .button {
   width: 68%;
 }
-/* line 411, ../components/sass/_layout.scss */
+/* line 423, ../components/sass/_layout.scss */
 #HomePortfolio .button a {
   padding: 5px 10px;
   font-size: 1.1em;
 }
 
 @media screen and (max-width: 430px) {
-  /* line 420, ../components/sass/_layout.scss */
+  /* line 432, ../components/sass/_layout.scss */
   #HomePortfolio .button {
     width: 100%;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 429, ../components/sass/_layout.scss */
+  /* line 441, ../components/sass/_layout.scss */
   #AboutUsContentHolder {
     padding: 15px 15px 0;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 834px) {
-  /* line 437, ../components/sass/_layout.scss */
+  /* line 449, ../components/sass/_layout.scss */
   #HomePortfolio .button {
     width: 100%;
   }
-  /* line 440, ../components/sass/_layout.scss */
+  /* line 452, ../components/sass/_layout.scss */
   #HomePortfolio .button a {
     padding: 5px 7px;
     font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 835px) and (max-width: 1023px) {
-  /* line 453, ../components/sass/_layout.scss */
+  /* line 465, ../components/sass/_layout.scss */
   #HomePortfolio .grid li h4 {
     margin-bottom: 15px;
   }
-  /* line 458, ../components/sass/_layout.scss */
+  /* line 470, ../components/sass/_layout.scss */
   #HomePortfolio .button {
     width: 60%;
   }
-  /* line 461, ../components/sass/_layout.scss */
+  /* line 473, ../components/sass/_layout.scss */
   #HomePortfolio .button a {
     padding: 5px 7px;
     font-size: 1.2rem;
@@ -674,20 +683,20 @@ ul, li {
 }
 /*=========================== HOME PAGE LAYOUT - end =================================*/
 /*======================= OUR PORTFOLIO PAGE LAYOUT - beginning ============================*/
-/* line 475, ../components/sass/_layout.scss */
+/* line 487, ../components/sass/_layout.scss */
 #OurPortfolioContentHolder {
   padding: 15px 25px 0;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 482, ../components/sass/_layout.scss */
+  /* line 494, ../components/sass/_layout.scss */
   #OurPortfolioContentHolder {
     padding: 15px 15px 0;
   }
 }
 /*======================= OUR PORTFOLIO PAGE LAYOUT - end ============================*/
 /*========================== OUR BLOG PAGE LAYOUT - beginning ============================*/
-/* line 493, ../components/sass/_layout.scss */
+/* line 505, ../components/sass/_layout.scss */
 #OurBlogGrid {
     /*.button {
 	width: 100%;
@@ -700,40 +709,40 @@ ul, li {
 	 }
      }*/
 }
-/* line 495, ../components/sass/_layout.scss */
+/* line 507, ../components/sass/_layout.scss */
 #OurBlogGrid h2 {
   padding: 15px 25px 0;
 }
-/* line 502, ../components/sass/_layout.scss */
+/* line 514, ../components/sass/_layout.scss */
 #OurBlogGrid .grid-contentHolder img {
   width: 100%;
   margin-bottom: 1%;
 }
-/* line 509, ../components/sass/_layout.scss */
+/* line 521, ../components/sass/_layout.scss */
 #OurBlogGrid .grid li {
   padding-bottom: 1%;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 530, ../components/sass/_layout.scss */
+  /* line 542, ../components/sass/_layout.scss */
   #OurBlogGrid h2 {
     padding: 15px 15px 0;
   }
 }
 /*========================== OUR BLOG PAGE LAYOUT - end ============================*/
 /*====================== CONTACT US PAGE LAYOUT - beginning ======================*/
-/* line 543, ../components/sass/_layout.scss */
+/* line 555, ../components/sass/_layout.scss */
 .contactText {
   padding: 15px 25px 0;
 }
 
-/* line 548, ../components/sass/_layout.scss */
+/* line 560, ../components/sass/_layout.scss */
 .wrapper-decoImg {
   position: relative;
   height: 0;
 }
 
-/* line 553, ../components/sass/_layout.scss */
+/* line 565, ../components/sass/_layout.scss */
 .container-decoImg {
   position: relative;
   left: -106%;
@@ -741,7 +750,7 @@ ul, li {
   height: 0;
   width: 205%;
 }
-/* line 560, ../components/sass/_layout.scss */
+/* line 572, ../components/sass/_layout.scss */
 .container-decoImg .decoImg {
   position: absolute;
   top: 6%;
@@ -754,19 +763,19 @@ ul, li {
 }
 
 @media screen and (max-width: 639px) {
-  /* line 575, ../components/sass/_layout.scss */
+  /* line 587, ../components/sass/_layout.scss */
   .contactText {
     padding: 15px 15px 0;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 582, ../components/sass/_layout.scss */
+  /* line 594, ../components/sass/_layout.scss */
   .wrapper-decoImg {
     display: none;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1023px) {
-  /* line 589, ../components/sass/_layout.scss */
+  /* line 601, ../components/sass/_layout.scss */
   .container-decoImg {
     left: -108%;
     width: 207%;
@@ -774,7 +783,7 @@ ul, li {
 }
 /*====================== CONTACT US PAGE LAYOUT - end ======================*/
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning =======================*/
-/* line 602, ../components/sass/_layout.scss */
+/* line 614, ../components/sass/_layout.scss */
 #About, #Skills, #Portfolio, #ContactIndi {
   margin-bottom: 2%;
   padding-bottom: 1%;
@@ -784,7 +793,7 @@ ul, li {
 }
 
 @media screen and (max-width: 639px) {
-  /* line 616, ../components/sass/_layout.scss */
+  /* line 628, ../components/sass/_layout.scss */
   #About, #Skills, #Portfolio, #ContactIndi {
     padding: 15px 15px 0;
   }
@@ -1229,32 +1238,21 @@ and open the template in the editor.
 .grid li .button a {
   width: 100%;
   padding: 7px 15px;
-  font-size: 1.2em;
-  color: #dbedd6;
-  background-color: #6b7569;
-  border: 2px dashed #464c45;
-  border-radius: 3px;
 }
-/* line 79, ../components/sass/_grid.scss */
-.grid li .button a:hover {
-  background-color: #464c45;
-  border: 2px dashed #6b7569;
-  text-decoration: none;
-}
-/* line 88, ../components/sass/_grid.scss */
+/* line 76, ../components/sass/_grid.scss */
 .grid:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 98, ../components/sass/_grid.scss */
+/* line 86, ../components/sass/_grid.scss */
 .grid-contentHolder {
   font-size: 1rem;
   padding: 0px 25px 10px 25px;
   box-sizing: border-box;
 }
-/* line 103, ../components/sass/_grid.scss */
+/* line 91, ../components/sass/_grid.scss */
 .grid-contentHolder img {
   width: 12em;
   height: auto;
@@ -1266,12 +1264,12 @@ and open the template in the editor.
 /**** Default grid - end ****/
 /********** Stretched / full width / blog-section grid (contact us page) - beginning ***************/
 /********** grid - blog-section *******/
-/* line 125, ../components/sass/_grid.scss */
+/* line 113, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout li {
   width: 32%;
   padding-bottom: 0%;
 }
-/* line 130, ../components/sass/_grid.scss */
+/* line 118, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout img {
   width: 100%;
   height: auto;
@@ -1279,26 +1277,26 @@ and open the template in the editor.
   float: none;
   display: block;
 }
-/* line 139, ../components/sass/_grid.scss */
+/* line 127, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder {
   width: 100%;
 }
-/* line 142, ../components/sass/_grid.scss */
+/* line 130, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder p.min-height-applied {
   min-height: 70px;
   box-sizing: border-box;
 }
-/* line 147, ../components/sass/_grid.scss */
+/* line 135, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .email {
   min-height: 60px;
   box-sizing: border-box;
 }
-/* line 151, ../components/sass/_grid.scss */
+/* line 139, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .socialIcons {
   padding: 5px;
   margin-bottom: 6%;
 }
-/* line 155, ../components/sass/_grid.scss */
+/* line 143, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .socialIcons img {
   width: 13%;
   height: auto;
@@ -1307,18 +1305,18 @@ and open the template in the editor.
   display: inline;
 }
 
-/* line 169, ../components/sass/_grid.scss */
+/* line 157, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child {
   border: 2px dashed #353a34;
   background-color: #464c45;
 }
 
-/* line 173, ../components/sass/_grid.scss */
+/* line 161, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li {
   background-color: #464c45;
 }
 
-/* line 178, ../components/sass/_grid.scss */
+/* line 166, ../components/sass/_grid.scss */
 .grid.grid-full-width > li {
   width: 100%;
   border-top: 0;
@@ -1328,17 +1326,17 @@ and open the template in the editor.
   padding-top: 15px;
 }
 
-/* line 187, ../components/sass/_grid.scss */
+/* line 175, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li:last-child {
   border-bottom: 0;
 }
 
-/* line 191, ../components/sass/_grid.scss */
+/* line 179, ../components/sass/_grid.scss */
 .grid.grid-full-width > li:first-child {
   padding-top: 0;
 }
 
-/* line 195, ../components/sass/_grid.scss */
+/* line 183, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li > h2 {
   font-size: 1.9rem;
   line-height: 2rem;
@@ -1346,36 +1344,36 @@ and open the template in the editor.
   margin-bottom: 20px;
 }
 
-/* line 202, ../components/sass/_grid.scss */
+/* line 190, ../components/sass/_grid.scss */
 .grid-stretched-layout .grid-full-width.blog-section p.button a, .grid-stretched-layout .grid-full-width.blog-section button a {
   padding: 5px 10px;
 }
 
-/* line 207, ../components/sass/_grid.scss */
+/* line 195, ../components/sass/_grid.scss */
 .grid-full-width.blog-section {
   margin-bottom: 0px;
 }
-/* line 211, ../components/sass/_grid.scss */
+/* line 199, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li img {
   margin-bottom: 1.4em;
 }
-/* line 215, ../components/sass/_grid.scss */
+/* line 203, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li h3 {
   font-size: 1.3em;
   line-height: 1.3;
   margin-bottom: 1em;
 }
-/* line 221, ../components/sass/_grid.scss */
+/* line 209, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li h4 {
   font-size: 1.2em;
   line-height: 1.2;
   margin-bottom: 1em;
 }
-/* line 227, ../components/sass/_grid.scss */
+/* line 215, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li p {
   margin-bottom: .84em;
 }
-/* line 232, ../components/sass/_grid.scss */
+/* line 220, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li .button a:hover {
   background-color: #3f443e;
 }
@@ -1383,22 +1381,22 @@ and open the template in the editor.
 /**** Stretched / full width / blog-section grid (contac us page) - beginning  - end ****/
 /**** Grids media queries - beginning ****/
 @media screen and (max-width: 900px) {
-  /* line 250, ../components/sass/_grid.scss */
+  /* line 238, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li {
     width: 49%;
   }
 
-  /* line 256, ../components/sass/_grid.scss */
+  /* line 244, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li:last-child {
     clear: both;
     width: 100%;
   }
 
-  /* line 261, ../components/sass/_grid.scss */
+  /* line 249, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li {
     width: 100%;
   }
-  /* line 264, ../components/sass/_grid.scss */
+  /* line 252, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li img {
     width: 50%;
     height: auto;
@@ -1408,39 +1406,39 @@ and open the template in the editor.
     padding-bottom: 0;
     margin-bottom: 1%;
   }
-  /* line 274, ../components/sass/_grid.scss */
+  /* line 262, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li p {
     clear: both;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 285, ../components/sass/_grid.scss */
+  /* line 273, ../components/sass/_grid.scss */
   .grid li {
     width: 100%;
     padding-top: 1%;
     margin-bottom: 2%;
     box-sizing: border-box;
   }
-  /* line 291, ../components/sass/_grid.scss */
+  /* line 279, ../components/sass/_grid.scss */
   .grid li h3 {
     margin-top: 1.3em;
     font-size: 1.8em;
     min-height: initial;
   }
-  /* line 297, ../components/sass/_grid.scss */
+  /* line 285, ../components/sass/_grid.scss */
   .grid li h4 {
     margin-bottom: .8em;
     font-size: 1.5em;
     min-height: initial;
   }
-  /* line 303, ../components/sass/_grid.scss */
+  /* line 291, ../components/sass/_grid.scss */
   .grid li p {
     display: inline-block;
     width: 100%;
     margin: 0;
     min-height: initial;
   }
-  /* line 312, ../components/sass/_grid.scss */
+  /* line 300, ../components/sass/_grid.scss */
   .grid li .button a {
     padding: 5px 10px;
     width: 100%;
@@ -1451,51 +1449,51 @@ and open the template in the editor.
     white-space: nowrap;
     font-size: 1.2em;
   }
-  /* line 324, ../components/sass/_grid.scss */
+  /* line 312, ../components/sass/_grid.scss */
   .grid li .grid-contentHolder {
     padding: 0px 15px 10px 15px;
   }
-  /* line 327, ../components/sass/_grid.scss */
+  /* line 315, ../components/sass/_grid.scss */
   .grid li .grid-contentHolder img {
     width: 11em;
     margin-right: 3%;
   }
 
-  /* line 335, ../components/sass/_grid.scss */
+  /* line 323, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout {
     margin-bottom: 1%;
   }
-  /* line 339, ../components/sass/_grid.scss */
+  /* line 327, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li {
     clear: both;
     width: 100%;
     padding-bottom: 5%;
   }
-  /* line 347, ../components/sass/_grid.scss */
+  /* line 335, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder img {
     width: 100%;
     margin-top: 3%;
   }
-  /* line 351, ../components/sass/_grid.scss */
+  /* line 339, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .email {
     min-height: 70px;
     box-sizing: border-box;
   }
-  /* line 356, ../components/sass/_grid.scss */
+  /* line 344, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .socialIcons {
     margin-bottom: 1%;
   }
-  /* line 358, ../components/sass/_grid.scss */
+  /* line 346, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .socialIcons img {
     padding: 2%;
   }
 
-  /* line 366, ../components/sass/_grid.scss */
+  /* line 354, ../components/sass/_grid.scss */
   .grid.grid-full-width > li {
     padding-top: 0%;
   }
 
-  /* line 371, ../components/sass/_grid.scss */
+  /* line 359, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li img {
     padding-top: 0%;
     margin-top: 0%;
@@ -1503,42 +1501,42 @@ and open the template in the editor.
     margin-bottom: 4%;
   }
 
-  /* line 380, ../components/sass/_grid.scss */
+  /* line 368, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li > h2 {
     font-size: 1.9rem;
     padding: 10px 15px 0 15px;
     margin-bottom: 0;
   }
 
-  /* line 386, ../components/sass/_grid.scss */
+  /* line 374, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li:last-child {
     padding-bottom: 1%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 397, ../components/sass/_grid.scss */
+  /* line 385, ../components/sass/_grid.scss */
   .grid li {
     width: 49%;
     padding-top: 3%;
     margin-bottom: 2%;
     box-sizing: border-box;
   }
-  /* line 403, ../components/sass/_grid.scss */
+  /* line 391, ../components/sass/_grid.scss */
   .grid li h3 {
     font-size: 1.7em;
     margin-bottom: .7em;
     padding-top: 7px;
   }
-  /* line 410, ../components/sass/_grid.scss */
+  /* line 398, ../components/sass/_grid.scss */
   .grid li h4 {
     font-size: 1.4em;
     margin-bottom: .5em;
   }
-  /* line 416, ../components/sass/_grid.scss */
+  /* line 404, ../components/sass/_grid.scss */
   .grid li .button {
     width: 100%;
   }
-  /* line 418, ../components/sass/_grid.scss */
+  /* line 406, ../components/sass/_grid.scss */
   .grid li .button a {
     width: 100%;
     white-space: nowrap;
@@ -1547,17 +1545,17 @@ and open the template in the editor.
     box-sizing: border-box;
     clear: both;
   }
-  /* line 430, ../components/sass/_grid.scss */
+  /* line 418, ../components/sass/_grid.scss */
   .grid .grid-contentHolder {
     min-height: 156px;
     box-sizing: border-box;
   }
-  /* line 434, ../components/sass/_grid.scss */
+  /* line 422, ../components/sass/_grid.scss */
   .grid .grid-contentHolder img {
     padding-bottom: 15px;
   }
 
-  /* line 440, ../components/sass/_grid.scss */
+  /* line 428, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li p.button a, .grid.grid-stretched-layout li button a {
     width: 100%;
     display: block;
@@ -1567,7 +1565,7 @@ and open the template in the editor.
 }
 /**** Grids media queries - end ****/
 /**** Our blog-posts - Default grid extension for our blog page - beginning ****/
-/* line 456, ../components/sass/_grid.scss */
+/* line 444, ../components/sass/_grid.scss */
 .blog-post h3, .blog-post h4 {
   clear: both;
   min-height: 3.1em;
@@ -1575,24 +1573,24 @@ and open the template in the editor.
   line-height: 1.5;
   padding-top: .4em;
 }
-/* line 464, ../components/sass/_grid.scss */
+/* line 452, ../components/sass/_grid.scss */
 .blog-post .blog-summary {
   min-height: 8em;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 471, ../components/sass/_grid.scss */
+  /* line 459, ../components/sass/_grid.scss */
   .blog-post .blog-summary {
     min-height: initial;
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 764px) {
-  /* line 480, ../components/sass/_grid.scss */
+  /* line 468, ../components/sass/_grid.scss */
   .blog-post h3, .blog-post h4 {
     min-height: 4.5em;
   }
-  /* line 484, ../components/sass/_grid.scss */
+  /* line 472, ../components/sass/_grid.scss */
   .blog-post .blog-summary {
     min-height: 11em;
   }
@@ -1622,18 +1620,17 @@ and open the template in the editor.
   margin: 0 5px 0 15px;
   display: inline-block;
   vertical-align: middle;
-  display: inline-block;
   font-size: 1.5rem;
   line-height: 1.5;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 36, ../components/sass/_mixitup.scss */
+/* line 35, ../components/sass/_mixitup.scss */
 .control-bar .group {
   display: inline-block;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
-/* line 41, ../components/sass/_mixitup.scss */
+/* line 40, ../components/sass/_mixitup.scss */
 .control-bar .group button {
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
@@ -1646,14 +1643,16 @@ and open the template in the editor.
   padding: 5px 10px;
   min-width: 70px;
   font-weight: 700;
+  border-radius: 3px;
+  margin-bottom: 6px;
 }
-/* line 54, ../components/sass/_mixitup.scss */
+/* line 55, ../components/sass/_mixitup.scss */
 .control-bar .group button:hover, .control-bar .group button:focus, .control-bar .group button.active {
   background: #B9C8B5;
   border: 2px dashed rgba(83, 90, 81, 0.5);
   color: #3A3F39;
 }
-/* line 63, ../components/sass/_mixitup.scss */
+/* line 65, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button {
   position: relative;
 }
@@ -1677,74 +1676,81 @@ and open the template in the editor.
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 66, ../components/sass/_mixitup.scss */
+/* line 68, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button[data-filter=".webdev"]:after {
   border-right-color: #ABF381;
 }
-/* line 69, ../components/sass/_mixitup.scss */
+/* line 71, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button[data-filter=".drupal"]:after {
   border-right-color: #137CC1;
 }
-/* line 72, ../components/sass/_mixitup.scss */
+/* line 74, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button[data-filter=".threeD"]:after {
   border-right-color: #FFB587;
 }
-/* line 75, ../components/sass/_mixitup.scss */
+/* line 77, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button[data-filter=".animation"]:after {
   border-right-color: #ff7621;
 }
-/* line 78, ../components/sass/_mixitup.scss */
+/* line 80, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button[data-filter=".drawing"]:after {
   border-right-color: #f8b0c9;
 }
 
-/* line 86, ../components/sass/_mixitup.scss */
+/* line 90, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .group:first-child {
   margin-bottom: 1%;
 }
-/* line 91, ../components/sass/_mixitup.scss */
+/* line 96, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button {
+  width: 10.9%;
+  min-height: 46px;
+  min-width: initial;
+  vertical-align: top;
+}
+/* line 105, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".html"]:after {
   border-right-color: #76DFC0;
 }
-/* line 94, ../components/sass/_mixitup.scss */
+/* line 108, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".css"]:after {
   border-right-color: #26a580;
 }
-/* line 97, ../components/sass/_mixitup.scss */
+/* line 111, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".sass"]:after {
   border-right-color: #1a6f56;
 }
-/* line 100, ../components/sass/_mixitup.scss */
+/* line 114, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".css-animation"]:after {
   border-right-color: #0e3d30;
 }
-/* line 103, ../components/sass/_mixitup.scss */
+/* line 117, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".drupal-project"]:after {
   border-right-color: #137CC1;
 }
-/* line 106, ../components/sass/_mixitup.scss */
+/* line 120, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".website-project"]:after {
   border-right-color: #859900;
 }
-/* line 109, ../components/sass/_mixitup.scss */
+/* line 123, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".js-jquery"]:after {
   border-right-color: #E24F83;
 }
-/* line 112, ../components/sass/_mixitup.scss */
+/* line 126, ../components/sass/_mixitup.scss */
 #Portfolio .control-bar .filter-buttons button[data-filter=".angularjs"]:after {
   border-right-color: #830E37;
 }
 
 @media screen and (min-width: 320px) and (max-width: 534px) {
-  /* line 126, ../components/sass/_mixitup.scss */
+  /* line 140, ../components/sass/_mixitup.scss */
   .control-bar .group button {
     padding: 3px 7px;
   }
-  /* line 131, ../components/sass/_mixitup.scss */
+  /* line 145, ../components/sass/_mixitup.scss */
   .control-bar .filter-buttons {
     width: 100%;
   }
-  /* line 134, ../components/sass/_mixitup.scss */
+  /* line 148, ../components/sass/_mixitup.scss */
   .control-bar .filter-buttons button {
     display: block;
     min-width: initial;
@@ -1754,21 +1760,21 @@ and open the template in the editor.
   }
 }
 @media screen and (max-width: 615px) {
-  /* line 148, ../components/sass/_mixitup.scss */
+  /* line 162, ../components/sass/_mixitup.scss */
   .control-bar label {
     display: block;
     margin: .4em .1em;
   }
 }
 @media screen and (max-width: 823px) {
-  /* line 156, ../components/sass/_mixitup.scss */
+  /* line 170, ../components/sass/_mixitup.scss */
   .control-bar .group:first-child {
     margin-bottom: 1%;
   }
 }
 /********* mix it up buttons - end **************/
 /********* mix it up grid - beginning **************/
-/* line 168, ../components/sass/_mixitup.scss */
+/* line 182, ../components/sass/_mixitup.scss */
 #Container {
   text-align: justify;
   font-family: "zero-width";
@@ -1788,7 +1794,7 @@ and open the template in the editor.
 #Container .gap {
   width: 23%;
 }
-/* line 171, ../components/sass/_mixitup.scss */
+/* line 185, ../components/sass/_mixitup.scss */
 #Container .mix {
   display: none;
   background: rgba(255, 255, 255, 0.2);
@@ -1825,28 +1831,28 @@ and open the template in the editor.
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 177, ../components/sass/_mixitup.scss */
+/* line 191, ../components/sass/_mixitup.scss */
 #Container .mix.webdev:after {
   border-right-color: #ABF381;
 }
-/* line 181, ../components/sass/_mixitup.scss */
+/* line 195, ../components/sass/_mixitup.scss */
 #Container .mix.drupal:after {
   border-right-color: #137CC1;
 }
-/* line 185, ../components/sass/_mixitup.scss */
+/* line 199, ../components/sass/_mixitup.scss */
 #Container .mix.threeD:after {
   border-right-color: #FFB587;
 }
-/* line 188, ../components/sass/_mixitup.scss */
+/* line 202, ../components/sass/_mixitup.scss */
 #Container .mix.animation:after {
   border-right-color: #ff7621;
 }
-/* line 191, ../components/sass/_mixitup.scss */
+/* line 205, ../components/sass/_mixitup.scss */
 #Container .mix.drawing:after {
   border-right-color: #f8b0c9;
 }
 
-/* line 196, ../components/sass/_mixitup.scss */
+/* line 210, ../components/sass/_mixitup.scss */
 #PortfolioContainer {
   text-align: justify;
   font-family: "zero-width";
@@ -1866,7 +1872,7 @@ and open the template in the editor.
 #PortfolioContainer .gap {
   width: 23%;
 }
-/* line 200, ../components/sass/_mixitup.scss */
+/* line 214, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix {
   display: none;
   background: rgba(255, 255, 255, 0.2);
@@ -1905,46 +1911,76 @@ and open the template in the editor.
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 208, ../components/sass/_mixitup.scss */
+/* line 222, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix img {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-/* line 215, ../components/sass/_mixitup.scss */
+/* line 228, ../components/sass/_mixitup.scss */
+#PortfolioContainer .portfoMix h3 {
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin-top: 1%;
+  padding-bottom: 2%;
+}
+/* line 235, ../components/sass/_mixitup.scss */
+#PortfolioContainer .portfoMix h4 {
+  font-size: 1.3em;
+  line-height: 1.3;
+  margin-top: 1%;
+  padding-bottom: 5%;
+  color: #B9C8B5;
+}
+/* line 243, ../components/sass/_mixitup.scss */
+#PortfolioContainer .portfoMix .button {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 248, ../components/sass/_mixitup.scss */
+#PortfolioContainer .portfoMix .button a {
+  background-color: #5a6258;
+  font-size: 1.1em;
+}
+/* line 252, ../components/sass/_mixitup.scss */
+#PortfolioContainer .portfoMix .button a:hover {
+  border: 2px dashed #7f8a7d;
+}
+/* line 260, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.html:after {
   border-right-color: #76DFC0;
 }
-/* line 218, ../components/sass/_mixitup.scss */
+/* line 263, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.css:after {
   border-right-color: #26a580;
 }
-/* line 221, ../components/sass/_mixitup.scss */
+/* line 266, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.sass:after {
   border-right-color: #1a6f56;
 }
-/* line 224, ../components/sass/_mixitup.scss */
+/* line 269, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.css-animation:after {
   border-right-color: #0e3d30;
 }
-/* line 227, ../components/sass/_mixitup.scss */
+/* line 272, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.drupal-project:after {
   border-right-color: #137CC1;
 }
-/* line 230, ../components/sass/_mixitup.scss */
+/* line 275, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.website-project:after {
   border-right-color: #859900;
 }
-/* line 233, ../components/sass/_mixitup.scss */
+/* line 278, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.js-jquery:after {
   border-right-color: #E24F83;
 }
-/* line 236, ../components/sass/_mixitup.scss */
+/* line 281, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.angularjs:after {
   border-right-color: #830E37;
 }
 
-/* line 241, ../components/sass/_mixitup.scss */
+/* line 286, ../components/sass/_mixitup.scss */
 #Container > *,
 #PortfolioContainer > * {
   display: inline-block;
@@ -1955,49 +1991,109 @@ and open the template in the editor.
 }
 
 @media screen and (max-width: 459px) {
-  /* line 252, ../components/sass/_mixitup.scss */
+  /* line 297, ../components/sass/_mixitup.scss */
   #Container .mix {
     width: 98%;
     min-height: 44px;
   }
-  /* line 255, ../components/sass/_mixitup.scss */
+  /* line 300, ../components/sass/_mixitup.scss */
   #Container .mix p {
     padding: .1em 1.5em;
     font-size: 1.2rem;
     line-height: 1.2;
   }
-  /* line 262, ../components/sass/_mixitup.scss */
+  /* line 307, ../components/sass/_mixitup.scss */
   #Container .gap {
     width: 98%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 551px) {
-  /* line 274, ../components/sass/_mixitup.scss */
+  /* line 319, ../components/sass/_mixitup.scss */
   #Container .mix {
     width: 48%;
     min-height: 60px;
   }
-  /* line 278, ../components/sass/_mixitup.scss */
+  /* line 323, ../components/sass/_mixitup.scss */
   #Container .mix p {
     padding: .1em 1.5em;
     font-size: 1.3rem;
     line-height: 1.3;
   }
-  /* line 285, ../components/sass/_mixitup.scss */
+  /* line 330, ../components/sass/_mixitup.scss */
   #Container .gap {
     width: 48%;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 648px) {
-  /* line 297, ../components/sass/_mixitup.scss */
+  /* line 342, ../components/sass/_mixitup.scss */
   #Container .mix {
     min-height: 117px;
   }
 }
 @media screen and (min-width: 649px) and (max-width: 831px) {
-  /* line 306, ../components/sass/_mixitup.scss */
+  /* line 351, ../components/sass/_mixitup.scss */
   #Container .mix {
     min-height: 94px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 535px) {
+  /* line 360, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label {
+    display: block;
+  }
+  /* line 364, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button {
+    width: 100%;
+    min-height: 30px;
+    padding: 5px 10px 0;
+  }
+}
+@media screen and (min-width: 536px) and (max-width: 639px) {
+  /* line 377, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label {
+    display: block;
+  }
+  /* line 381, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button {
+    width: 49%;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 818px) {
+  /* line 393, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label {
+    display: block;
+  }
+  /* line 397, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button {
+    width: 32%;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: 819px) and (max-width: 884px) {
+  /* line 409, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label {
+    display: block;
+  }
+  /* line 413, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button {
+    width: 24.4%;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: 885px) and (max-width: 1083px) {
+  /* line 425, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label {
+    display: block;
+  }
+  /* line 428, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons {
+    display: block;
+  }
+  /* line 431, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button {
+    width: 11.8%;
+    font-size: 1.2em;
   }
 }
 /********* mix it up grid - end **************/
