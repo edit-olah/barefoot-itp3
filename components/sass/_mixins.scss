@@ -6,6 +6,24 @@
 // _mixins
 // ========
 
+@mixin mixitupContainer() {
+    text-align: justify;
+    font-family: $zerowidthFont;
+    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+    box-sizing: border-box;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 0;
+    
+    &:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+    }
+    .gap {
+	width: $mixitupWidthDefault;
+    }
+}
 
 @mixin mixitupRect($scale) {
     position:relative;
@@ -31,10 +49,21 @@
 }
 
 
-
-
-
-
+@mixin mixitupMix() {
+    	display: none;
+	background: rgba(255, 255, 255, 0.2);
+	margin-bottom: 2%;
+	vertical-align: top;
+	width: $mixitupWidthDefault;
+	min-height: 80px;
+	border: 2px dashed lighten($primaryBG, 12);
+	
+	p {
+	    line-height: 1.4em;
+	    font-size: 1.4rem;
+	    padding: .5em 1em;
+	}
+}
 
 
 

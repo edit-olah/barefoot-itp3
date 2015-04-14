@@ -56,37 +56,79 @@
 		border: 2px dashed rgba(83,90,81,.5);
 		color: $primaryBG;
 	    }
-	    
-	    
-	}
-	
-	.filter-buttons {
-	    button {
-		@include mixitupRect(10px);
-	    }
-	    button[data-filter=".webdev"]:after{
-		border-right-color: $lightGreen;
-	    }
-	    button[data-filter=".drupal"]:after{
-		border-right-color: darken($lightGreen,30);
-	    }
-	    button[data-filter=".threeD"]:after{
-		border-right-color: $lightOrange;
-	    }
-	    button[data-filter=".animation"]:after{
-		border-right-color: darken($lightOrange,20);
-	    }
-	    button[data-filter=".drawing"]:after{
-		border-right-color: $lightMagneta;
-	    }
 	}
     }
   
+    .filter-buttons {
+	button {
+	    @include mixitupRect(10px);
+	}
+	button[data-filter=".webdev"]:after{
+	    border-right-color: $lightGreen;
+	}
+	button[data-filter=".drupal"]:after{
+	    border-right-color: $drupalBlue;
+	}
+	button[data-filter=".threeD"]:after{
+	    border-right-color: $lightOrange;
+	}
+	button[data-filter=".animation"]:after{
+	    border-right-color: darken($lightOrange,20);
+	}
+	button[data-filter=".drawing"]:after{
+	    border-right-color: lighten($lightMagneta,10);
+	}
+    }  
 }
+
+#Portfolio {
+    .control-bar {
+	.group:first-child {
+	    margin-bottom: 1%;
+	}
+	
+	.filter-buttons {
+	    button[data-filter=".html"]:after{
+		border-right-color: $lightTurq;
+	    }
+	    button[data-filter=".css"]:after{
+		border-right-color: darken($lightTurq,27);
+	    }
+	    button[data-filter=".sass"]:after{
+		border-right-color: darken($lightTurq,40);
+	    }
+	    button[data-filter=".css-animation"]:after{
+		border-right-color: darken($lightTurq,52);
+	    }
+	    button[data-filter=".drupal-project"]:after{
+		border-right-color: $drupalBlue;
+	    }
+	    button[data-filter=".website-project"]:after{
+		border-right-color: $secondaryFontColor;
+	    }
+	    button[data-filter=".js-jquery"]:after{
+		border-right-color: $semiLightMagneta;
+	    }
+	    button[data-filter=".angularjs"]:after{
+		border-right-color: $semiDarkMagneta;
+	    }
+	    
+	}  
+    }
+}
+
+
 
 @media screen and (min-width: 320px) and (max-width: 534px) {
     .control-bar{
-	.group.filter-buttons{
+	
+	.group{
+	    button{
+		padding: 3px 7px;
+	    }
+	}
+	
+	.filter-buttons{
 	    width:100%;
 	    
 	    button{
@@ -124,73 +166,86 @@
 /********* mix it up grid - beginning **************/
 
 #Container {
-    text-align: justify;
-    font-family: $zerowidthFont;
-    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    min-height: 200px;
-    overflow: hidden;
-    padding: 0;
-    
-    &:after {
-	content: '';
-	display: inline-block;
-	width: 100%;
-    }
+    @include mixitupContainer;
     
     .mix {
-	display: none;
-	position: relative;
-	background: rgba(255, 255, 255, 0.2);
-	margin-bottom: 2%;
-	vertical-align: top;
-	width: $mixitupWidthDefault;
-	min-height: 80px;
-	border: 2px dashed lighten($primaryBG, 12);
+	@include mixitupMix;
 	
 	@include mixitupRect(20px);
-	
-	p {
-	    line-height: 1.4em;
-	    font-size: 1.4rem;
-	    padding: .5em 1em;
-	}
     }
     
-    .gap {
-	width: $mixitupWidthDefault;
+    .mix.webdev:after {
+	border-right-color: $lightGreen;
+    }
+
+    .mix.drupal:after {
+	border-right-color: $drupalBlue;
+    }
+
+    .mix.threeD:after {
+	border-right-color: $lightOrange;
+    }
+    .mix.animation:after {
+	border-right-color: darken($lightOrange,20);
+    }
+    .mix.drawing:after {
+	border-right-color:  lighten($lightMagneta,10);
     }
 }
 
-#Container > * {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  font-family: $baseFont;
-  font-size: 1rem;
+#PortfolioContainer {
+    
+  @include mixitupContainer;
+  
+  .portfoMix {
+    @include mixitupMix;
+    
+    @include mixitupRect(20px);
+    
+    padding: 10px;
+    box-sizing: border-box;
+    
+    img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+    }
+  }
+  
+  .portfoMix.html:after {
+	border-right-color: $lightTurq;
+  }
+  .portfoMix.css:after {
+	border-right-color: darken($lightTurq,27);
+  }
+  .portfoMix.sass:after {
+	border-right-color: darken($lightTurq,40);
+  }
+  .portfoMix.css-animation:after {
+	border-right-color: darken($lightTurq,52);
+  }
+  .portfoMix.drupal-project:after {
+	border-right-color: $drupalBlue;
+  }
+  .portfoMix.website-project:after {
+	border-right-color: $secondaryFontColor;
+  }
+  .portfoMix.js-jquery:after {
+	border-right-color: $semiLightMagneta;
+  }
+  .portfoMix.angularjs:after {
+	border-right-color:  $semiDarkMagneta;
+  }
 }
 
-#Container .mix.webdev:after {
-  border-right-color: $lightGreen;
+#Container > *,
+#PortfolioContainer > * {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    font-family: $baseFont;
+    font-size: 1rem;
 }
-
-#Container .mix.drupal:after {
-  border-right-color: darken($lightGreen,30);
-}
-
-#Container .mix.threeD:after {
-  border-right-color: $lightOrange;
-}
-#Container .mix.animation:after {
-  border-right-color: darken($lightOrange,20);
-}
-#Container .mix.drawing:after {
-  border-right-color: $lightMagneta;
-}
-
 
 @media screen and (max-width: 459px){
     #Container {
