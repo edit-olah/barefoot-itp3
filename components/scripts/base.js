@@ -2,9 +2,7 @@ $( document ).ready(function() {
     
     // Instantiate MixItUp:
     
-    $('#Container').mixItUp({
-
-    });
+    $('#Container').mixItUp();
     
     $('#PortfolioContainer').mixItUp({
 	selectors: {
@@ -12,4 +10,12 @@ $( document ).ready(function() {
 	    filter: '.filter-portfo'
 	}
     });
+    
+    $(".click-follow").click(function() {
+	$link = $(this).find("a").attr("href"), 
+	$linktarget = $(this).find("a").attr("target"), 
+	"_blank" === $linktarget ? window.open($link) : window.location.href = $link;
+    });
+    
+
 });
