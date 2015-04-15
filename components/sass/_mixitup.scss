@@ -94,7 +94,7 @@
 	
 	.filter-buttons {
 	    button {
-		width: 10.9%;
+		width: 10.8%;
 		min-height: 46px;
 		min-width: initial;
 		vertical-align: top;
@@ -230,6 +230,7 @@
 	line-height: 1.4;
 	margin-top: 1%;
 	padding-bottom: 2%;
+	min-height: 41px;
     }
     
     h4 {
@@ -238,6 +239,7 @@
 	margin-top: 1%;
 	padding-bottom: 5%;
 	color: $primaryFontColor;
+	min-height: 39px;
     }
     
     .button{
@@ -354,6 +356,7 @@
     }
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 535px) {
     #Portfolio{
 	.control-bar {
@@ -392,6 +395,7 @@
 	.control-bar {
 	    label{
 		display: block;
+		margin: .4em .1em;
 	    }
 	    .filter-buttons {
 		button {
@@ -436,6 +440,84 @@
 	}
     }
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+     #PortfolioContainer { 
+	 
+	.gap {
+	    width: $mixitupWidth2;
+	}
+	 
+	.portfoMix {
+	    
+	    width: $mixitupWidth2;
+	    
+	    
+	    
+	    .button{
+
+		a {
+		    font-size: 1em;
+		}
+	    }
+	}
+    }
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+     #PortfolioContainer { 
+	 
+	.gap {
+	    width: $mixitupWidth4;
+	}
+	 
+	.portfoMix {
+	    
+	    width: $mixitupWidth4;
+	    
+	    
+	    
+	    .button{
+
+		a {
+		    font-size: 1.1em;
+		}
+	    }
+	}
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 808px) {
+     #PortfolioContainer {  
+	.portfoMix {
+	    .button{
+
+		a {
+		    font-size: .9em;
+		}
+	    }
+	}
+    }
+}
+
+@media screen and (min-width: 809px) and (max-width: 863px) {
+     #PortfolioContainer {  
+	.portfoMix {
+	    .button{
+
+		a {
+		    font-size: 1em;
+		}
+	    }
+	}
+    }
+}
+
+
 
 /********* mix it up grid - end **************/
 

@@ -2082,8 +2082,7 @@ $( document ).ready(function() {
     $('#PortfolioContainer').mixItUp({
 	selectors: {
 	    target: '.portfoMix',
-	    filter: '.filter-portfo',
-	    sort: '.sort-portfo'
+	    filter: '.filter-portfo'
 	}
     });
 });
