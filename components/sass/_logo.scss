@@ -16,6 +16,10 @@ and open the template in the editor.
 
 .logo-container {
     float: left;
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 0 10px;
     
     .logo {
 	display:block;
@@ -29,12 +33,6 @@ and open the template in the editor.
     }
 }
 
-
-#HeaderWrapper .container .logo-container{
-    //margin-top: 1%;
-    margin-bottom: 0;
-    padding: 0 10px;
-}
 
 #TopBanner .logo-container {
     margin: 1% 0 1% 10%;

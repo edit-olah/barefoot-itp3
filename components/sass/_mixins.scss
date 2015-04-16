@@ -21,7 +21,7 @@
 	width: 100%;
     }
     .gap {
-	width: $mixitupWidthDefault;
+	width: $mixitupWidth4;
     }
 }
 
@@ -54,14 +54,14 @@
 	background: rgba(255, 255, 255, 0.2);
 	margin-bottom: 2%;
 	vertical-align: top;
-	width: $mixitupWidthDefault;
-	min-height: 80px;
+	width: $mixitupWidth4;
+	min-height: 60px;
 	border: 2px dashed lighten($primaryBG, 12);
 	
 	p {
-	    line-height: 1.4em;
-	    font-size: 1.4rem;
-	    padding: .5em 1em;
+	    line-height: 1.3;
+	    font-size: 1.3rem;
+	    padding: .3em 1em;
 	}
 }
 

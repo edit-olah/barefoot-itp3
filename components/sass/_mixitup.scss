@@ -93,6 +93,8 @@
 	}
 	
 	.filter-buttons {
+	    width: 100%;
+	    
 	    button {
 		width: 10.8%;
 		min-height: 46px;
@@ -297,7 +299,7 @@
 @media screen and (max-width: 459px){
     #Container {
 	.mix {
-	    width: $mixitupWidth3;
+	    width: $mixitupWidth1;
 	    min-height: 44px;
 	    p {
 		padding: .1em 1.5em;
@@ -307,7 +309,7 @@
 	}
 	
 	.gap {
-	    width: $mixitupWidth3;
+	    width: $mixitupWidth1;
 	}
 
     }
@@ -471,12 +473,12 @@
      #PortfolioContainer { 
 	 
 	.gap {
-	    width: $mixitupWidth4;
+	    width: $mixitupWidth3;
 	}
 	 
 	.portfoMix {
 	    
-	    width: $mixitupWidth4;
+	    width: $mixitupWidth3;
 	    
 	    
 	    

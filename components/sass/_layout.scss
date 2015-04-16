@@ -17,9 +17,9 @@ body {
   background: $primaryBG;
   font-family: $baseFont;
   font-weight: $normal;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.6;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
   color: $primaryFontColor;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -35,7 +35,7 @@ body {
     line-height:0;
     font-size:0;
 }
-
+/*
 .leftContainer {
     float:left;
 }
@@ -43,7 +43,12 @@ body {
 .rightContainer {
     float: right;
 }
+*/
 
+.leftContainer, .rightContainer{
+    display: inline-block;
+    vertical-align: top;
+}
 .max-height-applied{
     max-height: 3.2em;
 }
@@ -66,23 +71,26 @@ body {
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: lighten($semiLightGreen, 10);
     margin-bottom: .7em;
-    line-height: 1.3em;
+    line-height: 1.6;
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: $semiLightGreen;
     margin-bottom: .6em;
+    line-height: 1.4;
 
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: .5em;
+    line-height: 1.3;
 }
+
 
 a {
     text-decoration: none;
@@ -98,7 +106,8 @@ a:hover {
 }
 
 a, p, li {
-    font-size: 1em;
+    font-size: 1.2em;
+    line-height: 1.5;
     margin-bottom: .5em;
 }
 
@@ -131,7 +140,6 @@ ul, li {
     
     a{
 	width: 100%;
-	display: inline-block;
 	box-sizing: border-box;
 	margin-bottom: 0;
 	padding: 5px 10px;
@@ -151,7 +159,6 @@ ul, li {
 @media screen and (max-width: 639px) {
     
     h1 {
-	margin-top: 5%;
 	font-size: 1.5em;
     }
     
@@ -236,8 +243,7 @@ ul, li {
 	width: 19%;
 	padding-top: 3%;
 	margin-bottom: 1%;
-	font-size: 1.3rem;
-	line-height: 2;
+	font-size: 1.2rem;
 	text-align: center;
 	font-family: $baseFont;
     }
@@ -278,6 +284,14 @@ ul, li {
     padding: 0;
 }*/
 
+@media screen and (max-width:593px) {
+    .nav {
+	a:link {
+	 padding: 20px 1% !important;
+	}
+    }
+}
+
 
 @media screen and (max-width: 639px) {
      #MainNav {
@@ -309,20 +323,6 @@ ul, li {
 	
 	a:active {
 	   border: 2px dashed lighten($primaryBG, 5);
-	}
-	
-	/*a:visited {
-	   border: 2px dashed lighten($primaryBG, 5);
-	}*/
-    }
-}
-
-
-
-@media screen and (min-width:320px) and (max-width:548px) {
-    .nav {
-	a:link {
-	 padding: 20px 1%;
 	}
     }
 }
@@ -444,71 +444,232 @@ ul, li {
 /**************************** ABOUT US -home page- ************************/
 
 #AboutUsContentHolder {
-    padding: $defaultPadding;
+    padding: 15px 25px;
     background-color: lighten($primaryBG, 7);
     border-radius: 3px;
     border: 2px dashed lighten($primaryBG, 2);
 }
 
 #HomePortfolio {
-    .button {
-	width: 68%;
-	
-	a {
-	    padding: 5px 10px;
-	    font-size: 1.1em;
-	}
-    }
-}
-
-@media screen and (max-width: 430px) {
-    #HomePortfolio {
-	.button {
+    .grid {
+	li {
+	    width: 49%;
+	    padding-bottom: .5%;
+	    padding-top: .5%;
+	    
+	    .grid-contentHolder{
+		padding: 10px 25px;
+	    }
+	    .leftContainer{
+		width: 32%;
+	    }
+	    .rightContainer{
+		width: 63%;
+		margin-left: 2%;
+	    }
+	    h3{
+		min-height: 32px;
+	    }
+	    img {
 		width: 100%;
+		height: auto;
+		padding-bottom: 0;
+		    
+	    }
+	   .button {
+		margin-top: 20px;
+		width: 100%;
+		
+		a {
+		    padding: 5px 10px;
+		    font-size: 1.1em;
+		    width: 100%;
+		}
+	    } 
 	}
     }
+
 }
 
+@media screen and (max-width: 493px) {
+    #AboutUsContentHolder {
+	padding: 15px;
+    }
+    #HomePortfolio {
+	padding:0;
+	 .grid {
+	     li {
+		 display: block;
+		 width: 100%;
+		 padding: 15px;
+		 
+		 .grid-contentHolder{
+		     padding: 0;
+		 }
+		 
+		 
+		 .leftContainer{
+		     width: 30%;
+		 }
+		 .rightContainer{
+		     width: 59%;
+		 }
+		
 
-@media screen and (max-width: 639px) {
+		 .button { 
+		     width: 166%;
+		     margin-left: -57%;
+		     margin-top: 23%;
+		    
+		    a {
+			font-size: 1.1em;
+		    }
+		 }
+	     }
+	 }
+    } 
+}
+
+@media screen and (min-width:494px) and (max-width: 529px) {
         
     #AboutUsContentHolder {
-	padding: $secondaryPadding;
+	padding: 15px;
     }
+    #HomePortfolio {
+	padding:0;
+	 .grid {
+	     li {
+		 .grid-contentHolder{
+		     padding: 0;
+		 }
+		 padding: 15px;
+		 .leftContainer{
+		     width: 45%;
+		 }
+		 .rightContainer{
+		     width: 49%;
+		 }
+
+		 .button { 
+		    width: 203%;
+		    margin-left: -103%;
+		    margin-top: 25%;
+		    
+		    a {
+			font-size: 1em;
+		    }
+		 }
+	     }
+	 }
+    }    
+    
 }
 
-@media screen and (min-width: 640px) and (max-width: 834px) {
+@media screen and (min-width:530px) and (max-width: 749px) {
+        
+    #AboutUsContentHolder {
+	padding: 15px 25px;
+    }
     #HomePortfolio {
+	 .grid {
+	     li {
+		 .leftContainer{
+		     width: 45%;
+		 }
+		 .rightContainer{
+		     width: 49%;
+		 }
+		 .button { 
+		    width: 203%;
+		    margin-left: -103%;
+		    margin-top: 53%;
+		 }
+	     }
+	 }
+    }    
+    
+}
 
-	.button {
-	    width: 100%;
+@media screen and (min-width:750px) and (max-width: 885px) {
+        
+    #AboutUsContentHolder {
+	padding: 15px 25px;
+    }
+    #HomePortfolio {
+	 .grid {
+	     li {
+		 .leftContainer{
+		     width: 40%;
+		 }
+		 .rightContainer{
+		     width: 55%;
+		 }
+		 .button { 
+		    width: 179%;
+		    margin-left: -79%;
+		    margin-top: 85px;
+		 }
+	     }
+	 }
+    }    
+    
+}
 
-	    a {
-		padding: 5px 7px;
-		font-size: 1.4rem;
+@media screen and (min-width: 886px) and (max-width: 949px) {
+    #HomePortfolio {
+	.grid {
+	    li {
+		
+		 .leftContainer{
+		     width: 40%;
+		 }
+		 .rightContainer{
+		     width: 53%;
+		 }		
+		 
+		.button {
+		    width: 100%;
+		    a {
+			padding: 5px 7px;
+			font-size: 1.1rem;
+		    }
+		}
 	    }
 	}
     }  
 }
 
 
-@media screen and (min-width: 835px) and (max-width: 1023px) {
+@media screen and (min-width: 950px) and (max-width: 1023px) {
     #HomePortfolio {
-	.grid{
+	.grid {
 	    li {
+		
+		.grid-contentHolder{
+		    min-height: initial;
+		}
 		h4{
 		    margin-bottom: 15px;
 		}
+		
+		.leftContainer{
+		    width: 33%;
+		}
+		.rightContainer{
+		    width: 59%;
+		}
+		
+		.button {
+		    width: 100%;
+		    
+		    a {
+			padding: 5px 7px;
+			font-size: 1.2rem;
+		    }
+		}
 	    }
 	}
-	.button {
-	    width: 60%;
 
-	    a {
-		padding: 5px 7px;
-		font-size: 1.2rem;
-	    }
-	}
     }
 }
 
@@ -538,8 +699,8 @@ ul, li {
 
 #OurBlogGrid {
     
-    h2 {
-	padding: $defaultPadding;
+    h1 {
+	padding: 5px 0 10px;
     }
     
     .grid-contentHolder {
@@ -547,7 +708,6 @@ ul, li {
 
 	img {
 	    width: 100%;
-	    margin-bottom: 1%;
 	}
 	
     }
@@ -556,28 +716,23 @@ ul, li {
 	padding-bottom: 1%;
     }
     
-    /*.button {
-	width: 100%;
-	
-	a {
-	    width: 100%;
-	    display: block;
-	    box-sizing: border-box;
-	    padding: 5px 10px;
-	 }
-     }*/
 }
 
 
-@media screen and (max-width: 639px) {
+
+
+@media screen and (max-width: 800px) {
     
     #OurBlogGrid {
     
-	h2 {
-	    padding: $secondaryPadding;
+	h1 {
+	    padding: 0 15px 10px;
 	}
     }
 }
+
+
+
 
 /*========================== OUR BLOG PAGE LAYOUT - end ============================*/
 
@@ -645,24 +800,25 @@ ul, li {
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning =======================*/
 
 
-#About, #Skills, #Portfolio, #ContactIndi {
+#About, #Skills, #Portfolio {
     margin-bottom: 2%;
     padding-bottom: 1%;
     background-color: lighten($primaryBG, 7);
     border-radius: 3px;
     border: 2px dashed lighten($primaryBG, 2);
+    padding: $secondaryPadding;
 }
 
 button {
     @extend p.button;
 }
 
-#About, #Skills, #Portfolio, #ContactIndi {
-    padding: $secondaryPadding;
-}
 
 #ContactIndi {
-    float:left;
+    
+    @extend #Portfolio;
+    
+    //float:left;
     width: 100%;
     padding-bottom: 10px;
     
@@ -675,11 +831,16 @@ button {
 	img {
 	    width: 100%;
 	    height: auto;
+	    margin-top: 5%;
 	}
     }
     
     .email{
 	margin: 1em 0 1.5em;
+    }
+    
+    .buttons{
+	margin-bottom: 15px;
     }
     
     .button{
@@ -690,11 +851,11 @@ button {
 	    padding: 4px 8px;
 	}
     }
-
+   
+    
     .socialIcons{
 	width: 98%;
 	padding: 10px 0;
-	margin-top: 5px;
 	border-top: 2px dashed lighten($primaryBG, 25);
 	
 	a{
@@ -707,7 +868,27 @@ button {
    
 }
 
-
+@media screen and (max-width: 580px) {
+    #ContactIndi {
+	.leftContainer {
+	    width: 75%;
+	}
+	.rightContainer {
+	    width: 22%;
+	    
+	    img {
+		  margin-top: 25%;
+	    }
+	}
+	
+	.email{
+	    margin: 1em 0 1.5em;
+	    a {
+		font-size: .9em;
+	    }
+	}
+    }
+}
 
 
 @media screen and (max-width: 624px) {
@@ -737,4 +918,22 @@ button {
 
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 
+/*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
 
+
+#ResumeHeader {
+    float:left;
+    width: 100%;
+    
+    @extend #Portfolio;
+}
+
+
+
+
+
+
+
+
+
+/*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/

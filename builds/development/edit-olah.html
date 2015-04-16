@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Edit Olah | Web Development Portfolio | Barefoot in the Park</title>
         <link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
@@ -15,41 +16,78 @@
             <header>
                 <div class="container">
                     
-                    <h1 class="logo-container"><span class="logo">Barefoot in the Park</span></h1>
+                   
                     
                     <div id="MainNav">
                         <nav>
-                            <ul class="nav">
-                                <li><a href="/index">Home</a></li>
-                                <li class="current"><a href="#about-edit">About Edit</a></li>
-				<li><a href="#skills">Skills</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="/edit-olah-web-dev-resume">Edit's Resume</a></li>
-                                <li><a href="/edit-olah-blog">Edit's Blog</a></li>
-                                <li><a href="#contact-edit">Contact Edit</a></li>
+                            <ul class="nav topNav">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/edit-olah-resume.html">Edit's Resume</a></li>
+				<li><a href="/edit-olah-blog.html">Blog</a></li>
                             </ul>
-                            <div class="clear"></div>
+                            
                         </nav>
                     </div><!-- /#MainNav -->
                     
-                    
+                     <h1 class="logo-container"><span class="logo">Barefoot in the Park</span></h1>
+		     <div class="clear"></div>
                 </div><!-- /.container -->
             </header>
-        </div><!-- /#HeaderWrapper -->
-        
+        </div><!-- /#HeaderWrapper -->	
+	
+   
         <!--==============================content================================-->
         
         <div id="MainContentWrapper">
             <main>
                 <div id="MainContent">
 		    
+		    <!-- HERO Panel beginning -->
+		    
+                    <div id="Hero">
+                        <section>
+			    <div class="heroContent">
+				<div class="container">
+				    <div class="heroText">
+					
+					<h1>Edit Olah - Web Developer</h1>
+					<h2 class="tagline">Portfolio of a playful mind</h2>
+					<div class="summary">
+					    <p>This is the portfolio of Edit Olah.<br>
+						Here, you can find some information on what he is working on and what piques his interest.</p>
+					</div><!-- /.summary -->
+				    </div><!-- /.heroText -->
+				</div><!-- /.container -->
+			    </div><!-- /.heroContent -->
+                        </section>
+                    </div><!-- / .page#home -->
+		    
+		    <!-- HERO Panel/page end -->
+		    
+		    
+		    <!-- PAGE NAV beginning -->
+		    
+		    <div id="PageNav">
+			<nav>
+			    <ul class="nav full-width">
+				<li class="current"><a href="#about-peter">About Edit</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact-edit">Contact Edit</a></li>
+			    </ul><!--.nav.full-width -->
+			    <div class="clear"></div>
+			</nav>
+		    </div><!-- /#MainNav -->
+			
+		    <!-- PAGE NAV end -->
+		    
 		    <!-- ABOUT EDIT PAGE beginning -->
 		    
-                    <div class="page" id="about-edit">
+                    <div class="page" id="About">
                         <section>
                             <div class="container">
-                                <h1>Edit Olah - Web Developer</h1>
-                                <h2 class="tagline">tagline tagline</h2>
+                                <h1>About Edit</h1>
+                                <h2 class="tagline">Unforgetable</h2>
                                 <div class="summary">
                                     <p>Bacon ipsum dolor amet ground round meatloaf ham hock swine tenderloin tongue pork 
                                         belly flank brisket. Brisket turkey salami, pancetta kevin jowl pastrami picanha shank. 
@@ -60,80 +98,250 @@
                                 </div><!-- /.summary -->
                             </div><!-- /.container -->
                         </section>
-                    </div><!-- / .page#about-edit -->
+                    </div><!-- / .page#About -->
 		    
 		    <!-- ABOUT EDIT PAGE end -->
 		    
 		    
 		    <!-- SKILLS PAGE beginning -->
 		    
-		    <div class="page" id="skills">
+		    <div class="page" id="Skills">
 			<section>
 			    <div class="container">
-				<article>
+				    <h1>Edit's Skills</h1>
 				    <h2>
-					h2 title
+					amazing
 				    </h2>
-				    <img src="images/#" alt="article image">
-				    <p>Bacon ipsum dolor amet ground round meatloaf ham hock swine tenderloin tongue pork 
-					belly flank brisket. Brisket turkey salami, pancetta kevin jowl pastrami picanha shank. 
-					Pastrami corned beef beef, fatback andouille venison prosciutto short ribs hamburger 
-					alcatra shankle rump picanha drumstick filet mignon. Swine short loin cupim t-bone 
-					kielbasa. Cow swine sirloin tail ham chicken tri-tip, flank filet mignon kielbasa 
-					hamburger turkey.
-				    </p>
-				</article>
+				    <div class="summary">
+					<p>Bacon ipsum dolor amet ground round meatloaf ham hock swine tenderloin tongue pork 
+					    belly flank brisket. Brisket turkey salami, pancetta kevin jowl pastrami picanha shank. 
+					    Pastrami corned beef beef, fatback andouille venison prosciutto short ribs hamburger 
+					    alcatra shankle rump picanha drumstick filet mignon. Swine short loin cupim t-bone 
+					    kielbasa. Cow swine sirloin tail ham chicken tri-tip, flank filet mignon kielbasa 
+					    hamburger turkey.
+					</p>
+				    </div><!--/.summary -->
+				    
+				<!-- Mix it up section beginning -->
+				    
+				    <div class="control-bar">
+					<div class="group">
+					    <label>Show:</label>
+					    <button class="filter" data-filter="all">All</button>
+					    <button class="filter" data-filter="none">None</button>
+					</div><!--/.group -->
+					<div class="group filter-buttons">
+					    <label>Filter:</label>
+					    <button class="filter" data-filter=".webdev">Webdev skills</button>
+					    <button class="filter" data-filter=".drupal">Drupal</button>
+					    <button class="filter" data-filter=".threeD">3D</button>
+					    <button class="filter" data-filter=".animation">Animation</button>
+					    <button class="filter" data-filter=".drawing">Drawing</button>
+					</div><!--/.group.filter-buttons -->
+					<div class="arrowDown"></div>
+			
+				    </div><!--/.control-bar -->
+				    
+				    <div id="Container">
+					<div class="mix webdev" data-my-order="1"><p>HTML</p></div>
+					<div class="mix webdev" data-my-order="2"><p>CSS</p></div>
+					<div class="mix webdev" data-my-order="3"><p>JavaScript</p></div>
+					<div class="mix webdev" data-my-order="4"><p>Node.js</p></div>
+					<div class="mix webdev" data-my-order="5"><p>AJAX</p></div>
+					<div class="mix webdev drupal" data-my-order="6"><p>Drupal site building</p></div>
+					<div class="mix webdev drupal" data-my-order="7"><p>Drupal theming</p></div>
+					<div class="mix webdev drupal" data-my-order="8"><p>Drupal custom module development</p></div>
+					<div class="mix threeD" data-my-order="9"><p>3D modelling</p></div>
+					<div class="mix threeD" data-my-order="10"><p>Texturing</p></div>
+					<div class="mix animation" data-my-order="11"><p>2D animation</p></div>
+					<div class="mix animation threeD" data-my-order="12"><p>3D animation</p></div>
+					<div class="mix drawing" data-my-order="13"><p>free-hand drawing</p></div>
+					<div class="gap"></div>
+					<div class="gap"></div>
+				    </div><!--/#Container -->
+				    
+				<!-- Mix it up section end -->
+				
 			    </div><!-- /.container -->
 			</section>
-                    </div> <!-- /.page#skills -->
+                    </div> <!-- /.page#Skills -->
 		    
 		    <!-- SKILLS PAGE end -->
 		    
                     <!-- PORTFOLIO PAGE beginning -->
 		    
-		    <div class="page" id="portfolio">
+		    <div class="page" id="Portfolio">
 			<section>
 			    <div class="container">
-				<article>
+				    <h1>Edit's Portfolio of work</h1>
 				    <h2>
-					h2 title
+					un-missable
 				    </h2>
-				    <img src="images/#" alt="article image">
-				    <p>Bacon ipsum dolor amet ground round meatloaf ham hock swine tenderloin tongue pork 
-					belly flank brisket. Brisket turkey salami, pancetta kevin jowl pastrami picanha shank. 
-					Pastrami corned beef beef, fatback andouille venison prosciutto short ribs hamburger 
-					alcatra shankle rump picanha drumstick filet mignon. Swine short loin cupim t-bone 
-					kielbasa. Cow swine sirloin tail ham chicken tri-tip, flank filet mignon kielbasa 
-					hamburger turkey.
-				    </p>
-				</article>
+				    <div class="summary">
+					<p>Bacon ipsum dolor amet ground round meatloaf ham hock swine tenderloin tongue pork 
+					    belly flank brisket. Brisket turkey salami, pancetta kevin jowl pastrami picanha shank. 
+					    Pastrami corned beef beef, fatback andouille venison prosciutto short ribs hamburger 
+					    alcatra shankle rump picanha drumstick filet mignon. Swine short loin cupim t-bone 
+					    kielbasa. Cow swine sirloin tail ham chicken tri-tip, flank filet mignon kielbasa 
+					    hamburger turkey.
+					</p>
+				    </div><!--/.summary -->
+				    
+				<!-- Mix it up section beginning -->
+				    
+				    <div class="control-bar">
+					<div class="group">
+					    <label>Show:</label>
+					    <button class="filter-portfo" data-filter="all">All</button>
+					    <button class="filter-portfo" data-filter="none">None</button>
+					</div><!--/.group -->
+					<div class="group filter-buttons">
+					    <label>Filter:</label>
+					    <button class="filter-portfo" data-filter=".html">HTML5</button>
+					    <button class="filter-portfo" data-filter=".css">CSS</button>
+					    <button class="filter-portfo" data-filter=".sass">SASS</button>
+					    <button class="filter-portfo" data-filter=".css-animation">CSS Animation</button>
+					    <button class="filter-portfo" data-filter=".drupal-project">Drupal Project</button>
+					    <button class="filter-portfo" data-filter=".website-project">Website Project</button>
+					    <button class="filter-portfo" data-filter=".js-jquery">JavaScript / jQuery</button>
+					</div><!--/.group.filter-buttons -->
+					<div class="arrowDown"></div>
+			
+				    </div><!--/.control-bar -->
+				    
+				    <div id="PortfolioContainer">
+					<div class="portfoMix click-follow html css sass" data-my-order="1">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 1</h3>
+					    <h4>HTML, CSS, SASS, Compass</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow css-animation" data-my-order="2">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 2</h3>
+					    <h4>CSS3 animation</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow drupal-project" data-my-order="3">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 3</h3>
+					    <h4>Drupal7</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow website-project" data-my-order="4">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 4</h3>
+					    <h4>Micro-site</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow js-jquery" data-my-order="5">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 5</h3>
+					    <h4>JavaScript, jQuery</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow drupal-project" data-my-order="6">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 6</h3>
+					    <h4>Drupal test</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow css" data-my-order="7">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 7</h3>
+					    <h4>parallax test</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow html" data-my-order="8">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 8</h3>
+					    <h4>SVG test</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow css" data-my-order="9">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 9</h3>
+					    <h4>CSS</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow css-animation" data-my-order="10">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 10</h3>
+					    <h4>CSS Animation</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow drupal-project" data-my-order="11">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 11</h3>
+					    <h4>Drupal8 test</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow website-project" data-my-order="12">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 12</h3>
+					    <h4>Micro-site</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="portfoMix click-follow drupal-project" data-my-order="13">
+					    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+					    <h3>Portfolio Project 13</h3>
+					    <h4>Drupal custom module</h4>
+					    <p class="button"><a href="/edit-olah.html">More details >> </a></p>
+					</div><!--/.portfoMix -->
+					<div class="gap"></div>
+					<div class="gap"></div>
+				    </div><!--/#PortfolioContainer -->
+				    
+				<!-- Mix it up section end -->
+				    
+				    
+				    
 			    </div><!-- /.container -->
 			</section>
-                    </div> <!-- /.page#portfolio -->
+                    </div> <!-- /.page#Portfolio -->
 		    
 		    <!-- PORTFOLIO PAGE end -->
 		    
 		    <!-- CONTACT EDIT PAGE beginning -->
 		    
-		    <div class="page" id="contact-edit">
+		    <div class="page" id="ContactIndi">
 			<section>
 			    <div class="container">
-				<article>
+				
+				<div class='leftContainer'>
+				    <h1>Contact Edit</h1>
 				    <h2>
-					h2 title
+					Get in touch
 				    </h2>
-				    <img src="images/#" alt="article image">
 				    <p>Bacon ipsum dolor amet ground round meatloaf ham hock swine tenderloin tongue pork 
-					belly flank brisket. Brisket turkey salami, pancetta kevin jowl pastrami picanha shank. 
-					Pastrami corned beef beef, fatback andouille venison prosciutto short ribs hamburger 
-					alcatra shankle rump picanha drumstick filet mignon. Swine short loin cupim t-bone 
-					kielbasa. Cow swine sirloin tail ham chicken tri-tip, flank filet mignon kielbasa 
-					hamburger turkey.
+					belly flank brisket. 
 				    </p>
-				</article>
+				    <p class='highlighted'><span class='bold large-text'>Edit Olah</span>, <span class='semiBold semi-large-text'>Web developer</span></p>
+				    
+				    
+				    <p class="email">Email: <a href="mailto:edit.olah@barefootinthepark.co.uk" class="min-height-applied">edit.olah@barefootinthepark.co.uk</a></p>
+				    
+				    <div class='buttons'>
+					<p class="button"><a href="/edit-olah-resume.html">See Edit's resume >></a></p>
+					<p class="button"><a href="/edit-olah-blog.html">Go to Edit's blog >></a></p>
+				    </div>
+				    
+				    <div class="socialIcons max-height-applied">
+					<a href="#"><img alt="LinkedIn icon" src="images/linkedin_icon.png" ></a>
+					<a href="#"><img alt="email icon" src="images/email_icon.png" ></a>
+					<a href="#"><img alt="twitter icon" src="images/twitter_icon.png" ></a>
+					<a href="#"><img alt="instagram icon" src="images/instagram_icon.png" ></a>
+					<a href="#"><img alt="web icon" src="images/web_icon.png" ></a>
+				    </div><!-- /.socialIcons -->
+				</div><!--/.leftContainer -->
+				
+				<div class='rightContainer'>
+				    <img alt="" src="images/bfitp_placeholder_img_gr.png" >
+				</div> <!--/.rightContainer -->
+				
 			    </div><!-- /.container -->
 			</section>
-                    </div> <!-- /.page#contact-edit -->
+                    </div> <!-- /.page#ContactIndi -->
 		    
 		    <!-- CONTACT EDIT PAGE end -->
                     
@@ -156,8 +364,10 @@
                 </div><!-- / #FooterContent -->
             </footer>
         </div><!-- /#Footer -->
-        
+	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/script.js"></script>
+
     </body>
 </html>
 

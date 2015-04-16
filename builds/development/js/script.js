@@ -2075,7 +2075,11 @@ $( document ).ready(function() {
     
     // Instantiate MixItUp:
     
-    $('#Container').mixItUp();
+    $('#Container').mixItUp({
+	load: {
+	    filter: '.webdev'
+	}
+    });
     
     $('#PortfolioContainer').mixItUp({
 	selectors: {
