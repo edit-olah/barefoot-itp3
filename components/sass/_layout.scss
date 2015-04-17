@@ -140,6 +140,7 @@ ul, li {
     
     a{
 	width: 100%;
+	display: block;
 	box-sizing: border-box;
 	margin-bottom: 0;
 	padding: 5px 10px;
@@ -444,7 +445,7 @@ ul, li {
 /**************************** ABOUT US -home page- ************************/
 
 #AboutUsContentHolder {
-    padding: 15px 25px;
+    padding: $defaultPadding;
     background-color: lighten($primaryBG, 7);
     border-radius: 3px;
     border: 2px dashed lighten($primaryBG, 2);
@@ -491,10 +492,14 @@ ul, li {
 
 }
 
-@media screen and (max-width: 493px) {
+@media screen and (max-width: 639px) {
     #AboutUsContentHolder {
-	padding: 15px;
+	padding: $secondaryPadding;
     }
+}
+
+@media screen and (max-width: 493px) {
+
     #HomePortfolio {
 	padding:0;
 	 .grid {
@@ -506,20 +511,24 @@ ul, li {
 		 .grid-contentHolder{
 		     padding: 0;
 		 }
-		 
-		 
 		 .leftContainer{
-		     width: 30%;
+		     width: 40%;
+		     
+		 }
+		 img {
+		     width: 79%;
 		 }
 		 .rightContainer{
-		     width: 59%;
+		     width: 55%;
+		     h3 {
+			 padding-top: 5%;
+			 min-height: 45px;
+		     }
 		 }
-		
-
 		 .button { 
-		     width: 166%;
-		     margin-left: -57%;
-		     margin-top: 23%;
+		       width: 179%;
+			margin-left: -79%;
+			margin-top: 18%;
 		    
 		    a {
 			font-size: 1.1em;
@@ -530,19 +539,23 @@ ul, li {
     } 
 }
 
-@media screen and (min-width:494px) and (max-width: 529px) {
+@media screen and (min-width:494px) and (max-width: 529px){
         
     #AboutUsContentHolder {
-	padding: 15px;
+	//padding: 15px;
     }
     #HomePortfolio {
 	padding:0;
+	
 	 .grid {
 	     li {
+		 padding: 15px;
+		 
 		 .grid-contentHolder{
 		     padding: 0;
 		 }
-		 padding: 15px;
+		 
+		 
 		 .leftContainer{
 		     width: 45%;
 		 }
@@ -565,35 +578,39 @@ ul, li {
     
 }
 
-@media screen and (min-width:530px) and (max-width: 749px) {
+@media screen and (min-width:530px) and (max-width: 749px){
         
     #AboutUsContentHolder {
-	padding: 15px 25px;
+	//padding: 15px 25px;
     }
+    
     #HomePortfolio {
-	 .grid {
-	     li {
-		 .leftContainer{
-		     width: 45%;
-		 }
-		 .rightContainer{
-		     width: 49%;
-		 }
-		 .button { 
-		    width: 203%;
-		    margin-left: -103%;
-		    margin-top: 53%;
-		 }
-	     }
-	 }
+	.grid {
+	    li {
+		.leftContainer {
+		    width: 40%;
+		}
+		.rightContainer {
+		    width: 50%;
+		}
+		.button { 
+		    width: 200%;
+		    margin-left: -89%;
+		    margin-top: 40%;
+		   a {
+		       font-size: 1em;
+		   }
+		}
+	    }
+	}
     }    
     
 }
 
-@media screen and (min-width:750px) and (max-width: 885px) {
+@media screen and (min-width:750px) and (max-width: 885px){
         
     #AboutUsContentHolder {
-	padding: 15px 25px;
+	//padding: 15px 25px;
     }
     #HomePortfolio {
 	 .grid {
@@ -601,13 +618,19 @@ ul, li {
 		 .leftContainer{
 		     width: 40%;
 		 }
+
 		 .rightContainer{
 		     width: 55%;
 		 }
 		 .button { 
-		    width: 179%;
-		    margin-left: -79%;
-		    margin-top: 85px;
+		    width: 182%;
+		    margin-left: -82%;
+		    margin-top: 43%;
+		    
+		    a {
+			padding: 5px 7px;
+			font-size: 1.2rem;
+		    }
 		 }
 	     }
 	 }
@@ -721,7 +744,7 @@ ul, li {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 639px) {
     
     #OurBlogGrid {
     
@@ -774,7 +797,7 @@ ul, li {
 @media screen and (max-width: 639px) {
        
     .contactText {
-	padding: $secondaryPadding;
+	padding: 0 15px;
 
     }
 }

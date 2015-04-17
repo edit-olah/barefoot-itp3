@@ -86,7 +86,7 @@ and open the template in the editor.
 
 .grid-contentHolder {
     font-size:1rem;
-    padding: 0px 25px 10px 25px;
+    padding: 0px 25px;
     box-sizing: border-box;
     
     img {
@@ -98,13 +98,123 @@ and open the template in the editor.
 }
 
 
+
+@media screen and (max-width: 639px) {
+    .grid {
+	li {
+	    width: 100%;
+	    padding-top: 1%;
+	    margin-bottom: 2%;
+	    box-sizing: border-box;
+
+	    h2 {
+		margin-top: 1.3em;
+		min-height: initial;
+	    }
+
+	    h3 {
+		margin-bottom: .8em;
+		min-height: initial;
+	    }
+
+	    p {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		min-height: initial;
+	    }
+
+
+	    .button {
+		a {
+		    padding: 5px 10px;
+		    width: 100%;
+		    display: block;
+		    box-sizing: border-box;
+		    margin: 0 auto;
+		    text-align: center;
+		    white-space: nowrap;
+		    font-size: 1.2em;
+		}
+	    }
+
+	    .grid-contentHolder {
+		padding: 0px 15px 10px 15px;
+
+		img {
+		    width: 11em;
+		    margin-top: 3%;
+		}
+	    }
+	}
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    .grid {
+	li {
+	    width: $mixitupWidth2;
+	}
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid {
+    
+	li {
+	    width: $mixitupWidth3;
+	    padding-top: 3%;
+	    margin-bottom: 2%;
+	    box-sizing: border-box;
+	    
+	    h2 {
+		margin-bottom: .7em;
+	    }
+
+
+	    h3 {
+		margin-bottom: .5em;
+	    }
+
+
+	   .button {
+	       width: 100%;
+		a {
+		     width: 100%;
+		     white-space: nowrap;
+		     display: block;
+		     padding: 5px 10px; // used to be just 5px for all sides
+		     box-sizing: border-box;
+		     clear:both;
+		 }
+	    
+	    }
+	}
+	
+	.gap {
+	    width: $mixitupWidth3;
+	}
+	
+	.grid-contentHolder {
+	    min-height: 156px;
+	    box-sizing: border-box;
+	    
+	    img {
+		padding-bottom: 15px;
+	    }
+	}
+    }
+
+}
+
+
+
 /**** Default grid - end ****/
 
-/********** Stretched / full width / blog-section grid (contact us page) - beginning ***************/
+/*=====================================================================================*/
 
-
-/********** grid - blog-section *******/
-
+/********** CONTACT US PAGE - Stretched / full width / blog-section grid - beginning ***************/
 
 
 .grid.grid-stretched-layout {
@@ -125,7 +235,8 @@ and open the template in the editor.
     
     .grid-contentHolder {
 	width: 100%;
-    
+	padding: 0px 25px 18px 25px;
+	
 	p.min-height-applied {
 	    min-height: 70px;
 	    box-sizing: border-box;
@@ -224,12 +335,6 @@ and open the template in the editor.
 }
 
 
-/**** Stretched / full width / blog-section grid (contac us page) - beginning  - end ****/
-
-/**** Grids media queries - beginning ****/
-
-
-
 @media screen and (max-width: 900px) {
     
     .grid.grid-stretched-layout {
@@ -267,55 +372,6 @@ and open the template in the editor.
 }
 
 @media screen and (max-width: 639px) {
-
-    .grid {
-	li {
-	    width: 100%;
-	    padding-top: 1%;
-	    margin-bottom: 2%;
-	    box-sizing: border-box;
-
-	    h2 {
-		margin-top: 1.3em;
-		min-height: initial;
-	    }
-
-	    h3 {
-		margin-bottom: .8em;
-		min-height: initial;
-	    }
-
-	    p {
-		display: inline-block;
-		width: 100%;
-		margin: 0;
-		min-height: initial;
-	    }
-
-
-	    .button {
-		a {
-		    padding: 5px 10px;
-		    width: 100%;
-		    display: block;
-		    box-sizing: border-box;
-		    margin: 0 auto;
-		    text-align: center;
-		    white-space: nowrap;
-		    font-size: 1.2em;
-		}
-	    }
-
-	    .grid-contentHolder {
-		padding: 0px 15px 10px 15px;
-
-		img {
-		    width: 11em;
-		    margin-right: 3%;
-		}
-	    }
-	}
-    }
     
     .grid.grid-stretched-layout {
 	
@@ -325,25 +381,36 @@ and open the template in the editor.
 	    clear:both;
 	    width: 100%;
 	    padding-bottom: 5%;
+	    padding-left: 0;
+	    padding-right: 0;
 	}
 	
 	.grid-contentHolder {
+	    padding: 0 15px;
 	    
 	    img {
-		width: 100%;
-		margin-top: 3%;
+		width: 70%;
+		margin: 4% auto;
 	    }
 	    .email {
-		min-height: 70px;
+		min-height: initial;
 		box-sizing: border-box;	    
 	    }
-	    
+	    p.min-height-applied {
+		min-height: initial;
+	    }
 	    .socialIcons {
-		margin-bottom: 1%;
+		margin: 0 auto 1%;
+		width: 70%;
 		img {
 		    padding: 2%;
 		 }
 
+	    }
+	    .button {
+		a {
+		    font-size: 1.4em;
+		}
 	    }
 	}
     }
@@ -355,7 +422,7 @@ and open the template in the editor.
     .grid.grid-stretched-layout > li .grid.grid-full-width > li {
 	img {
 	    padding-top: 0%;
-	    margin-top: 0%;
+	    margin-top: 3%;
 	    width: 100%;
 	    margin-bottom: 4%;
 	}
@@ -364,7 +431,7 @@ and open the template in the editor.
     
     .grid.grid-stretched-layout > li > h2 {
 	font-size: 1.9rem;
-	padding: 10px 15px 0 15px;
+	padding: 5px 15px 20px 15px;
 	margin-bottom: 0;
     }
     
@@ -374,55 +441,9 @@ and open the template in the editor.
 }
 
 
+
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-
-
-    .grid {
-    
-	li {
-	    width: $mixitupWidth3;
-	    padding-top: 3%;
-	    margin-bottom: 2%;
-	    box-sizing: border-box;
-	    
-	    h2 {
-		margin-bottom: .7em;
-	    }
-
-
-	    h3 {
-		margin-bottom: .5em;
-	    }
-
-
-	   .button {
-	       width: 100%;
-		a {
-		     width: 100%;
-		     white-space: nowrap;
-		     display: block;
-		     padding: 5px 10px; // used to be just 5px for all sides
-		     box-sizing: border-box;
-		     clear:both;
-		 }
-	    
-	    }
-	}
-	
-	.gap {
-	    width: $mixitupWidth3;
-	}
-	
-	.grid-contentHolder {
-	    min-height: 156px;
-	    box-sizing: border-box;
-	    
-	    img {
-		padding-bottom: 15px;
-	    }
-	}
-    }
-    
     .grid.grid-stretched-layout li p.button a {
 	width: 100%;
 	display: block;
@@ -432,16 +453,17 @@ and open the template in the editor.
 
 }
 
+/**** CONTACT US PAGE - Stretched / full width / blog-section grid  - end ****/
 
+/*=====================================================================================*/
 
-/**** Grids media queries - end ****/
-
-/**** Our blog-posts - Default grid extension for our blog page - beginning ****/
+/**** OUR BLOG - Our blog-posts - Default grid extension for our blog page - beginning ****/
 
 .blog-post {
     
     h2 {
 	min-height: 47px;
+	margin-top: 3%;
     }
     
     h3 {
@@ -468,14 +490,31 @@ and open the template in the editor.
 @media screen and (min-width: 640px) and (max-width: 764px) {
     .blog-post {
 	h2, h3 {
-	    min-height: 4.5em;
+	    min-height: 3em;
 	}
 
 	.blog-summary {
-	    min-height: 11em;
+	    min-height: 9.3em;
 	  }
     }
     
 }
 
-/**** Our blog-posts - Default grid extension for our blog page - end ****/
+@media screen and (min-width: 765px) and (max-width: 1023px) {
+    .blog-post {
+	h2, h3 {
+	    min-height: 4em;
+	}
+
+	.blog-summary {
+	    min-height: 12em;
+	  }
+    }
+    
+}
+
+
+/**** OUR BLOG - Our blog-posts - Default grid extension for our blog page - end ****/
+
+/*=====================================================================================*/
+
