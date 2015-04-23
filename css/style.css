@@ -1084,7 +1084,74 @@ ul, li {
   float: left;
   width: 100%;
 }
+/* line 953, ../components/sass/_layout.scss */
+#ResumeHeader .leftContainer {
+  width: 21%;
+}
+/* line 956, ../components/sass/_layout.scss */
+#ResumeHeader .leftContainer img {
+  width: 100%;
+}
+/* line 961, ../components/sass/_layout.scss */
+#ResumeHeader .rightContainer {
+  margin-top: 5%;
+  margin-left: 4%;
+  width: 68%;
+}
+/* line 966, ../components/sass/_layout.scss */
+#ResumeHeader .rightContainer h1 {
+  font-size: 1.9em;
+}
+/* line 970, ../components/sass/_layout.scss */
+#ResumeHeader .rightContainer h2 {
+  font-size: 1.8em;
+}
+/* line 974, ../components/sass/_layout.scss */
+#ResumeHeader .rightContainer h3 {
+  font-size: 1.7em;
+}
 
+@media screen and (min-width: 320px) and (max-width: 459px) {
+  /* line 984, ../components/sass/_layout.scss */
+  #ResumeHeader .leftContainer {
+    width: 30%;
+  }
+  /* line 988, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer {
+    width: 60%;
+  }
+  /* line 991, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer h1 {
+    font-size: 1.6em;
+  }
+  /* line 995, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer h2 {
+    font-size: 1.4em;
+  }
+  /* line 999, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer h3 {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 640px) {
+  /* line 1009, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer {
+    margin-left: 0;
+    padding-left: 5px;
+  }
+  /* line 1013, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer h1 {
+    font-size: 1.6em;
+  }
+  /* line 1017, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer h2 {
+    font-size: 1.4em;
+  }
+  /* line 1021, ../components/sass/_layout.scss */
+  #ResumeHeader .rightContainer h3 {
+    font-size: 1.3em;
+  }
+}
 /*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
 /*
 To change this license header, choose License Headers in Project Properties.
