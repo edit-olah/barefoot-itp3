@@ -2507,69 +2507,74 @@ and open the template in the editor.
   margin-left: 10%;
 }
 /* line 39, ../components/sass/_contactmodule.scss */
-#ContactIndi .email {
-  margin: 1em 0 1.5em;
+#ContactIndi .highlighted {
+  margin-bottom: 0;
+  margin-top: 1em;
 }
-/* line 43, ../components/sass/_contactmodule.scss */
+/* line 44, ../components/sass/_contactmodule.scss */
+#ContactIndi .email {
+  margin: .5em 0 1.5em;
+}
+/* line 48, ../components/sass/_contactmodule.scss */
 #ContactIndi .buttons {
   margin-bottom: 15px;
 }
-/* line 47, ../components/sass/_contactmodule.scss */
+/* line 52, ../components/sass/_contactmodule.scss */
 #ContactIndi .button {
   width: 48%;
 }
-/* line 49, ../components/sass/_contactmodule.scss */
+/* line 54, ../components/sass/_contactmodule.scss */
 #ContactIndi .button a {
   font-size: 1.1em;
   line-height: 1.1;
   padding: 4px 8px;
 }
-/* line 57, ../components/sass/_contactmodule.scss */
+/* line 62, ../components/sass/_contactmodule.scss */
 #ContactIndi .socialIcons {
   width: 98%;
   padding: 10px 0;
   border-top: 2px dashed #788276;
 }
-/* line 64, ../components/sass/_contactmodule.scss */
+/* line 69, ../components/sass/_contactmodule.scss */
 #ContactIndi .socialIcons a img {
   width: 2.5em;
 }
 
 @media screen and (max-width: 580px) {
-  /* line 74, ../components/sass/_contactmodule.scss */
+  /* line 79, ../components/sass/_contactmodule.scss */
   #ContactIndi .leftContainer {
     width: 75%;
   }
-  /* line 77, ../components/sass/_contactmodule.scss */
+  /* line 82, ../components/sass/_contactmodule.scss */
   #ContactIndi .rightContainer {
     width: 22%;
   }
-  /* line 80, ../components/sass/_contactmodule.scss */
+  /* line 85, ../components/sass/_contactmodule.scss */
   #ContactIndi .rightContainer img {
     margin-top: 25%;
   }
-  /* line 85, ../components/sass/_contactmodule.scss */
+  /* line 90, ../components/sass/_contactmodule.scss */
   #ContactIndi .email {
     margin: 1em 0 1.5em;
   }
-  /* line 87, ../components/sass/_contactmodule.scss */
+  /* line 92, ../components/sass/_contactmodule.scss */
   #ContactIndi .email a {
     font-size: .9em;
   }
 }
 @media screen and (max-width: 624px) {
-  /* line 97, ../components/sass/_contactmodule.scss */
+  /* line 102, ../components/sass/_contactmodule.scss */
   #ContactIndi .button {
     width: 98%;
   }
-  /* line 100, ../components/sass/_contactmodule.scss */
+  /* line 105, ../components/sass/_contactmodule.scss */
   #ContactIndi .button a {
     font-size: 1.1em;
     line-height: 1.1;
   }
 }
 @media screen and (min-width: 625px) and (max-width: 766px) {
-  /* line 111, ../components/sass/_contactmodule.scss */
+  /* line 116, ../components/sass/_contactmodule.scss */
   #ContactIndi .button a {
     font-size: .9em;
     line-height: .9;
@@ -2577,7 +2582,7 @@ and open the template in the editor.
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) {
-  /* line 123, ../components/sass/_contactmodule.scss */
+  /* line 128, ../components/sass/_contactmodule.scss */
   #ContactIndi .rightContainer img {
     max-width: initial;
     width: 95%;
