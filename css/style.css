@@ -989,7 +989,7 @@ ul, li {
 /*====================== CONTACT US PAGE LAYOUT - end ======================*/
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning =======================*/
 /* line 843, ../components/sass/_layout.scss */
-#About, #Skills, #Portfolio, #ContactIndi, #ResumeHeader, #ResumeMainContent {
+#About, #Skills, #Portfolio, #ResumeHeader, #ResumeMainContent, #ContactIndi {
   margin-bottom: 2%;
   padding-bottom: 1%;
   background-color: #4b524a;
@@ -998,142 +998,44 @@ ul, li {
   padding: 15px 15px;
 }
 
-/* line 857, ../components/sass/_layout.scss */
-#ContactIndi {
-  width: 100%;
-  padding-bottom: 10px;
-}
-/* line 865, ../components/sass/_layout.scss */
-#ContactIndi .leftContainer {
-  width: 65%;
-}
-/* line 869, ../components/sass/_layout.scss */
-#ContactIndi .rightContainer {
-  width: 33%;
-}
-/* line 871, ../components/sass/_layout.scss */
-#ContactIndi .rightContainer img {
-  width: 80%;
-  max-width: 80%;
-  height: auto;
-  margin-top: 5%;
-  margin-left: 10%;
-}
-/* line 880, ../components/sass/_layout.scss */
-#ContactIndi .email {
-  margin: 1em 0 1.5em;
-}
-/* line 884, ../components/sass/_layout.scss */
-#ContactIndi .buttons {
-  margin-bottom: 15px;
-}
-/* line 888, ../components/sass/_layout.scss */
-#ContactIndi .button {
-  width: 48%;
-}
-/* line 890, ../components/sass/_layout.scss */
-#ContactIndi .button a {
-  font-size: 1.1em;
-  line-height: 1.1;
-  padding: 4px 8px;
-}
-/* line 898, ../components/sass/_layout.scss */
-#ContactIndi .socialIcons {
-  width: 98%;
-  padding: 10px 0;
-  border-top: 2px dashed #788276;
-}
-/* line 905, ../components/sass/_layout.scss */
-#ContactIndi .socialIcons a img {
-  width: 2.5em;
-}
-
-@media screen and (max-width: 580px) {
-  /* line 915, ../components/sass/_layout.scss */
-  #ContactIndi .leftContainer {
-    width: 75%;
-  }
-  /* line 918, ../components/sass/_layout.scss */
-  #ContactIndi .rightContainer {
-    width: 22%;
-  }
-  /* line 921, ../components/sass/_layout.scss */
-  #ContactIndi .rightContainer img {
-    margin-top: 25%;
-  }
-  /* line 926, ../components/sass/_layout.scss */
-  #ContactIndi .email {
-    margin: 1em 0 1.5em;
-  }
-  /* line 928, ../components/sass/_layout.scss */
-  #ContactIndi .email a {
-    font-size: .9em;
-  }
-}
-@media screen and (max-width: 624px) {
-  /* line 938, ../components/sass/_layout.scss */
-  #ContactIndi .button {
-    width: 98%;
-  }
-  /* line 941, ../components/sass/_layout.scss */
-  #ContactIndi .button a {
-    font-size: 1.1em;
-    line-height: 1.1;
-  }
-}
-@media screen and (min-width: 625px) and (max-width: 766px) {
-  /* line 952, ../components/sass/_layout.scss */
-  #ContactIndi .button a {
-    font-size: .9em;
-    line-height: .9;
-    padding: 8px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 1023px) {
-  /* line 964, ../components/sass/_layout.scss */
-  #ContactIndi .rightContainer img {
-    max-width: initial;
-    width: 95%;
-  }
-}
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 /*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
-/* line 977, ../components/sass/_layout.scss */
+/* line 862, ../components/sass/_layout.scss */
 #ResumeHeader {
   width: 100%;
 }
-/* line 983, ../components/sass/_layout.scss */
+/* line 868, ../components/sass/_layout.scss */
 #ResumeHeader .leftContainer {
   width: 21%;
 }
-/* line 986, ../components/sass/_layout.scss */
+/* line 871, ../components/sass/_layout.scss */
 #ResumeHeader .leftContainer img {
   width: 100%;
 }
-/* line 991, ../components/sass/_layout.scss */
+/* line 876, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer {
   margin-top: 5%;
   margin-left: 4%;
   width: 68%;
 }
-/* line 996, ../components/sass/_layout.scss */
+/* line 881, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer h1 {
   font-size: 1.9em;
 }
-/* line 1000, ../components/sass/_layout.scss */
+/* line 885, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer h2 {
   font-size: 1.8em;
 }
-/* line 1004, ../components/sass/_layout.scss */
+/* line 889, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer h3 {
   font-size: 1.7em;
 }
 
-/* line 1016, ../components/sass/_layout.scss */
+/* line 901, ../components/sass/_layout.scss */
 #ResumeMainContent .container {
   margin-bottom: 2%;
 }
-/* line 1021, ../components/sass/_layout.scss */
+/* line 906, ../components/sass/_layout.scss */
 #ResumeMainContent .personalSummary ul {
   width: 100%;
   list-style-type: circle;
@@ -1141,7 +1043,7 @@ ul, li {
   list-style-image: none;
   padding: 0 0 0 17px;
 }
-/* line 1028, ../components/sass/_layout.scss */
+/* line 913, ../components/sass/_layout.scss */
 #ResumeMainContent .personalSummary ul li {
   list-style-type: circle;
   list-style-position: outside;
@@ -1149,44 +1051,44 @@ ul, li {
 }
 
 @media screen and (min-width: 320px) and (max-width: 459px) {
-  /* line 1039, ../components/sass/_layout.scss */
+  /* line 924, ../components/sass/_layout.scss */
   #ResumeHeader .leftContainer {
     width: 30%;
   }
-  /* line 1043, ../components/sass/_layout.scss */
+  /* line 928, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer {
     width: 60%;
     margin-top: 0;
   }
-  /* line 1047, ../components/sass/_layout.scss */
+  /* line 932, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h1 {
     font-size: 1.6em;
   }
-  /* line 1051, ../components/sass/_layout.scss */
+  /* line 936, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h2 {
     font-size: 1.4em;
   }
-  /* line 1055, ../components/sass/_layout.scss */
+  /* line 940, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h3 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 640px) {
-  /* line 1065, ../components/sass/_layout.scss */
+  /* line 950, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer {
     margin-left: 0;
     padding-left: 5px;
     margin-top: 0;
   }
-  /* line 1070, ../components/sass/_layout.scss */
+  /* line 955, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h1 {
     font-size: 1.6em;
   }
-  /* line 1074, ../components/sass/_layout.scss */
+  /* line 959, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h2 {
     font-size: 1.4em;
   }
-  /* line 1078, ../components/sass/_layout.scss */
+  /* line 963, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h3 {
     font-size: 1.3em;
   }
@@ -2127,50 +2029,50 @@ and open the template in the editor.
 }
 
 /* line 90, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .group:first-child, #ContactIndi .control-bar .group:first-child, #ResumeHeader .control-bar .group:first-child, #ResumeMainContent .control-bar .group:first-child {
+#Portfolio .control-bar .group:first-child, #ResumeHeader .control-bar .group:first-child, #ResumeMainContent .control-bar .group:first-child, #ContactIndi .control-bar .group:first-child {
   margin-bottom: 1%;
 }
 /* line 95, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons {
+#Portfolio .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons {
   width: 100%;
 }
 /* line 98, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button {
+#Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
   width: 10.8%;
   min-height: 46px;
   min-width: initial;
   vertical-align: top;
 }
 /* line 107, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".html"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".html"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".html"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".html"]:after {
   border-right-color: #76DFC0;
 }
 /* line 110, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".css"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css"]:after {
   border-right-color: #26a580;
 }
 /* line 113, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".sass"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".sass"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".sass"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".sass"]:after {
   border-right-color: #1a6f56;
 }
 /* line 116, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css-animation"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css-animation"]:after {
   border-right-color: #0e3d30;
 }
 /* line 119, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".drupal-project"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".drupal-project"]:after {
   border-right-color: #137CC1;
 }
 /* line 122, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".website-project"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".website-project"]:after {
   border-right-color: #859900;
 }
 /* line 125, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".js-jquery"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".js-jquery"]:after {
   border-right-color: #E24F83;
 }
 /* line 128, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".angularjs"]:after {
+#Portfolio .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".angularjs"]:after {
   border-right-color: #830E37;
 }
 
@@ -2473,11 +2375,11 @@ and open the template in the editor.
 }
 @media screen and (min-width: 320px) and (max-width: 535px) {
   /* line 365, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ContactIndi .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label {
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
     display: block;
   }
   /* line 369, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button {
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
     width: 100%;
     min-height: 30px;
     padding: 5px 10px 0;
@@ -2485,49 +2387,49 @@ and open the template in the editor.
 }
 @media screen and (min-width: 536px) and (max-width: 639px) {
   /* line 382, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ContactIndi .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label {
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
     display: block;
   }
   /* line 386, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button {
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
     width: 49%;
     min-height: 30px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 818px) {
   /* line 398, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ContactIndi .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label {
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
     display: block;
     margin: .4em .1em;
   }
   /* line 403, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button {
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
     width: 32%;
     min-height: 30px;
   }
 }
 @media screen and (min-width: 819px) and (max-width: 884px) {
   /* line 415, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ContactIndi .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label {
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
     display: block;
   }
   /* line 419, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button {
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
     width: 24.4%;
     min-height: 30px;
   }
 }
 @media screen and (min-width: 885px) and (max-width: 1083px) {
   /* line 431, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ContactIndi .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label {
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
     display: block;
   }
   /* line 434, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons {
+  #Portfolio .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons {
     display: block;
   }
   /* line 437, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button {
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
     width: 11.8%;
     font-size: 1.2em;
   }
@@ -2573,3 +2475,111 @@ and open the template in the editor.
   }
 }
 /********* mix it up grid - end **************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-May-2015, 17:56:48
+    Author     : Edit
+*/
+/*================================= CONTACT MODULE =================================*/
+/* line 16, ../components/sass/_contactmodule.scss */
+#ContactIndi {
+  width: 100%;
+  padding-bottom: 10px;
+}
+/* line 24, ../components/sass/_contactmodule.scss */
+#ContactIndi .leftContainer {
+  width: 65%;
+}
+/* line 28, ../components/sass/_contactmodule.scss */
+#ContactIndi .rightContainer {
+  width: 33%;
+}
+/* line 30, ../components/sass/_contactmodule.scss */
+#ContactIndi .rightContainer img {
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+/* line 39, ../components/sass/_contactmodule.scss */
+#ContactIndi .email {
+  margin: 1em 0 1.5em;
+}
+/* line 43, ../components/sass/_contactmodule.scss */
+#ContactIndi .buttons {
+  margin-bottom: 15px;
+}
+/* line 47, ../components/sass/_contactmodule.scss */
+#ContactIndi .button {
+  width: 48%;
+}
+/* line 49, ../components/sass/_contactmodule.scss */
+#ContactIndi .button a {
+  font-size: 1.1em;
+  line-height: 1.1;
+  padding: 4px 8px;
+}
+/* line 57, ../components/sass/_contactmodule.scss */
+#ContactIndi .socialIcons {
+  width: 98%;
+  padding: 10px 0;
+  border-top: 2px dashed #788276;
+}
+/* line 64, ../components/sass/_contactmodule.scss */
+#ContactIndi .socialIcons a img {
+  width: 2.5em;
+}
+
+@media screen and (max-width: 580px) {
+  /* line 74, ../components/sass/_contactmodule.scss */
+  #ContactIndi .leftContainer {
+    width: 75%;
+  }
+  /* line 77, ../components/sass/_contactmodule.scss */
+  #ContactIndi .rightContainer {
+    width: 22%;
+  }
+  /* line 80, ../components/sass/_contactmodule.scss */
+  #ContactIndi .rightContainer img {
+    margin-top: 25%;
+  }
+  /* line 85, ../components/sass/_contactmodule.scss */
+  #ContactIndi .email {
+    margin: 1em 0 1.5em;
+  }
+  /* line 87, ../components/sass/_contactmodule.scss */
+  #ContactIndi .email a {
+    font-size: .9em;
+  }
+}
+@media screen and (max-width: 624px) {
+  /* line 97, ../components/sass/_contactmodule.scss */
+  #ContactIndi .button {
+    width: 98%;
+  }
+  /* line 100, ../components/sass/_contactmodule.scss */
+  #ContactIndi .button a {
+    font-size: 1.1em;
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 625px) and (max-width: 766px) {
+  /* line 111, ../components/sass/_contactmodule.scss */
+  #ContactIndi .button a {
+    font-size: .9em;
+    line-height: .9;
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  /* line 123, ../components/sass/_contactmodule.scss */
+  #ContactIndi .rightContainer img {
+    max-width: initial;
+    width: 95%;
+  }
+}
