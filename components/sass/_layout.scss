@@ -421,7 +421,7 @@ ul, li {
     }
     
     #Footer .container p {
-	font-size: 0.7em;
+	font-size: 1em;
     }
 }
 
@@ -869,9 +869,11 @@ button {
     .rightContainer {
 	width: 33%;
 	img {
-	    width: 100%;
+	    width: 80%;
+	    max-width: 80%;
 	    height: auto;
 	    margin-top: 5%;
+	    margin-left: 10%;
 	}
     }
     
@@ -956,13 +958,24 @@ button {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    #ContactIndi {
+	.rightContainer {
+	    img {
+		max-width: initial;
+		width: 95%;
+	    }
+	}
+    }
+}
+
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 
 /*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
 
 
 #ResumeHeader {
-    float:left;
+    //float:left;
     width: 100%;
     
     @extend #Portfolio;
@@ -994,6 +1007,31 @@ button {
     }
     
 
+}
+
+#ResumeMainContent {
+    
+    @extend #Portfolio;
+    
+    .container {
+	margin-bottom: 2%;
+    }
+    
+    .personalSummary {
+	ul{
+	    width: 100%;
+	    list-style-type: circle;
+	    list-style-position: outside;
+	    list-style-image: none;
+	    padding: 0 0 0 17px;
+	    
+	    li{
+		list-style-type: circle;
+		list-style-position: outside;
+		list-style-image: none
+	    }
+	}
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 459px) {
