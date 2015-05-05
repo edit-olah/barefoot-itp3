@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 73, ../components/sass/_layout.scss */
 h1 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: #a3e87b;
   margin-bottom: .7em;
   line-height: 1.6;
@@ -335,7 +335,7 @@ h1 {
 
 /* line 80, ../components/sass/_layout.scss */
 h2 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: #85E14F;
   margin-bottom: .6em;
   line-height: 1.4;
@@ -363,7 +363,7 @@ a:hover {
 
 /* line 108, ../components/sass/_layout.scss */
 a, p, li {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5;
   margin-bottom: .5em;
 }
@@ -897,47 +897,57 @@ ul, li {
   padding: 15px 25px;
 }
 
+/* line 712, ../components/sass/_layout.scss */
+#OurPortfolioGrid .grid-contentHolder img {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 639px) {
-  /* line 712, ../components/sass/_layout.scss */
+  /* line 721, ../components/sass/_layout.scss */
   #OurPortfolioContentHolder {
     padding: 15px 15px;
+  }
+
+  /* line 727, ../components/sass/_layout.scss */
+  #OurPortfolioGrid .grid-contentHolder img {
+    margin-bottom: 0px;
   }
 }
 /*======================= OUR PORTFOLIO PAGE LAYOUT - end ============================*/
 /*========================== OUR BLOG PAGE LAYOUT - beginning ============================*/
-/* line 725, ../components/sass/_layout.scss */
+/* line 742, ../components/sass/_layout.scss */
 #OurBlogGrid h1 {
   padding: 5px 0 10px;
 }
-/* line 732, ../components/sass/_layout.scss */
+/* line 749, ../components/sass/_layout.scss */
 #OurBlogGrid .grid-contentHolder img {
   width: 100%;
 }
-/* line 738, ../components/sass/_layout.scss */
+/* line 755, ../components/sass/_layout.scss */
 #OurBlogGrid .grid li {
   padding-bottom: 1%;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 751, ../components/sass/_layout.scss */
+  /* line 768, ../components/sass/_layout.scss */
   #OurBlogGrid h1 {
     padding: 0 15px 10px;
   }
 }
 /*========================== OUR BLOG PAGE LAYOUT - end ============================*/
 /*====================== CONTACT US PAGE LAYOUT - beginning ======================*/
-/* line 767, ../components/sass/_layout.scss */
+/* line 784, ../components/sass/_layout.scss */
 .contactText {
   padding: 15px 25px;
 }
 
-/* line 772, ../components/sass/_layout.scss */
+/* line 789, ../components/sass/_layout.scss */
 .wrapper-decoImg {
   position: relative;
   height: 0;
 }
 
-/* line 777, ../components/sass/_layout.scss */
+/* line 794, ../components/sass/_layout.scss */
 .container-decoImg {
   position: relative;
   left: -106%;
@@ -945,7 +955,7 @@ ul, li {
   height: 0;
   width: 205%;
 }
-/* line 784, ../components/sass/_layout.scss */
+/* line 801, ../components/sass/_layout.scss */
 .container-decoImg .decoImg {
   position: absolute;
   top: 6%;
@@ -958,19 +968,19 @@ ul, li {
 }
 
 @media screen and (max-width: 639px) {
-  /* line 799, ../components/sass/_layout.scss */
+  /* line 816, ../components/sass/_layout.scss */
   .contactText {
     padding: 0 15px;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 806, ../components/sass/_layout.scss */
+  /* line 823, ../components/sass/_layout.scss */
   .wrapper-decoImg {
     display: none;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1023px) {
-  /* line 813, ../components/sass/_layout.scss */
+  /* line 830, ../components/sass/_layout.scss */
   .container-decoImg {
     left: -108%;
     width: 207%;
@@ -978,7 +988,7 @@ ul, li {
 }
 /*====================== CONTACT US PAGE LAYOUT - end ======================*/
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning =======================*/
-/* line 826, ../components/sass/_layout.scss */
+/* line 843, ../components/sass/_layout.scss */
 #About, #Skills, #Portfolio, #ContactIndi, #ResumeHeader {
   margin-bottom: 2%;
   padding-bottom: 1%;
@@ -988,89 +998,89 @@ ul, li {
   padding: 15px 15px;
 }
 
-/* line 840, ../components/sass/_layout.scss */
+/* line 857, ../components/sass/_layout.scss */
 #ContactIndi {
   width: 100%;
   padding-bottom: 10px;
 }
-/* line 848, ../components/sass/_layout.scss */
+/* line 865, ../components/sass/_layout.scss */
 #ContactIndi .leftContainer {
   width: 65%;
 }
-/* line 852, ../components/sass/_layout.scss */
+/* line 869, ../components/sass/_layout.scss */
 #ContactIndi .rightContainer {
   width: 33%;
 }
-/* line 854, ../components/sass/_layout.scss */
+/* line 871, ../components/sass/_layout.scss */
 #ContactIndi .rightContainer img {
   width: 100%;
   height: auto;
   margin-top: 5%;
 }
-/* line 861, ../components/sass/_layout.scss */
+/* line 878, ../components/sass/_layout.scss */
 #ContactIndi .email {
   margin: 1em 0 1.5em;
 }
-/* line 865, ../components/sass/_layout.scss */
+/* line 882, ../components/sass/_layout.scss */
 #ContactIndi .buttons {
   margin-bottom: 15px;
 }
-/* line 869, ../components/sass/_layout.scss */
+/* line 886, ../components/sass/_layout.scss */
 #ContactIndi .button {
   width: 48%;
 }
-/* line 871, ../components/sass/_layout.scss */
+/* line 888, ../components/sass/_layout.scss */
 #ContactIndi .button a {
   font-size: 1.1em;
   line-height: 1.1;
   padding: 4px 8px;
 }
-/* line 879, ../components/sass/_layout.scss */
+/* line 896, ../components/sass/_layout.scss */
 #ContactIndi .socialIcons {
   width: 98%;
   padding: 10px 0;
   border-top: 2px dashed #788276;
 }
-/* line 886, ../components/sass/_layout.scss */
+/* line 903, ../components/sass/_layout.scss */
 #ContactIndi .socialIcons a img {
   width: 2.5em;
 }
 
 @media screen and (max-width: 580px) {
-  /* line 896, ../components/sass/_layout.scss */
+  /* line 913, ../components/sass/_layout.scss */
   #ContactIndi .leftContainer {
     width: 75%;
   }
-  /* line 899, ../components/sass/_layout.scss */
+  /* line 916, ../components/sass/_layout.scss */
   #ContactIndi .rightContainer {
     width: 22%;
   }
-  /* line 902, ../components/sass/_layout.scss */
+  /* line 919, ../components/sass/_layout.scss */
   #ContactIndi .rightContainer img {
     margin-top: 25%;
   }
-  /* line 907, ../components/sass/_layout.scss */
+  /* line 924, ../components/sass/_layout.scss */
   #ContactIndi .email {
     margin: 1em 0 1.5em;
   }
-  /* line 909, ../components/sass/_layout.scss */
+  /* line 926, ../components/sass/_layout.scss */
   #ContactIndi .email a {
     font-size: .9em;
   }
 }
 @media screen and (max-width: 624px) {
-  /* line 919, ../components/sass/_layout.scss */
+  /* line 936, ../components/sass/_layout.scss */
   #ContactIndi .button {
     width: 98%;
   }
-  /* line 922, ../components/sass/_layout.scss */
+  /* line 939, ../components/sass/_layout.scss */
   #ContactIndi .button a {
     font-size: 1.1em;
     line-height: 1.1;
   }
 }
 @media screen and (min-width: 625px) and (max-width: 766px) {
-  /* line 933, ../components/sass/_layout.scss */
+  /* line 950, ../components/sass/_layout.scss */
   #ContactIndi .button a {
     font-size: .9em;
     line-height: .9;
@@ -1079,75 +1089,77 @@ ul, li {
 }
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
 /*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
-/* line 947, ../components/sass/_layout.scss */
+/* line 964, ../components/sass/_layout.scss */
 #ResumeHeader {
   float: left;
   width: 100%;
 }
-/* line 953, ../components/sass/_layout.scss */
+/* line 970, ../components/sass/_layout.scss */
 #ResumeHeader .leftContainer {
   width: 21%;
 }
-/* line 956, ../components/sass/_layout.scss */
+/* line 973, ../components/sass/_layout.scss */
 #ResumeHeader .leftContainer img {
   width: 100%;
 }
-/* line 961, ../components/sass/_layout.scss */
+/* line 978, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer {
   margin-top: 5%;
   margin-left: 4%;
   width: 68%;
 }
-/* line 966, ../components/sass/_layout.scss */
+/* line 983, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer h1 {
   font-size: 1.9em;
 }
-/* line 970, ../components/sass/_layout.scss */
+/* line 987, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer h2 {
   font-size: 1.8em;
 }
-/* line 974, ../components/sass/_layout.scss */
+/* line 991, ../components/sass/_layout.scss */
 #ResumeHeader .rightContainer h3 {
   font-size: 1.7em;
 }
 
 @media screen and (min-width: 320px) and (max-width: 459px) {
-  /* line 984, ../components/sass/_layout.scss */
+  /* line 1001, ../components/sass/_layout.scss */
   #ResumeHeader .leftContainer {
     width: 30%;
   }
-  /* line 988, ../components/sass/_layout.scss */
+  /* line 1005, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer {
     width: 60%;
+    margin-top: 0;
   }
-  /* line 991, ../components/sass/_layout.scss */
+  /* line 1009, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h1 {
     font-size: 1.6em;
   }
-  /* line 995, ../components/sass/_layout.scss */
+  /* line 1013, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h2 {
     font-size: 1.4em;
   }
-  /* line 999, ../components/sass/_layout.scss */
+  /* line 1017, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h3 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 640px) {
-  /* line 1009, ../components/sass/_layout.scss */
+  /* line 1027, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer {
     margin-left: 0;
     padding-left: 5px;
+    margin-top: 0;
   }
-  /* line 1013, ../components/sass/_layout.scss */
+  /* line 1032, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h1 {
     font-size: 1.6em;
   }
-  /* line 1017, ../components/sass/_layout.scss */
+  /* line 1036, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h2 {
     font-size: 1.4em;
   }
-  /* line 1021, ../components/sass/_layout.scss */
+  /* line 1040, ../components/sass/_layout.scss */
   #ResumeHeader .rightContainer h3 {
     font-size: 1.3em;
   }
@@ -1727,7 +1739,7 @@ and open the template in the editor.
 /* line 236, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder {
   width: 100%;
-  padding: 0px 25px 18px 25px;
+  padding: 0px 25px 11px 25px;
 }
 /* line 240, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder p.min-height-applied {
@@ -1786,8 +1798,8 @@ and open the template in the editor.
 
 /* line 293, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li > h2 {
-  font-size: 1.9rem;
-  line-height: 2rem;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
   padding: 0 25px;
   margin-bottom: 20px;
 }

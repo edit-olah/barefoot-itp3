@@ -71,14 +71,14 @@ body {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     color: lighten($semiLightGreen, 10);
     margin-bottom: .7em;
     line-height: 1.6;
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: $semiLightGreen;
     margin-bottom: .6em;
     line-height: 1.4;
@@ -106,7 +106,7 @@ a:hover {
 }
 
 a, p, li {
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.5;
     margin-bottom: .5em;
 }
@@ -704,6 +704,15 @@ ul, li {
 
 #OurPortfolioContentHolder {
     padding: $defaultPadding;
+    
+}
+
+#OurPortfolioGrid {
+    .grid-contentHolder {
+	img {
+	    margin-bottom: 12px;
+	}
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -711,6 +720,14 @@ ul, li {
   
     #OurPortfolioContentHolder {
 	padding: $secondaryPadding;
+    }
+    
+    #OurPortfolioGrid {
+	.grid-contentHolder {
+	    img {
+		margin-bottom: 0px;
+	    }
+	}
     }
 }
 
@@ -987,6 +1004,7 @@ button {
 	
 	.rightContainer {
 	    width: 60%;
+	    margin-top: 0;
 	    
 	    h1 {
 		font-size: 1.6em;
@@ -1009,6 +1027,7 @@ button {
 	.rightContainer {
 	    margin-left: 0;
 	    padding-left: 5px;
+	    margin-top: 0;
 	    
 	    h1 {
 		font-size: 1.6em;
