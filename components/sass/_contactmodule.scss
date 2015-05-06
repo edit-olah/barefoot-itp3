@@ -41,6 +41,12 @@ and open the template in the editor.
 	margin-top: 1em;
     }
     
+    .contactDetails {
+	background-color: lighten($primaryBG, 4);
+	padding: 3px 10px 0;
+	border-bottom: 2px dashed lighten($primaryBG, 25);
+    }
+    
     .email{
 	margin: .5em 0 1.5em;
     }
@@ -62,7 +68,7 @@ and open the template in the editor.
     .socialIcons{
 	width: 98%;
 	padding: 10px 0;
-	border-top: 2px dashed lighten($primaryBG, 25);
+	
 	
 	a{
 	    
