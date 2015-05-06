@@ -166,6 +166,16 @@ There are five types of categories:
 3. Module
 4. State
 5. Theme'
+
 - - - - - - - - - - - - - -
 
 
+## 13. 	Ariel Flesler’s jQuery scrollTo
+
+https://plugins.jquery.com/scrollTo/
+https://github.com/flesler/jquery.scrollTo
+http://stackoverflow.com/questions/6677035/jquery-scroll-to-element
+
+http://stackoverflow.com/questions/12492471/scrollto-doctype
+
+- - - - - - - - - - - - - -
