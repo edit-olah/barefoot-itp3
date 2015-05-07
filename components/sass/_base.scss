@@ -37,6 +37,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    font: inherit;
 }
 
 body {
@@ -46,6 +47,10 @@ body {
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
     display:block;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 nav ul {
@@ -114,3 +119,26 @@ input, select {
 }
 
 /*=========================== RESET - end ============================*/
+
+
+
+
+/*
+Source/Author: Call Me Nick
+https://github.com/callmenick/Animating-Hamburger-Icons
+*/
+/* =============================================================================
+  BOX SIZING & CLEARFIX
+============================================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,7 +1,3 @@
-// Pulling in scrollTo:
-
-//require('jquery.scrollto');
-
 $( document ).ready(function() {
     
     // Instantiate MixItUp:
@@ -27,15 +23,60 @@ $( document ).ready(function() {
 	"_blank" === $linktarget ? window.open($link) : window.location.href = $link;
     });
     
-    // ScrollTo:
+    // Page nav behaviour - incl. scrollTo:
+  
     $('.pageNavLink').click(function(e) {
 	
-	var divId = '#' + $(this).attr("href");
+	var divId = '#' + $(this).attr("href");	
 	$.scrollTo(divId, 1000,{offset: {top:-148, left:0}});
 	e.preventDefault();
 	$('.pageNavLink').parent().removeClass('current');
-	$(this).parent().addClass('current');
-    });
+	$(this).parent().addClass('current', function(){
+	    if(($(this).attr("href") === 'Hero') && ($(this).parent().hasClass('current'))) {
+		//$(this).parent().delay(600).removeClass('current');
+		//alert('Got it!');
+	    } 
+	});
    
+    });
+    
+    // Hamburger menu behaviour: - Source/Author: Call Me Nick
+    
+    (function() {
+
+	"use strict";
+
+	var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+	for (var i = toggles.length - 1; i >= 0; i--) {
+	  var toggle = toggles[i];
+	  toggleHandler(toggle);
+	};
+
+	function toggleHandler(toggle) {
+	  toggle.addEventListener( "click", function(e) {
+	    e.preventDefault();
+	    
+	    //original line of code: (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+	    // amended line of code:
+	      if(this.classList.contains("active") === true) {
+		this.classList.remove("active");
+		$('#PageNav nav').slideUp(600);
+		
+	    } else {
+		this.classList.add("active");
+		$('#PageNav nav').slideDown(600);
+	    }
+	  });
+	}
+
+    })();
+
+   // (function() {
+	//if($('.cmn-toggle-switch').hasClass('active')) {
+	   // $('#PageNav nav').addClass('open');
+	   // alert('active!');
+	//}
+   // })();
 });
 

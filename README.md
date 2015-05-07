@@ -179,3 +179,11 @@ http://stackoverflow.com/questions/6677035/jquery-scroll-to-element
 http://stackoverflow.com/questions/12492471/scrollto-doctype
 
 - - - - - - - - - - - - - -
+
+
+## 14. CSS-only version of the hamburger menu icon
+
+http://callmenick.com/post/animating-css-only-hamburger-menu-icons
+https://github.com/callmenick/Animating-Hamburger-Icons
+
+- - - - - - - - - - - - - -

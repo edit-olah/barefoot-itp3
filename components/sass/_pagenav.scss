@@ -18,6 +18,10 @@ and open the template in the editor.
     background: $greenBG2;
     background: rgba(189,222,55, .8);
     //margin-bottom: 1%;
+    .cmn-toggle-switch__htx {
+	background: $greenBG2;
+	background: rgba(189,222,55, .8);
+    }
 }
 
 .nav.full-width {
@@ -34,7 +38,7 @@ and open the template in the editor.
     }
     a {
 	color: $primaryBG;
-	padding: .5% 3%;
+	padding: .7% 3%;
 	
     }
     
@@ -50,6 +54,30 @@ and open the template in the editor.
 }
 
 @media screen and (max-width: 639px) {
+    
+    #PageNav {
+	width: 100%;
+	.cmn-toggle-switch__htx {
+	    float:left;
+	    top: -52px;
+	}
+	nav {
+	    display: none;
+	    //float: right;
+	    //width: 90%;
+	    .nav {
+		clear: initial;
+	    }
+	    .nav.full-width {
+		//max-width: none;
+		//margin: 0;
+	    }
+	}
+
+    }
+    
+    
+    /*
     #PageNav {
 	clear: both;
     }
@@ -60,14 +88,18 @@ and open the template in the editor.
 	    padding: .7% .5%;
 	}
     }
+    */
 }
 
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
+    
     .nav.full-width {
 	background: transparent;
+	min-height: 38px;
 	a {
 	    font-size: 1.1em;
+	    padding: 1% 3%;
 	}
     }
 }

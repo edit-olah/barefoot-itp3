@@ -94,5 +94,31 @@ $mixitupWidth5		    : 19%; //5 items in a row
 
 
 
+// hamburger menu
 
+// line heights
+$line-height--small: 1.2;
+$line-height--medium: 1.5;
+
+// colours
+$neutral: rgb(120,120,120);
+
+
+$accent: rgb(255,150,80);
+$accent-dark: darken($accent, 20%);
+
+/* original variables
+$button-width: 108px;
+$button-height: 96px;
+$bar-thickness: 6px;
+$button-pad: 18px;
+$button-trans-delay: 0.3s;
+*/
+
+
+$button-width: 60px;
+$button-height: 52px;
+$bar-thickness: 4px;
+$button-pad: 10px;
+$button-trans-delay: 0.3s;
 

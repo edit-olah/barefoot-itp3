@@ -199,6 +199,7 @@ ul, li {
   width: 100%;
   position: fixed;
   height: auto;
+  min-height: 129px;
   left: 0;
   top: 0;
   z-index: 10;
@@ -229,12 +230,19 @@ ul, li {
 	padding: $minPadding;
     }
     
+    .fixedNavPage {
+	margin-top: 120px;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {
 
     .page {
 	padding: $secondaryPadding;
+    }
+    
+    .fixedNavPage {
+	margin-top: 130px;
     }
 }
 /***************============= fluid grid MAIN NAVIGATION - beginning ==============**************/
