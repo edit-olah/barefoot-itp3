@@ -26,7 +26,6 @@ $( document ).ready(function() {
     // Page nav behaviour - incl. scrollTo:
   
     $('.pageNavLink').click(function(e) {
-	//console.log('start');
 	
 	// when clicked scroll to relevant section
 	var divId = '#' + $(this).attr("href");	
@@ -45,22 +44,7 @@ $( document ).ready(function() {
 		setTimeout(function(){ 
 		    $this.parent().removeClass('current');
 		}, 3000);
-		
-		//console.log('hello');
-	    //}else{
-		//console.log('goodbye');
 	    } 
-	    
-	/*$(this).parent().addClass('current', 100, '', function(){
-	    console.log('add class callback');
-	    if(($(this).attr("href") === 'Hero') && ($(this).parent().hasClass('current'))) {
-		//$(this).parent().delay(600).removeClass('current');
-		//alert('Got it!');
-		console.log('hello');
-	    }else{
-		console.log('goodbye');
-	    } 
-	});*/
    
     });
     
@@ -96,11 +80,5 @@ $( document ).ready(function() {
 
     })();
 
-   // (function() {
-	//if($('.cmn-toggle-switch').hasClass('active')) {
-	   // $('#PageNav nav').addClass('open');
-	   // alert('active!');
-	//}
-   // })();
 });
 
