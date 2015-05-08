@@ -233,6 +233,11 @@ ul, li {
     .fixedNavPage {
 	margin-top: 120px;
     }
+    
+    #OuterHeaderWrapper {
+	min-height: initial;
+	max-height: 121px;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px) {

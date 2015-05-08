@@ -15,7 +15,7 @@ $( document ).ready(function() {
 	}
     });
     
-    // Click Follow function:
+    // Click Follow function: (find link within the area and make the whole area a link)
     
     $(".click-follow").click(function() {
 	$link = $(this).find("a").attr("href"), 
@@ -26,17 +26,41 @@ $( document ).ready(function() {
     // Page nav behaviour - incl. scrollTo:
   
     $('.pageNavLink').click(function(e) {
+	//console.log('start');
 	
+	// when clicked scroll to relevant section
 	var divId = '#' + $(this).attr("href");	
 	$.scrollTo(divId, 1000,{offset: {top:-148, left:0}});
 	e.preventDefault();
+	
+	// make relevant page nav element appear current/selected 
 	$('.pageNavLink').parent().removeClass('current');
-	$(this).parent().addClass('current', function(){
+	$(this).parent().addClass('current');
+	
+	// remove 'current' class from 'back to top' element after some time:
+
+	if(($(this).attr("href") === 'Hero') && ($(this).parent().hasClass('current'))) {
+		
+		$this = $(this);
+		setTimeout(function(){ 
+		    $this.parent().removeClass('current');
+		}, 3000);
+		
+		//console.log('hello');
+	    //}else{
+		//console.log('goodbye');
+	    } 
+	    
+	/*$(this).parent().addClass('current', 100, '', function(){
+	    console.log('add class callback');
 	    if(($(this).attr("href") === 'Hero') && ($(this).parent().hasClass('current'))) {
 		//$(this).parent().delay(600).removeClass('current');
 		//alert('Got it!');
+		console.log('hello');
+	    }else{
+		console.log('goodbye');
 	    } 
-	});
+	});*/
    
     });
     
@@ -59,7 +83,7 @@ $( document ).ready(function() {
 	    
 	    //original line of code: (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
 	    // amended line of code:
-	      if(this.classList.contains("active") === true) {
+	    if(this.classList.contains("active") === true) {
 		this.classList.remove("active");
 		$('#PageNav nav').slideUp(600);
 		
