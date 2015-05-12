@@ -6,19 +6,13 @@ var pageNavTimeout;
 function bfitp_timeout ($time){
     pageNavTimeout = setTimeout(function(){ 
 	
-	console.log('TIMEOUT - from bfitp_timeout function');
 	// slide up/close page nav:
 	$('#PageNav nav').slideUp(600);
 	// make hamburger menu icon inactive:
 	$('.cmn-toggle-switch').removeClass('active');
-	console.log('hamburger menu is now inactive - from bfitp_timeout function');
 	
 	// remove recorded data string against page nav link:
 	$('.pageNavLink').removeData('clicked');
-	console.log('pageNavLink data is removed: - from bfitp_timeout function');
-	console.log($('.pageNavLink').data());
-	
-	console.log('TIMEOUT completed - from bfitp_timeout function');
 	
     }, $time);
 };
@@ -65,15 +59,11 @@ $( document ).ready(function() {
 	
 	// record data (clicked string) against .pageNavLink:
 	$('.pageNavLink').data('clicked', true);
-	console.log('pageNavLink data is recorded: - from pageNavLink click event');
-	console.log($('.pageNavLink').data());
 	
 	// if Hamburger Menu is active (therefore pageNav is visible) and when this pageNavLink is clicked: 
 		
 	if(($('.cmn-toggle-switch').hasClass('active')) && ($('.pageNavLink').data('clicked') === true)){
-	    console.log('start conditional behaviour when pageNavLink is clicked and ham icon is active');
-	    bfitp_timeout(4000);
-	    console.log('TIMEOUT called - from conditional statement');
+	    bfitp_timeout(3000);
 	}
 	
 
@@ -83,7 +73,7 @@ $( document ).ready(function() {
 		$this = $(this);
 		setTimeout(function(){ 
 		    $this.parent().removeClass('current');
-		}, 3000);
+		}, 2500);
 	    } 
 	    
 	
@@ -115,20 +105,15 @@ $( document ).ready(function() {
 		
 		// slide up/close page nav:
 		$('#PageNav nav').slideUp(600);
-		console.log('HAMburger menu is now INACTIVE');
 		// remove recorded data string against page nav link:
 		$('.pageNavLink').removeData('clicked');
-		console.log('pageNavLink data is removed: - from HAM INACTIVE');
-		console.log($('.pageNavLink').data());
 		clearTimeout(pageNavTimeout);
-		console.log('timeout CLEARED - from HAM INACTIVE');
 		
 	    } else {
 		this.classList.add("active");
 		
 		// slide down/open page nav:
 		$('#PageNav nav').slideDown(600);
-		console.log('HAMburger menu is now ACTIVE');
 	    }
 	  });
 	}
