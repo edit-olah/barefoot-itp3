@@ -187,3 +187,22 @@ http://callmenick.com/post/animating-css-only-hamburger-menu-icons
 https://github.com/callmenick/Animating-Hamburger-Icons
 
 - - - - - - - - - - - - - -
+
+## 15. setTimeout and clearTimeout JavaScript functions
+
+http://www.w3schools.com/jsref/met_win_settimeout.asp
+http://stackoverflow.com/questions/12468122/jquery-stop-settimeout-if-user-clicks-in-input-field
+https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout
+
+setTimeout vs window.setTimeout:
+http://www.sitepoint.com/jquery-settimeout-function-examples/
+
+- - - - - - - - - - - - - -
+
+## 16. .data() jQuery function - 'Store arbitrary data associated with the matched elements...'
+
+https://api.jquery.com/data/
+http://stackoverflow.com/questions/6081608/jquery-check-if-it-is-clicked-or-not
+
+- - - - - - - - - - - - - -
+

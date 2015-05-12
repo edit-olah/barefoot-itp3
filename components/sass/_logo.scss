@@ -33,10 +33,12 @@ and open the template in the editor.
     }
 }
 
-
 #TopBanner .logo-container {
     margin: 1% 0 1% 10%;
 }
+
+
+
 
 @media screen and (max-width: 639px) {
     
@@ -55,5 +57,25 @@ and open the template in the editor.
 	    margin-top: 5px;	    
 	}
     }
+    
+    .logo-container.fixedNavPage-logoContainer {
+	float: right;
+	clear: initial;
+	width:80%;
+	    
+	.logo {
+	    background-position: 0%;
+	}
+    }
 }
 
+@media screen and (max-width: 364px) {
+    .logo-container.fixedNavPage-logoContainer {
+	clear: both;
+	width: 100%;
+	.logo {
+	    background-position: 50%;
+	}
+    }
+    
+}

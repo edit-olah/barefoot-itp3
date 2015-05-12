@@ -93,7 +93,8 @@ https://github.com/callmenick/Animating-Hamburger-Icons
  */
 
 .cmn-toggle-switch__htx {
-    background-color: rgb(255,50,100);
+    background: $greenBG2;
+    background: rgba(189,222,55, .8);
 }
 
 .cmn-toggle-switch__htx span {
@@ -122,7 +123,9 @@ https://github.com/callmenick/Animating-Hamburger-Icons
 /* active state, i.e. menu open */
 
 .cmn-toggle-switch__htx.active {
-    background-color: darken(rgb(255,50,100), 20%);
+    //background-color: darken(rgb(255,50,100), 20%);
+    background: $greenBG2;
+    background: darken(rgba(189,222,55, .8), 20%);
 }
 
 .cmn-toggle-switch__htx.active span {
@@ -152,5 +155,16 @@ https://github.com/callmenick/Animating-Hamburger-Icons
 @media screen and (max-width: 639px) {
     .cmn-toggle-switch {
 	display: block;
+    }
+    
+    .cmn-toggle-switch__htx {
+	float:left;
+	top: 27px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .cmn-toggle-switch__htx {
+	top: 0;
     }
 }

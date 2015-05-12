@@ -2071,6 +2071,28 @@
 	};
 	
 })(jQuery);
+
+// defining bftip_timeout function for page nav and hamburger menu icon behaviour, and put it into a global variable:
+
+var timeoutId = function bfitp_timeout ($time){
+    setTimeout(function(){ 
+	console.log('TIMEOUT - from bfitp_timeout function');
+	// slide up/close page nav:
+	$('#PageNav nav').slideUp(600);
+	// make hamburger menu icon inactive:
+	$('.cmn-toggle-switch').removeClass('active');
+	console.log('hamburger menu is now inactive - from bfitp_timeout function');
+	
+	// remove recorded data string against page nav link:
+	$('.pageNavLink').removeData('clicked');
+	console.log('pageNavLink data is removed: - from bfitp_timeout function');
+	console.log($('.pageNavLink').data());
+	
+	console.log('TIMEOUT completed - from bfitp_timeout function');
+    }, $time);
+};
+
+
 $( document ).ready(function() {
     
     // Instantiate MixItUp:
@@ -2088,7 +2110,7 @@ $( document ).ready(function() {
 	}
     });
     
-    // Click Follow function: (find link within the area and make the whole area a link)
+    // Click Follow function: (find link within the area and make the whole area a link):
     
     $(".click-follow").click(function() {
 	$link = $(this).find("a").attr("href"), 
@@ -2099,18 +2121,37 @@ $( document ).ready(function() {
     // Page nav behaviour - incl. scrollTo:
   
     $('.pageNavLink').click(function(e) {
+	e.stopPropagation();
 	
-	// when clicked scroll to relevant section
+	// when clicked scroll to relevant section:
 	var divId = '#' + $(this).attr("href");	
-	$.scrollTo(divId, 1000,{offset: {top:-148, left:0}});
+	$.scrollTo(divId, 1000,{offset: {top:-160, left:0}});
 	e.preventDefault();
 	
-	// make relevant page nav element appear current/selected 
+	// make relevant page nav element appear current/selected: 
 	$('.pageNavLink').parent().removeClass('current');
 	$(this).parent().addClass('current');
 	
-	// remove 'current' class from 'back to top' element after some time:
+	// record data (clicked string) against .pageNavLink:
+	$('.pageNavLink').data('clicked', true);
+	console.log('pageNavLink data is recorded: - from pageNavLink click event');
+	console.log($('.pageNavLink').data());
+	
+	
+	
+	// if Hamburger Menu is active and therefore pageNav is visible (when this pageNavLink li is clicked): 
+		
+	if(($('.cmn-toggle-switch').hasClass('active')) && ($('.pageNavLink').data('clicked') === true)){
+	    
+	    console.log('start conditional behaviour when pageNavLink is clicked and ham icon is active');
+	    timeoutId(2000);
+	    console.log('TIMEOUT called - from conditional statement');
 
+	    
+	}
+	
+
+	// remove 'current' class from 'back to top' element after some time:
 	if(($(this).attr("href") === 'Hero') && ($(this).parent().hasClass('current'))) {
 		
 		$this = $(this);
@@ -2118,6 +2159,8 @@ $( document ).ready(function() {
 		    $this.parent().removeClass('current');
 		}, 3000);
 	    } 
+	    
+	
    
     });
     
@@ -2140,13 +2183,23 @@ $( document ).ready(function() {
 	    
 	    //original line of code: (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
 	    // amended line of code:
+	    
 	    if(this.classList.contains("active") === true) {
 		this.classList.remove("active");
 		$('#PageNav nav').slideUp(600);
+		console.log('HAMburger menu is now INACTIVE');
+		$('.pageNavLink').removeData('clicked');
+		console.log('pageNavLink data is removed: - from HAM INACTIVE');
+		console.log($('.pageNavLink').data());
+		clearTimeout(timeoutId);
+		console.log('timeout CLEARED - from HAM INACTIVE');
+		
 		
 	    } else {
 		this.classList.add("active");
 		$('#PageNav nav').slideDown(600);
+		console.log('HAMburger menu is now ACTIVE');
+
 	    }
 	  });
 	}
@@ -2154,6 +2207,8 @@ $( document ).ready(function() {
     })();
 
 });
+
+
 
 
 },{}]},{},[1])

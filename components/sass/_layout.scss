@@ -199,7 +199,7 @@ ul, li {
   width: 100%;
   position: fixed;
   height: auto;
-  min-height: 129px;
+  //min-height: 129px;
   left: 0;
   top: 0;
   z-index: 10;
@@ -229,14 +229,17 @@ ul, li {
 	width: 100%;
 	padding: $minPadding;
     }
-    
+}
+
+@media screen and (max-width: 364px) {
     .fixedNavPage {
-	margin-top: 120px;
+      margin-top: 170px;
     }
-    
-    #OuterHeaderWrapper {
-	min-height: initial;
-	max-height: 121px;
+}
+
+@media screen and (min-width: 365px) and (max-width: 639px) {
+    .fixedNavPage {
+	margin-top: 150px;
     }
 }
 
@@ -316,7 +319,8 @@ ul, li {
 @media screen and (max-width:593px) {
     .nav {
 	a:link {
-	 padding: 20px 1% !important;
+	 padding: 20px 1%;
+	 //padding: 20px 1% !important;
 	}
     }
 }
