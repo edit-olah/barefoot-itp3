@@ -46,8 +46,8 @@ $( document ).ready(function() {
     // Page nav behaviour - incl. scrollTo:
   
     $('.pageNavLink').click(function(e) {
-	e.stopPropagation();
-	
+	//e.stopPropagation();
+	e.preventDefault();
 	// when clicked scroll to relevant section:
 	var divId = '#' + $(this).attr("href");	
 	$.scrollTo(divId, 1000,{offset: {top:-160, left:0}});
@@ -79,6 +79,17 @@ $( document ).ready(function() {
 	
    
     });
+    
+    // Back to top button behaviour:
+    
+    $('.backToTopButton').click(function(e) {
+	e.preventDefault();
+	// when clicked scroll to div with 'Hero' id:
+	var divId = '#' + $(this).attr("href");	
+	$.scrollTo(divId, 1500,{offset: {top:-160, left:0}});
+	
+    });
+    
     
     // Hamburger menu behaviour: - Source/Author: Call Me Nick
     

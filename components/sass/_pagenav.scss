@@ -49,6 +49,15 @@ and open the template in the editor.
     text-decoration: none;
 }
 
+.backToTopButton {
+	float: right;
+	display: block;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	line-height: 1.2;
+	padding: 5px 0 5px 5px;
+}
+
 @media screen and (max-width: 639px) {
     
     #PageNav {

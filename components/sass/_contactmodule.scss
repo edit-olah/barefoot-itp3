@@ -89,7 +89,7 @@ and open the template in the editor.
 	    width: 22%;
 	    
 	    img {
-		  margin-top: 25%;
+		  margin-top: 15%;
 	    }
 	}
 	
@@ -102,6 +102,16 @@ and open the template in the editor.
     }
 }
 
+
+@media screen and (max-width: 395px) {
+    #ContactIndi {
+	.email{
+	    a {
+	    word-wrap: break-word;
+	    }
+	}
+    }
+}
 
 @media screen and (max-width: 624px) {
     #ContactIndi {

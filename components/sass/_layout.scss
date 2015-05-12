@@ -239,7 +239,7 @@ ul, li {
 
 @media screen and (min-width: 365px) and (max-width: 639px) {
     .fixedNavPage {
-	margin-top: 150px;
+	margin-top:  125px;
     }
 }
 
@@ -500,8 +500,14 @@ ul, li {
 		width: 63%;
 		margin-left: 2%;
 	    }
+	    
+	    h2 {
+		min-width: 110px;
+	    }
+	    
 	    h3{
 		min-height: 32px;
+		min-width: 114px;
 	    }
 	    img {
 		width: 100%;
@@ -601,7 +607,7 @@ ul, li {
 		    margin-top: 25%;
 		    
 		    a {
-			font-size: 1em;
+			font-size: .9em;
 		    }
 		 }
 	     }
@@ -630,7 +636,7 @@ ul, li {
 		    margin-left: -89%;
 		    margin-top: 40%;
 		   a {
-		       font-size: 1em;
+		       font-size: .9em;
 		   }
 		}
 	    }
