@@ -25,13 +25,13 @@
     }
 }
 
-@mixin mixitupRect($scale) {
+@mixin mixitupRect($scale, $beforePaddingTop) {
     position:relative;
     
     &:before {
 	content: '';
 	display: inline-block;
-	padding-top: 5%;
+	padding-top: $beforePaddingTop;
 	vertical-align: middle;
     }
     &:after {
@@ -59,9 +59,9 @@
 	border: 2px dashed lighten($primaryBG, 12);
 	
 	p {
-	    line-height: 1.3;
+	    line-height: 1.2;
 	    font-size: 1.3rem;
-	    padding: .3em 1em;
+	    padding: 0 .8em;
 	}
 }
 

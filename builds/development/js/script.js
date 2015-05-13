@@ -2095,11 +2095,17 @@ $( document ).ready(function() {
     
     // Instantiate MixItUp:
     
-    $('#Container').mixItUp({
+    $('#SkillsContainer.peters-skills').mixItUp({
 	load: {
 	    filter: '.webdev'
 	}
     });
+    $('#SkillsContainer.edits-skills').mixItUp({
+	//load: {
+	    //filter: '.markup, .extension-language, .dynamic-programming-language, .code-library, .cms, .frontend-automation, .version-control, .virtualization, .terminal-emulator'
+	//}
+    });    
+    
     
     $('#PortfolioContainer').mixItUp({
 	selectors: {

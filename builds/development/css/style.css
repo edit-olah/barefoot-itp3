@@ -2088,9 +2088,10 @@ and open the template in the editor.
     Created on : 06-Jan-2015, 08:02:58
     Author     : Edit
 */
-/*================================= MIX IT UP =================================*/
-/********* mix it up control bar - beginning **************/
-/* line 13, ../components/sass/_mixitup.scss */
+/*================================= MIX IT UP ================================================*/
+/* ===================== mix it up GLOBAL styles - beginning ======================*/
+/********* mix it up buttons / control bar - beginning **************/
+/* line 16, ../components/sass/_mixitup.scss */
 .control-bar {
   background: #768174;
   background: #3A3F39;
@@ -2102,23 +2103,23 @@ and open the template in the editor.
   font-size: 0;
   position: relative;
 }
-/* line 25, ../components/sass/_mixitup.scss */
+/* line 28, ../components/sass/_mixitup.scss */
 .control-bar label {
   color: #e1f0a4;
-  margin: 0 5px 0 15px;
+  margin: 0 5px;
   display: inline-block;
   vertical-align: middle;
   font-size: 1.5rem;
   line-height: 1.5;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 35, ../components/sass/_mixitup.scss */
+/* line 38, ../components/sass/_mixitup.scss */
 .control-bar .group {
   display: inline-block;
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
-/* line 40, ../components/sass/_mixitup.scss */
+/* line 43, ../components/sass/_mixitup.scss */
 .control-bar .group button {
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
@@ -2134,13 +2135,13 @@ and open the template in the editor.
   border-radius: 3px;
   margin-bottom: 6px;
 }
-/* line 55, ../components/sass/_mixitup.scss */
+/* line 58, ../components/sass/_mixitup.scss */
 .control-bar .group button:hover, .control-bar .group button:focus, .control-bar .group button.active {
   background: #B9C8B5;
   border: 2px dashed rgba(83, 90, 81, 0.5);
   color: #3A3F39;
 }
-/* line 65, ../components/sass/_mixitup.scss */
+/* line 68, ../components/sass/_mixitup.scss */
 .control-bar .filter-buttons button {
   position: relative;
 }
@@ -2164,85 +2165,17 @@ and open the template in the editor.
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 68, ../components/sass/_mixitup.scss */
-.control-bar .filter-buttons button[data-filter=".webdev"]:after {
-  border-right-color: #ABF381;
-}
-/* line 71, ../components/sass/_mixitup.scss */
-.control-bar .filter-buttons button[data-filter=".drupal"]:after {
-  border-right-color: #137CC1;
-}
-/* line 74, ../components/sass/_mixitup.scss */
-.control-bar .filter-buttons button[data-filter=".threeD"]:after {
-  border-right-color: #FFB587;
-}
-/* line 77, ../components/sass/_mixitup.scss */
-.control-bar .filter-buttons button[data-filter=".animation"]:after {
-  border-right-color: #ff7621;
-}
-/* line 80, ../components/sass/_mixitup.scss */
-.control-bar .filter-buttons button[data-filter=".drawing"]:after {
-  border-right-color: #f8b0c9;
-}
-
-/* line 90, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .group:first-child, #ResumeHeader .control-bar .group:first-child, #ResumeMainContent .control-bar .group:first-child, #ContactIndi .control-bar .group:first-child {
-  margin-bottom: 1%;
-}
-/* line 95, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons {
-  width: 100%;
-}
-/* line 98, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
-  width: 10.8%;
-  min-height: 46px;
-  min-width: initial;
-  vertical-align: top;
-}
-/* line 107, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".html"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".html"]:after {
-  border-right-color: #76DFC0;
-}
-/* line 110, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css"]:after {
-  border-right-color: #26a580;
-}
-/* line 113, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".sass"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".sass"]:after {
-  border-right-color: #1a6f56;
-}
-/* line 116, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css-animation"]:after {
-  border-right-color: #0e3d30;
-}
-/* line 119, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".drupal-project"]:after {
-  border-right-color: #137CC1;
-}
-/* line 122, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".website-project"]:after {
-  border-right-color: #859900;
-}
-/* line 125, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".js-jquery"]:after {
-  border-right-color: #E24F83;
-}
-/* line 128, ../components/sass/_mixitup.scss */
-#Portfolio .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".angularjs"]:after {
-  border-right-color: #830E37;
-}
 
 @media screen and (min-width: 320px) and (max-width: 534px) {
-  /* line 142, ../components/sass/_mixitup.scss */
+  /* line 81, ../components/sass/_mixitup.scss */
   .control-bar .group button {
     padding: 3px 7px;
   }
-  /* line 147, ../components/sass/_mixitup.scss */
+  /* line 86, ../components/sass/_mixitup.scss */
   .control-bar .filter-buttons {
     width: 100%;
   }
-  /* line 150, ../components/sass/_mixitup.scss */
+  /* line 89, ../components/sass/_mixitup.scss */
   .control-bar .filter-buttons button {
     display: block;
     min-width: initial;
@@ -2251,23 +2184,32 @@ and open the template in the editor.
     margin-bottom: .7%;
   }
 }
-@media screen and (max-width: 615px) {
-  /* line 164, ../components/sass/_mixitup.scss */
+@media screen and (max-width: 727px) {
+  /* line 103, ../components/sass/_mixitup.scss */
   .control-bar label {
     display: block;
     margin: .4em .1em;
   }
 }
 @media screen and (max-width: 823px) {
-  /* line 172, ../components/sass/_mixitup.scss */
+  /* line 111, ../components/sass/_mixitup.scss */
   .control-bar .group:first-child {
     margin-bottom: 1%;
   }
 }
-/********* mix it up buttons - end **************/
+/********* mix it up buttons / control bar  - end **************/
 /********* mix it up grid - beginning **************/
-/* line 184, ../components/sass/_mixitup.scss */
-#Container {
+/* line 123, ../components/sass/_mixitup.scss */
+.mixItUp-container > * {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* line 131, ../components/sass/_mixitup.scss */
+.mixItUp-container {
   text-align: justify;
   font-family: "zero-width";
   font-size: 0;
@@ -2277,17 +2219,17 @@ and open the template in the editor.
   padding: 0;
 }
 /* line 18, ../components/sass/_mixins.scss */
-#Container:after {
+.mixItUp-container:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 /* line 23, ../components/sass/_mixins.scss */
-#Container .gap {
+.mixItUp-container .gap {
   width: 23%;
 }
-/* line 187, ../components/sass/_mixitup.scss */
-#Container .mix {
+/* line 134, ../components/sass/_mixitup.scss */
+.mixItUp-container .mix, .mixItUp-container .portfoMix {
   display: none;
   background: rgba(255, 255, 255, 0.2);
   margin-bottom: 2%;
@@ -2298,20 +2240,20 @@ and open the template in the editor.
   position: relative;
 }
 /* line 61, ../components/sass/_mixins.scss */
-#Container .mix p {
-  line-height: 1.3;
+.mixItUp-container .mix p, .mixItUp-container .portfoMix p {
+  line-height: 1.2;
   font-size: 1.3rem;
-  padding: .3em 1em;
+  padding: 0 .8em;
 }
 /* line 31, ../components/sass/_mixins.scss */
-#Container .mix:before {
+.mixItUp-container .mix:before, .mixItUp-container .portfoMix:before {
   content: '';
   display: inline-block;
   padding-top: 5%;
   vertical-align: middle;
 }
 /* line 37, ../components/sass/_mixins.scss */
-#Container .mix:after {
+.mixItUp-container .mix:after, .mixItUp-container .portfoMix:after {
   content: '';
   position: absolute;
   border: 20px solid transparent;
@@ -2323,93 +2265,395 @@ and open the template in the editor.
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 193, ../components/sass/_mixitup.scss */
-#Container .mix.webdev:after {
-  border-right-color: #ABF381;
-}
-/* line 197, ../components/sass/_mixitup.scss */
-#Container .mix.drupal:after {
-  border-right-color: #137CC1;
-}
-/* line 201, ../components/sass/_mixitup.scss */
-#Container .mix.threeD:after {
-  border-right-color: #FFB587;
-}
-/* line 204, ../components/sass/_mixitup.scss */
-#Container .mix.animation:after {
-  border-right-color: #ff7621;
-}
-/* line 207, ../components/sass/_mixitup.scss */
-#Container .mix.drawing:after {
-  border-right-color: #f8b0c9;
-}
 
-/* line 212, ../components/sass/_mixitup.scss */
-#PortfolioContainer {
-  text-align: justify;
-  font-family: "zero-width";
-  font-size: 0;
-  box-sizing: border-box;
-  min-height: 200px;
-  overflow: hidden;
-  padding: 0;
-}
-/* line 18, ../components/sass/_mixins.scss */
-#PortfolioContainer:after {
-  content: '';
+/********* mix it up grid - end **************/
+/* ================================ mix it up GLOBAL styles - end ======================================*/
+/* =============================== Skills section - beginning ======================================*/
+/********* Skills - buttons / control bar - beginning **************/
+/* line 156, ../components/sass/_mixitup.scss */
+#Skills .control-bar {
   display: inline-block;
+  width: 37%;
+  vertical-align: top;
+  margin: 7px 0 0 2%;
+  padding: 13px 3%;
+}
+/* line 163, ../components/sass/_mixitup.scss */
+#Skills .control-bar .group {
   width: 100%;
 }
-/* line 23, ../components/sass/_mixins.scss */
-#PortfolioContainer .gap {
-  width: 23%;
+/* line 166, ../components/sass/_mixitup.scss */
+#Skills .control-bar .group button {
+  width: 100%;
+  text-align: left;
 }
-/* line 216, ../components/sass/_mixitup.scss */
-#PortfolioContainer .portfoMix {
-  display: none;
-  background: rgba(255, 255, 255, 0.2);
-  margin-bottom: 2%;
+/* line 170, ../components/sass/_mixitup.scss */
+#Skills .control-bar .group button[data-filter="all"], #Skills .control-bar .group button[data-filter="none"] {
+  width: 39%;
+  text-align: center;
+}
+/* line 177, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons label {
+  margin-bottom: 10px;
+}
+/* line 181, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".webdev"]:after {
+  border-right-color: #ABF381;
+}
+/* line 184, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".drupal"]:after {
+  border-right-color: #137CC1;
+}
+/* line 187, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".threeD"]:after {
+  border-right-color: #FFB587;
+}
+/* line 190, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".animation"]:after {
+  border-right-color: #ff7621;
+}
+/* line 193, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".drawing"]:after {
+  border-right-color: #f8b0c9;
+}
+/* line 196, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".markup"]:after {
+  border-right-color: #e9fcde;
+}
+/* line 199, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".extension-language"]:after {
+  border-right-color: #caf7b0;
+}
+/* line 202, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".dynamic-programming-language"]:after {
+  border-right-color: #ABF381;
+}
+/* line 205, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".code-library"]:after {
+  border-right-color: #7cec3b;
+}
+/* line 208, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".frontend-automation"]:after {
+  border-right-color: #4bedbd;
+}
+/* line 211, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".version-control"]:after {
+  border-right-color: #76DFC0;
+}
+/* line 214, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".virtualization"]:after {
+  border-right-color: #FFB587;
+}
+/* line 217, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".terminal-emulator"]:after {
+  border-right-color: #FF9959;
+}
+/* line 220, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".cut-up"]:after {
+  border-right-color: #f25d00;
+}
+/* line 223, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".cms"]:after {
+  border-right-color: #15cc96;
+}
+/* line 226, ../components/sass/_mixitup.scss */
+#Skills .control-bar .filter-buttons button[data-filter=".additional"]:after {
+  border-right-color: #F481A9;
+}
+
+/*** Skills - buttons / control bar - end ***/
+/*** Skills - grid - beginning ***/
+/* line 238, ../components/sass/_mixitup.scss */
+#SkillsContainer {
+  display: inline-block;
+  width: 59%;
   vertical-align: top;
-  width: 23%;
-  min-height: 60px;
-  border: 2px dashed #585f56;
+  margin-top: 7px;
+}
+/* line 245, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix {
   position: relative;
+  margin-bottom: .7%;
+  width: 49%;
+  min-height: 49px;
+}
+/* line 31, ../components/sass/_mixins.scss */
+#SkillsContainer .mix:before {
+  content: '';
+  display: inline-block;
+  padding-top: 2%;
+  vertical-align: middle;
+}
+/* line 37, ../components/sass/_mixins.scss */
+#SkillsContainer .mix:after {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-right-color: white;
+  top: -10px;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 251, ../components/sass/_mixitup.scss */
+#SkillsContainer .gap {
+  width: 24.5%;
+}
+/* line 257, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.webdev:after {
+  border-right-color: #ABF381;
+}
+/* line 260, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.cms:after {
+  border-right-color: #15cc96;
+}
+/* line 263, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.drupal:after {
+  border-right-color: #137CC1;
+}
+/* line 266, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.threeD:after {
+  border-right-color: #FFB587;
+}
+/* line 269, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.animation:after {
+  border-right-color: #ff7621;
+}
+/* line 272, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.drawing:after {
+  border-right-color: #f8b0c9;
+}
+/* line 275, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.markup:after {
+  border-right-color: #e9fcde;
+}
+/* line 278, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.extension-language:after {
+  border-right-color: #caf7b0;
+}
+/* line 281, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.dynamic-programming-language:after {
+  border-right-color: #ABF381;
+}
+/* line 284, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.code-library:after {
+  border-right-color: #7cec3b;
+}
+/* line 287, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.frontend-automation:after {
+  border-right-color: #4bedbd;
+}
+/* line 290, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.version-control:after {
+  border-right-color: #76DFC0;
+}
+/* line 293, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.virtualization:after {
+  border-right-color: #FFB587;
+}
+/* line 296, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.terminal-emulator:after {
+  border-right-color: #FF9959;
+}
+/* line 299, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.cut-up:after {
+  border-right-color: #f25d00;
+}
+/* line 302, ../components/sass/_mixitup.scss */
+#SkillsContainer .mix.additional:after {
+  border-right-color: #F481A9;
+}
+
+@media screen and (max-width: 459px) {
+  /* line 310, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix {
+    width: 98%;
+    min-height: 44px;
+    margin-bottom: 6px;
+  }
+  /* line 315, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix p {
+    padding: .1em 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  /* line 322, ../components/sass/_mixitup.scss */
+  #SkillsContainer .gap {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 551px) {
+  /* line 331, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix {
+    width: 48%;
+    min-height: 60px;
+    margin-bottom: 6px;
+  }
+  /* line 336, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix p {
+    padding: .1em 1.5em;
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  /* line 343, ../components/sass/_mixitup.scss */
+  #SkillsContainer .gap {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 648px) {
+  /* line 353, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix {
+    min-height: 60px;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 649px) and (max-width: 831px) {
+  /* line 363, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix {
+    min-height: 57px;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  /* line 373, ../components/sass/_mixitup.scss */
+  #Skills .control-bar label {
+    display: block;
+  }
+
+  /* line 380, ../components/sass/_mixitup.scss */
+  #SkillsContainer .mix {
+    margin-bottom: 6px;
+  }
+}
+/*** Skills - grid - end ***/
+/* ============================= Skills section - end ============================================*/
+/* ============================= Portfolio section - beginning =============================*/
+/*** Portfolio - buttons / control bar - beginning ***/
+/* line 403, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .group:first-child, #ResumeHeader .control-bar .group:first-child, #ResumeMainContent .control-bar .group:first-child, #ContactIndi .control-bar .group:first-child {
+  margin-bottom: 1%;
+}
+/* line 408, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons {
+  width: 100%;
+}
+/* line 411, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
+  width: 10.8%;
+  min-height: 46px;
+  min-width: initial;
+  vertical-align: top;
+}
+/* line 420, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".html"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".html"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".html"]:after {
+  border-right-color: #76DFC0;
+}
+/* line 423, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css"]:after {
+  border-right-color: #26a580;
+}
+/* line 426, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".sass"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".sass"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".sass"]:after {
+  border-right-color: #1a6f56;
+}
+/* line 429, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".css-animation"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".css-animation"]:after {
+  border-right-color: #0e3d30;
+}
+/* line 432, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".drupal-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".drupal-project"]:after {
+  border-right-color: #137CC1;
+}
+/* line 435, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".website-project"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".website-project"]:after {
+  border-right-color: #859900;
+}
+/* line 438, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".js-jquery"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".js-jquery"]:after {
+  border-right-color: #E24F83;
+}
+/* line 441, ../components/sass/_mixitup.scss */
+#Portfolio .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeHeader .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ResumeMainContent .control-bar .filter-buttons button[data-filter=".angularjs"]:after, #ContactIndi .control-bar .filter-buttons button[data-filter=".angularjs"]:after {
+  border-right-color: #830E37;
+}
+
+@media screen and (min-width: 320px) and (max-width: 535px) {
+  /* line 452, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
+    display: block;
+  }
+  /* line 456, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
+    width: 100%;
+    min-height: 30px;
+    padding: 5px 10px 0;
+  }
+}
+@media screen and (min-width: 536px) and (max-width: 639px) {
+  /* line 469, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
+    display: block;
+  }
+  /* line 473, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
+    width: 49%;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 818px) {
+  /* line 485, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
+    display: block;
+    margin: .4em .1em;
+  }
+  /* line 490, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
+    width: 32%;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: 819px) and (max-width: 884px) {
+  /* line 502, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
+    display: block;
+  }
+  /* line 506, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
+    width: 24.4%;
+    min-height: 30px;
+  }
+}
+@media screen and (min-width: 885px) and (max-width: 1083px) {
+  /* line 518, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
+    display: block;
+  }
+  /* line 521, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons {
+    display: block;
+  }
+  /* line 524, ../components/sass/_mixitup.scss */
+  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
+    width: 11.8%;
+    font-size: 1.2em;
+  }
+}
+/*** Portfolio - buttons / control bar - end ***/
+/*** Portfolio - grid - beginning ***/
+/* line 539, ../components/sass/_mixitup.scss */
+#PortfolioContainer .portfoMix {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 61, ../components/sass/_mixins.scss */
-#PortfolioContainer .portfoMix p {
-  line-height: 1.3;
-  font-size: 1.3rem;
-  padding: .3em 1em;
-}
-/* line 31, ../components/sass/_mixins.scss */
-#PortfolioContainer .portfoMix:before {
-  content: '';
-  display: inline-block;
-  padding-top: 5%;
-  vertical-align: middle;
-}
-/* line 37, ../components/sass/_mixins.scss */
-#PortfolioContainer .portfoMix:after {
-  content: '';
-  position: absolute;
-  border: 20px solid transparent;
-  border-right-color: white;
-  top: -20px;
-  left: -20px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-/* line 224, ../components/sass/_mixitup.scss */
+/* line 543, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix img {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-/* line 230, ../components/sass/_mixitup.scss */
+/* line 549, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix h3 {
   font-size: 1.4em;
   line-height: 1.4;
@@ -2417,7 +2661,7 @@ and open the template in the editor.
   padding-bottom: 2%;
   min-height: 41px;
 }
-/* line 238, ../components/sass/_mixitup.scss */
+/* line 557, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix h4 {
   font-size: 1.3em;
   line-height: 1.3;
@@ -2426,212 +2670,96 @@ and open the template in the editor.
   color: #B9C8B5;
   min-height: 39px;
 }
-/* line 247, ../components/sass/_mixitup.scss */
+/* line 566, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix .button {
   width: 100%;
   margin-bottom: 0;
   padding: 0;
 }
-/* line 252, ../components/sass/_mixitup.scss */
+/* line 571, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix .button a {
   background-color: #5a6258;
   font-size: 1.1em;
 }
-/* line 256, ../components/sass/_mixitup.scss */
+/* line 575, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix .button a:hover {
   border: 2px dashed #7f8a7d;
 }
-/* line 264, ../components/sass/_mixitup.scss */
+/* line 583, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.html:after {
   border-right-color: #76DFC0;
 }
-/* line 267, ../components/sass/_mixitup.scss */
+/* line 586, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.css:after {
   border-right-color: #26a580;
 }
-/* line 270, ../components/sass/_mixitup.scss */
+/* line 589, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.sass:after {
   border-right-color: #1a6f56;
 }
-/* line 273, ../components/sass/_mixitup.scss */
+/* line 592, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.css-animation:after {
   border-right-color: #0e3d30;
 }
-/* line 276, ../components/sass/_mixitup.scss */
+/* line 595, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.drupal-project:after {
   border-right-color: #137CC1;
 }
-/* line 279, ../components/sass/_mixitup.scss */
+/* line 598, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.website-project:after {
   border-right-color: #859900;
 }
-/* line 282, ../components/sass/_mixitup.scss */
+/* line 601, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.js-jquery:after {
   border-right-color: #E24F83;
 }
-/* line 285, ../components/sass/_mixitup.scss */
+/* line 604, ../components/sass/_mixitup.scss */
 #PortfolioContainer .portfoMix.angularjs:after {
   border-right-color: #830E37;
 }
 
-/* line 290, ../components/sass/_mixitup.scss */
-#Container > *,
-#PortfolioContainer > * {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 459px) {
-  /* line 301, ../components/sass/_mixitup.scss */
-  #Container .mix {
-    width: 98%;
-    min-height: 44px;
-  }
-  /* line 304, ../components/sass/_mixitup.scss */
-  #Container .mix p {
-    padding: .1em 1.5em;
-    font-size: 1.2rem;
-    line-height: 1.2;
-  }
-  /* line 311, ../components/sass/_mixitup.scss */
-  #Container .gap {
-    width: 98%;
-  }
-}
-@media screen and (min-width: 460px) and (max-width: 551px) {
-  /* line 323, ../components/sass/_mixitup.scss */
-  #Container .mix {
-    width: 48%;
-    min-height: 60px;
-  }
-  /* line 327, ../components/sass/_mixitup.scss */
-  #Container .mix p {
-    padding: .1em 1.5em;
-    font-size: 1.3rem;
-    line-height: 1.3;
-  }
-  /* line 334, ../components/sass/_mixitup.scss */
-  #Container .gap {
-    width: 48%;
-  }
-}
-@media screen and (min-width: 550px) and (max-width: 648px) {
-  /* line 346, ../components/sass/_mixitup.scss */
-  #Container .mix {
-    min-height: 117px;
-  }
-}
-@media screen and (min-width: 649px) and (max-width: 831px) {
-  /* line 355, ../components/sass/_mixitup.scss */
-  #Container .mix {
-    min-height: 94px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 535px) {
-  /* line 365, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
-    display: block;
-  }
-  /* line 369, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
-    width: 100%;
-    min-height: 30px;
-    padding: 5px 10px 0;
-  }
-}
-@media screen and (min-width: 536px) and (max-width: 639px) {
-  /* line 382, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
-    display: block;
-  }
-  /* line 386, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
-    width: 49%;
-    min-height: 30px;
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 818px) {
-  /* line 398, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
-    display: block;
-    margin: .4em .1em;
-  }
-  /* line 403, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
-    width: 32%;
-    min-height: 30px;
-  }
-}
-@media screen and (min-width: 819px) and (max-width: 884px) {
-  /* line 415, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
-    display: block;
-  }
-  /* line 419, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
-    width: 24.4%;
-    min-height: 30px;
-  }
-}
-@media screen and (min-width: 885px) and (max-width: 1083px) {
-  /* line 431, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar label, #ResumeHeader .control-bar label, #ResumeMainContent .control-bar label, #ContactIndi .control-bar label {
-    display: block;
-  }
-  /* line 434, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons, #ResumeHeader .control-bar .filter-buttons, #ResumeMainContent .control-bar .filter-buttons, #ContactIndi .control-bar .filter-buttons {
-    display: block;
-  }
-  /* line 437, ../components/sass/_mixitup.scss */
-  #Portfolio .control-bar .filter-buttons button, #ResumeHeader .control-bar .filter-buttons button, #ResumeMainContent .control-bar .filter-buttons button, #ContactIndi .control-bar .filter-buttons button {
-    width: 11.8%;
-    font-size: 1.2em;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  /* line 451, ../components/sass/_mixitup.scss */
+  /* line 613, ../components/sass/_mixitup.scss */
   #PortfolioContainer .gap {
     width: 48%;
   }
-  /* line 455, ../components/sass/_mixitup.scss */
+  /* line 617, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix {
     width: 48%;
   }
-  /* line 463, ../components/sass/_mixitup.scss */
+  /* line 625, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix .button a {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  /* line 475, ../components/sass/_mixitup.scss */
+  /* line 637, ../components/sass/_mixitup.scss */
   #PortfolioContainer .gap {
     width: 32%;
   }
-  /* line 479, ../components/sass/_mixitup.scss */
+  /* line 641, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix {
     width: 32%;
   }
-  /* line 487, ../components/sass/_mixitup.scss */
+  /* line 649, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix .button a {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 808px) {
-  /* line 501, ../components/sass/_mixitup.scss */
+  /* line 663, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix .button a {
     font-size: .9em;
   }
 }
 @media screen and (min-width: 809px) and (max-width: 863px) {
-  /* line 514, ../components/sass/_mixitup.scss */
+  /* line 676, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix .button a {
     font-size: 1em;
   }
 }
-/********* mix it up grid - end **************/
+/*** Portfolio - grid - end ***/
+/* =============================== Portfolio section - end =========================================*/
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
