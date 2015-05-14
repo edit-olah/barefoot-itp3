@@ -305,11 +305,12 @@
     
 }
 
-@media screen and (max-width: 459px){
+@media screen and (max-width: 320px){
     #SkillsContainer {
 	.mix {
 	    width: $mixitupWidth1;
-	    min-height: 44px;
+	    min-height: initial;
+	    line-height: 1;
 	    margin-bottom: 6px;
 	    
 	    p {
@@ -326,7 +327,7 @@
     }
 }
 
-@media screen and (min-width: 460px) and (max-width: 551px){
+@media screen and (min-width: 321px) and (max-width: 551px){
     #SkillsContainer {
 	.mix {
 	    width: $mixitupWidth2;
@@ -367,14 +368,20 @@
     }
 }
 
+
 @media screen and (max-width: 1002px) {
     #Skills{
 	.control-bar {
-		label{
-		    display: block;
+	    label{
+		display: block;
+	    }
+	    .filter-buttons{
+		button{
+		    margin-bottom: 6px;
 		}
+	    }
 	}
-    }
+    }    
     
     #SkillsContainer {
 	.mix {
@@ -383,6 +390,39 @@
     }
 }
 
+@media screen and (max-width: 530px) {
+    #Skills{
+	.control-bar {
+	    display: none;
+	}
+    }
+    
+    #SkillsContainer {
+	width: 100%;
+	
+	.mix{
+	    &:after{
+		border-right-color: transparent !important;
+	    }
+	}
+    }
+}
+
+@media screen and (max-width: 464px){
+    
+}
+
+
+@media screen and (min-width: 465px) and (max-width: 530px) {
+    
+    #SkillsContainer {
+	width: 100%;
+	
+	.mix {
+	    min-height: 44px;
+	}
+    }
+}
 
 
 /*** Skills - grid - end ***/
