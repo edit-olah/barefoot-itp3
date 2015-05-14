@@ -22,11 +22,19 @@ $( document ).ready(function() {
     
     // Instantiate MixItUp:
     
-    $('#SkillsContainer.peters-skills').mixItUp({
-	load: {
-	    filter: '.webdev'
-	}
-    });
+    // mixitup control panel is hidden under 530px window width, so don't apply default filter under this width:
+    if ($(window).width() > 530) {
+	$('#SkillsContainer.peters-skills').mixItUp({
+		load: {
+		    filter: '.webdev'
+		}
+	});
+    } else {
+	$('#SkillsContainer.peters-skills').mixItUp({});
+    }
+    
+    
+    
     $('#SkillsContainer.edits-skills').mixItUp({
 	//load: {
 	    //filter: '.markup, .extension-language, .dynamic-programming-language, .code-library, .cms, .frontend-automation, .version-control, .virtualization, .terminal-emulator'
@@ -76,11 +84,11 @@ $( document ).ready(function() {
 	// remove 'current' class from 'back to top' element after some time:
 	if(($(this).attr("href") === 'Hero') && ($(this).parent().hasClass('current'))) {
 		
-		$this = $(this);
-		setTimeout(function(){ 
-		    $this.parent().removeClass('current');
-		}, 2500);
-	    } 
+	    $this = $(this);
+	    setTimeout(function(){ 
+		$this.parent().removeClass('current');
+	    }, 2500);
+	} 
 	    
 	
    
