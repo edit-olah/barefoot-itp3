@@ -1247,6 +1247,35 @@ ul, li {
     padding: 0px 5px;
   }
 }
+/*** portfolio project detail page - beginning ***/
+/* line 1114, ../components/sass/_layout.scss */
+#DetailPageHeader.portfolio-project-header .leftContainer {
+  width: 45%;
+}
+/* line 1117, ../components/sass/_layout.scss */
+#DetailPageHeader.portfolio-project-header .rightContainer {
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 3.5%;
+}
+
+/* line 1125, ../components/sass/_layout.scss */
+#DetailPageMainContent #SidebarContent {
+  border: 2px dashed #5f675d;
+  background-color: #464c45;
+  padding: 10px;
+}
+/* line 1129, ../components/sass/_layout.scss */
+#DetailPageMainContent #SidebarContent .sidebar-section {
+  padding: 15px 0 20px 0;
+  border-bottom: 2px dashed #5f675d;
+}
+/* line 1133, ../components/sass/_layout.scss */
+#DetailPageMainContent #SidebarContent .sidebar-section:last-child {
+  border-bottom: none;
+}
+
+/*** portfolio project detail page - end ***/
 /*** 2-column main content page - end ***/
 /*===================== DETAIL PAGES LAYOUTS (resume, blog article, portfolio work) - end =======================*/
 /*

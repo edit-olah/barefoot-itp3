@@ -1108,6 +1108,39 @@ button {
 }
 
 
+/*** portfolio project detail page - beginning ***/
+
+#DetailPageHeader.portfolio-project-header {
+    .leftContainer{
+	width: 45%;
+    }
+    .rightContainer{
+	width: 50%;
+	margin-top: 1%;
+	margin-left: 3.5%;
+    }
+}
+
+#DetailPageMainContent {
+    #SidebarContent {
+	border: 2px dashed lighten($primaryBG, 15);
+	background-color: lighten($primaryBG, 5);
+	padding: 10px;
+	.sidebar-section {
+	    padding:15px 0 20px 0;
+	    border-bottom: 2px dashed lighten($primaryBG, 15);
+	    
+	    &:last-child {
+		border-bottom: none;
+	    }
+	}
+    }
+}
+
+
+/*** portfolio project detail page - end ***/
+
+
 /*** 2-column main content page - end ***/
 
 /*===================== DETAIL PAGES LAYOUTS (resume, blog article, portfolio work) - end =======================*/
