@@ -738,11 +738,11 @@ ul, li {
     }
 }
 
-/*=========================== HOME PAGE LAYOUT - end =================================*/
+/*=========================== HOME PAGE LAYOUT - end =========================================================*/
 
 
 
-/*======================= OUR PORTFOLIO PAGE LAYOUT - beginning ============================*/
+/*======================= OUR PORTFOLIO PAGE LAYOUT - beginning ==============================================*/
 
 #OurPortfolioContentHolder {
     padding: $defaultPadding;
@@ -773,11 +773,11 @@ ul, li {
     }
 }
 
-/*======================= OUR PORTFOLIO PAGE LAYOUT - end ============================*/
+/*======================= OUR PORTFOLIO PAGE LAYOUT - end ===================================================*/
 
 
 
-/*========================== OUR BLOG PAGE LAYOUT - beginning ============================*/
+/*========================== OUR BLOG PAGE LAYOUT - beginning ==============================================*/
 
 #OurBlogGrid {
     
@@ -816,11 +816,11 @@ ul, li {
 
 
 
-/*========================== OUR BLOG PAGE LAYOUT - end ============================*/
+/*========================== OUR BLOG PAGE LAYOUT - end ==========================================================*/
 
 
 
-/*====================== CONTACT US PAGE LAYOUT - beginning ======================*/
+/*====================== CONTACT US PAGE LAYOUT - beginning ====================================================*/
 
 
 .contactText {
@@ -875,11 +875,11 @@ ul, li {
     }
 }
 
-/*====================== CONTACT US PAGE LAYOUT - end ======================*/
+/*====================== CONTACT US PAGE LAYOUT - end ================================================================*/
 
 
 
-/*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning =======================*/
+/*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning ===============================================*/
 
 
 #About, #Skills, #Portfolio {
@@ -896,12 +896,19 @@ button {
 }
 
 
-/*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =======================*/
+/*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =====================================================*/
 
-/*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
+/*===================== DETAIL PAGES LAYOUTS (resume, blog article, portfolio work) - beginning =======================*/
 
+/*** detail page GLOBAL STYLES - beginning ***/
 
-#ResumeHeader {
+.summary{
+    p{
+	color: lighten($semiLightGreen, 20);
+    }
+}
+
+#DetailPageHeader {
     //float:left;
     width: 100%;
     
@@ -936,7 +943,7 @@ button {
 
 }
 
-#ResumeMainContent {
+#DetailPageMainContent {
     
     @extend #Portfolio;
     
@@ -962,7 +969,7 @@ button {
 }
 
 @media screen and (min-width: 320px) and (max-width: 459px) {
-    #ResumeHeader {
+    #DetailPageHeader {
 	.leftContainer {
 	    width: 30%;
 	}
@@ -987,7 +994,7 @@ button {
 }
 
 @media screen and (min-width: 460px) and (max-width: 640px) {
-    #ResumeHeader {
+    #DetailPageHeader {
 	
 	.rightContainer {
 	    margin-left: 0;
@@ -1012,8 +1019,95 @@ button {
     }
 }
 
+/*** detail page GLOBAL STYLES - end ***/
+
+/*** 2-column main content page - beginning ***/
+
+#DetailPageMainContent {
+    
+    .leftContainer {
+	width: 70%;
+	padding-right: 10px;
+	box-sizing: border-box;
+    }
+    
+    .rightContainer {
+	width: 28%;
+	.grid {
+	    padding: 20px 10px 0 10px;
+	    background-color: lighten($primaryBG, 10);
+	    
+	    li {
+		border-bottom: 2px dashed lighten($primaryBG, 5);
+		&:last-child{
+		    border-bottom: none;
+		}
+	    }
+	    
+	    .grid-contentHolder{
+		padding: 0px 15px;
+		
+		.button {
+		    a {
+			font-size: 1em;
+			padding: 5px 8px;
+		    }
+		}
+		
+		img{
+		    width: 100%;
+		}
+	    }
+	}
+    }
+    
+}
+
+#DetailPageMainContent.blog-post-article{
+    padding: 25px 15px;
+}
+
+@media screen and (max-width: 639px) {
+    #DetailPageMainContent {
+	
+	.leftContainer{
+	    display: block;
+	    width: 100%;	    
+	}
+	
+	.rightContainer {
+	    display: block;
+	    width: 100%;
+	    
+	    h2{
+		margin-top: 25px;
+		padding-top: 25px;
+		margin-bottom: 20px;
+		border-top: 3px dashed lighten($primaryBG, 15);
+	    }
+	}
+
+    }
+}
 
 
+@media screen and (min-width: 640px) and (max-width: 770px) {
+    #DetailPageMainContent {
+	.leftContainer {
+	    width: 65%;
+	}
+	.rightContainer {
+	    width: 33%;
+	    .grid{
+		.grid-contentHolder{
+		    padding: 0px 5px;
+		}
+	    }
+	}
+    }
+}
 
 
-/*===================== INDIVIDUAL RESUME PAGES LAYOUTS - beginning =======================*/
+/*** 2-column main content page - end ***/
+
+/*===================== DETAIL PAGES LAYOUTS (resume, blog article, portfolio work) - end =======================*/
