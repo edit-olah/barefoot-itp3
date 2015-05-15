@@ -1275,6 +1275,19 @@ ul, li {
   border-bottom: none;
 }
 
+@media screen and (max-width: 460px) {
+  /* line 1142, ../components/sass/_layout.scss */
+  #DetailPageHeader.portfolio-project-header .leftContainer {
+    display: block;
+    width: 100%;
+  }
+  /* line 1147, ../components/sass/_layout.scss */
+  #DetailPageHeader.portfolio-project-header .rightContainer {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 /*** portfolio project detail page - end ***/
 /*** 2-column main content page - end ***/
 /*===================== DETAIL PAGES LAYOUTS (resume, blog article, portfolio work) - end =======================*/
@@ -3029,25 +3042,30 @@ and open the template in the editor.
     font-size: .9em;
   }
 }
-@media screen and (max-width: 395px) {
-  /* line 109, ../components/sass/_contactmodule.scss */
-  #ContactIndi .email a {
-    word-wrap: break-word;
-  }
-}
 @media screen and (max-width: 627px) {
-  /* line 118, ../components/sass/_contactmodule.scss */
+  /* line 110, ../components/sass/_contactmodule.scss */
   #ContactIndi .button {
     width: 98%;
   }
-  /* line 121, ../components/sass/_contactmodule.scss */
+  /* line 113, ../components/sass/_contactmodule.scss */
   #ContactIndi .button a {
     font-size: 1.1em;
     line-height: 1.1;
   }
 }
+@media screen and (max-width: 395px) {
+  /* line 124, ../components/sass/_contactmodule.scss */
+  #ContactIndi .button a {
+    font-size: .85em;
+    padding: 10px 7px;
+  }
+  /* line 130, ../components/sass/_contactmodule.scss */
+  #ContactIndi .email a {
+    word-wrap: break-word;
+  }
+}
 @media screen and (min-width: 628px) and (max-width: 778px) {
-  /* line 132, ../components/sass/_contactmodule.scss */
+  /* line 140, ../components/sass/_contactmodule.scss */
   #ContactIndi .button a {
     font-size: .9em;
     line-height: .9;
@@ -3055,7 +3073,7 @@ and open the template in the editor.
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) {
-  /* line 144, ../components/sass/_contactmodule.scss */
+  /* line 152, ../components/sass/_contactmodule.scss */
   #ContactIndi .rightContainer img {
     max-width: initial;
     width: 95%;

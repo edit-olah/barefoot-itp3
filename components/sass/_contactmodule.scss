@@ -103,15 +103,7 @@ and open the template in the editor.
 }
 
 
-@media screen and (max-width: 395px) {
-    #ContactIndi {
-	.email{
-	    a {
-	    word-wrap: break-word;
-	    }
-	}
-    }
-}
+
 
 @media screen and (max-width: 627px) {
     #ContactIndi {
@@ -121,6 +113,22 @@ and open the template in the editor.
 	    a{
 		font-size: 1.1em;
 		line-height: 1.1;
+	    }
+	}
+    }
+}
+
+@media screen and (max-width: 395px) {
+    #ContactIndi {
+	.button{
+	    a{
+		font-size: .85em;
+		padding: 10px 7px;
+	    }
+	}
+	.email{
+	    a {
+	    word-wrap: break-word;
 	    }
 	}
     }
