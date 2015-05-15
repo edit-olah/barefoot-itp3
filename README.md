@@ -206,3 +206,28 @@ http://stackoverflow.com/questions/6081608/jquery-check-if-it-is-clicked-or-not
 
 - - - - - - - - - - - - - -
 
+## 17. HTML5 semantic markup
+
+http://html5doctor.com/element-index/
+
+- - - - - - - - - - - - - -
+
+## 18. HTML Validator
+
+https://validator.w3.org/
+
+- - - - - - - - - - - - - -
+
+## 19. HTML5 outliner
+
+https://gsnedders.html5.org/outliner/
+
+- - - - - - - - - - - - - -
+
+## 20. CSS validator
+
+https://jigsaw.w3.org/css-validator/
+
+- - - - - - - - - - - - - -
+
+
