@@ -91,6 +91,10 @@ h3 {
     line-height: 1.3;
 }
 
+.sidebar-header{
+    margin: 0 25px .5em;
+}
+
 
 a {
     text-decoration: none;
@@ -348,7 +352,7 @@ ul, li {
 	}
 	
 	a:link {
-	    padding: 20px 5%;
+	    padding: 20px 2%;
 	    line-height: 1;
 	    font-weight: $normal;
 	    font-size: 0.85em;
