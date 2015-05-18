@@ -275,7 +275,7 @@ ul, li {
     margin-bottom: 10px;
     text-align: justify; 
     font-family: $zerowidthFont;
-    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+    font-size: 0.1px; // adjusting typographic CSS properties that affect the site layout's whitespace
 
 
     li {
@@ -772,6 +772,16 @@ ul, li {
 	.grid-contentHolder {
 	    img {
 		margin-bottom: 0px;
+	    }
+	}
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 802px) {
+    #OurPortfolioGrid {
+	.grid-contentHolder {
+	    h3{
+		min-height: 35px;
 	    }
 	}
     }

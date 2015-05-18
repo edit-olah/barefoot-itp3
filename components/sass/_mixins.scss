@@ -9,7 +9,7 @@
 @mixin mixitupContainer() {
     text-align: justify;
     font-family: $zerowidthFont;
-    font-size: 0; // adjusting typographic CSS properties that affect the site layout's whitespace
+    font-size: 0.1px; // adjusting typographic CSS properties that affect the site layout's whitespace
     box-sizing: border-box;
     min-height: 200px;
     overflow: hidden;

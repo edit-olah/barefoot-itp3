@@ -565,7 +565,7 @@ ul, li {
   margin-bottom: 10px;
   text-align: justify;
   font-family: "zero-width";
-  font-size: 0;
+  font-size: 0.1px;
 }
 /* line 281, ../components/sass/_layout.scss */
 .nav li {
@@ -989,41 +989,47 @@ ul, li {
     margin-bottom: 0px;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 802px) {
+  /* line 783, ../components/sass/_layout.scss */
+  #OurPortfolioGrid .grid-contentHolder h3 {
+    min-height: 35px;
+  }
+}
 /*======================= OUR PORTFOLIO PAGE LAYOUT - end ===================================================*/
 /*========================== OUR BLOG PAGE LAYOUT - beginning ==============================================*/
-/* line 788, ../components/sass/_layout.scss */
+/* line 798, ../components/sass/_layout.scss */
 #OurBlogGrid h1 {
   padding: 5px 0 10px;
 }
-/* line 795, ../components/sass/_layout.scss */
+/* line 805, ../components/sass/_layout.scss */
 #OurBlogGrid .grid-contentHolder img {
   width: 100%;
 }
-/* line 801, ../components/sass/_layout.scss */
+/* line 811, ../components/sass/_layout.scss */
 #OurBlogGrid .grid li {
   padding-bottom: 1%;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 814, ../components/sass/_layout.scss */
+  /* line 824, ../components/sass/_layout.scss */
   #OurBlogGrid h1 {
     padding: 0 15px 10px;
   }
 }
 /*========================== OUR BLOG PAGE LAYOUT - end ==========================================================*/
 /*====================== CONTACT US PAGE LAYOUT - beginning ====================================================*/
-/* line 830, ../components/sass/_layout.scss */
+/* line 840, ../components/sass/_layout.scss */
 .contactText {
   padding: 15px 25px;
 }
 
-/* line 835, ../components/sass/_layout.scss */
+/* line 845, ../components/sass/_layout.scss */
 .wrapper-decoImg {
   position: relative;
   height: 0;
 }
 
-/* line 840, ../components/sass/_layout.scss */
+/* line 850, ../components/sass/_layout.scss */
 .container-decoImg {
   position: relative;
   left: -108%;
@@ -1031,7 +1037,7 @@ ul, li {
   height: 0;
   width: 209%;
 }
-/* line 847, ../components/sass/_layout.scss */
+/* line 857, ../components/sass/_layout.scss */
 .container-decoImg .decoImg {
   position: absolute;
   top: 6%;
@@ -1044,19 +1050,19 @@ ul, li {
 }
 
 @media screen and (max-width: 639px) {
-  /* line 862, ../components/sass/_layout.scss */
+  /* line 872, ../components/sass/_layout.scss */
   .contactText {
     padding: 0 15px;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 869, ../components/sass/_layout.scss */
+  /* line 879, ../components/sass/_layout.scss */
   .wrapper-decoImg {
     display: none;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1023px) {
-  /* line 876, ../components/sass/_layout.scss */
+  /* line 886, ../components/sass/_layout.scss */
   .container-decoImg {
     left: -108%;
     width: 207%;
@@ -1064,7 +1070,7 @@ ul, li {
 }
 /*====================== CONTACT US PAGE LAYOUT - end ================================================================*/
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - beginning ===============================================*/
-/* line 889, ../components/sass/_layout.scss */
+/* line 899, ../components/sass/_layout.scss */
 #About, #Skills, #Portfolio, #DetailPageHeader, #DetailPageMainContent, #ContactIndi {
   margin-bottom: 2%;
   padding-bottom: 1%;
@@ -1077,47 +1083,47 @@ ul, li {
 /*===================== INDIVIDUAL PORTFOLIO PAGES LAYOUTS - end =====================================================*/
 /*===================== DETAIL PAGES LAYOUTS (resume, blog article, portfolio work) - beginning =======================*/
 /*** detail page GLOBAL STYLES - beginning ***/
-/* line 910, ../components/sass/_layout.scss */
+/* line 920, ../components/sass/_layout.scss */
 .summary p {
   color: #c1f0a6;
 }
 
-/* line 915, ../components/sass/_layout.scss */
+/* line 925, ../components/sass/_layout.scss */
 #DetailPageHeader {
   width: 100%;
 }
-/* line 921, ../components/sass/_layout.scss */
+/* line 931, ../components/sass/_layout.scss */
 #DetailPageHeader .leftContainer {
   width: 21%;
 }
-/* line 924, ../components/sass/_layout.scss */
+/* line 934, ../components/sass/_layout.scss */
 #DetailPageHeader .leftContainer img {
   width: 100%;
 }
-/* line 929, ../components/sass/_layout.scss */
+/* line 939, ../components/sass/_layout.scss */
 #DetailPageHeader .rightContainer {
   margin-top: 5%;
   margin-left: 4%;
   width: 68%;
 }
-/* line 934, ../components/sass/_layout.scss */
+/* line 944, ../components/sass/_layout.scss */
 #DetailPageHeader .rightContainer h1 {
   font-size: 1.9em;
 }
-/* line 938, ../components/sass/_layout.scss */
+/* line 948, ../components/sass/_layout.scss */
 #DetailPageHeader .rightContainer h2 {
   font-size: 1.8em;
 }
-/* line 942, ../components/sass/_layout.scss */
+/* line 952, ../components/sass/_layout.scss */
 #DetailPageHeader .rightContainer h3 {
   font-size: 1.7em;
 }
 
-/* line 954, ../components/sass/_layout.scss */
+/* line 964, ../components/sass/_layout.scss */
 #DetailPageMainContent .container {
   margin-bottom: 2%;
 }
-/* line 959, ../components/sass/_layout.scss */
+/* line 969, ../components/sass/_layout.scss */
 #DetailPageMainContent .personalSummary ul {
   width: 100%;
   list-style-type: circle;
@@ -1125,7 +1131,7 @@ ul, li {
   list-style-image: none;
   padding: 0 0 0 17px;
 }
-/* line 966, ../components/sass/_layout.scss */
+/* line 976, ../components/sass/_layout.scss */
 #DetailPageMainContent .personalSummary ul li {
   list-style-type: circle;
   list-style-position: outside;
@@ -1133,104 +1139,104 @@ ul, li {
 }
 
 @media screen and (min-width: 320px) and (max-width: 459px) {
-  /* line 977, ../components/sass/_layout.scss */
+  /* line 987, ../components/sass/_layout.scss */
   #DetailPageHeader .leftContainer {
     width: 30%;
   }
-  /* line 981, ../components/sass/_layout.scss */
+  /* line 991, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer {
     width: 60%;
     margin-top: 0;
   }
-  /* line 985, ../components/sass/_layout.scss */
+  /* line 995, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer h1 {
     font-size: 1.6em;
   }
-  /* line 989, ../components/sass/_layout.scss */
+  /* line 999, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer h2 {
     font-size: 1.4em;
   }
-  /* line 993, ../components/sass/_layout.scss */
+  /* line 1003, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer h3 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 640px) {
-  /* line 1003, ../components/sass/_layout.scss */
+  /* line 1013, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer {
     margin-left: 0;
     padding-left: 5px;
     margin-top: 0;
   }
-  /* line 1008, ../components/sass/_layout.scss */
+  /* line 1018, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer h1 {
     font-size: 1.6em;
   }
-  /* line 1012, ../components/sass/_layout.scss */
+  /* line 1022, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer h2 {
     font-size: 1.4em;
   }
-  /* line 1016, ../components/sass/_layout.scss */
+  /* line 1026, ../components/sass/_layout.scss */
   #DetailPageHeader .rightContainer h3 {
     font-size: 1.3em;
   }
 }
 /*** detail page GLOBAL STYLES - end ***/
 /*** 2-column main content page - beginning ***/
-/* line 1032, ../components/sass/_layout.scss */
+/* line 1042, ../components/sass/_layout.scss */
 #DetailPageMainContent .leftContainer {
   width: 70%;
   padding-right: 10px;
   box-sizing: border-box;
 }
-/* line 1038, ../components/sass/_layout.scss */
+/* line 1048, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer {
   width: 28%;
 }
-/* line 1040, ../components/sass/_layout.scss */
+/* line 1050, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer .grid {
   padding: 20px 10px 0 10px;
   background-color: #535a51;
 }
-/* line 1044, ../components/sass/_layout.scss */
+/* line 1054, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer .grid li {
   border-bottom: 2px dashed #464c45;
 }
-/* line 1046, ../components/sass/_layout.scss */
+/* line 1056, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer .grid li:last-child {
   border-bottom: none;
 }
-/* line 1051, ../components/sass/_layout.scss */
+/* line 1061, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer .grid .grid-contentHolder {
   padding: 0px 15px;
 }
-/* line 1055, ../components/sass/_layout.scss */
+/* line 1065, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer .grid .grid-contentHolder .button a {
   font-size: 1em;
   padding: 5px 8px;
 }
-/* line 1061, ../components/sass/_layout.scss */
+/* line 1071, ../components/sass/_layout.scss */
 #DetailPageMainContent .rightContainer .grid .grid-contentHolder img {
   width: 100%;
 }
 
-/* line 1070, ../components/sass/_layout.scss */
+/* line 1080, ../components/sass/_layout.scss */
 #DetailPageMainContent.blog-post-article {
   padding: 25px 15px;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 1077, ../components/sass/_layout.scss */
+  /* line 1087, ../components/sass/_layout.scss */
   #DetailPageMainContent .leftContainer {
     display: block;
     width: 100%;
   }
-  /* line 1082, ../components/sass/_layout.scss */
+  /* line 1092, ../components/sass/_layout.scss */
   #DetailPageMainContent .rightContainer {
     display: block;
     width: 100%;
   }
-  /* line 1086, ../components/sass/_layout.scss */
+  /* line 1096, ../components/sass/_layout.scss */
   #DetailPageMainContent .rightContainer h2 {
     margin-top: 25px;
     padding-top: 25px;
@@ -1239,54 +1245,54 @@ ul, li {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 770px) {
-  /* line 1100, ../components/sass/_layout.scss */
+  /* line 1110, ../components/sass/_layout.scss */
   #DetailPageMainContent .leftContainer {
     width: 65%;
   }
-  /* line 1103, ../components/sass/_layout.scss */
+  /* line 1113, ../components/sass/_layout.scss */
   #DetailPageMainContent .rightContainer {
     width: 33%;
   }
-  /* line 1106, ../components/sass/_layout.scss */
+  /* line 1116, ../components/sass/_layout.scss */
   #DetailPageMainContent .rightContainer .grid .grid-contentHolder {
     padding: 0px 5px;
   }
 }
 /*** portfolio project detail page - beginning ***/
-/* line 1118, ../components/sass/_layout.scss */
+/* line 1128, ../components/sass/_layout.scss */
 #DetailPageHeader.portfolio-project-header .leftContainer {
   width: 45%;
 }
-/* line 1121, ../components/sass/_layout.scss */
+/* line 1131, ../components/sass/_layout.scss */
 #DetailPageHeader.portfolio-project-header .rightContainer {
   width: 50%;
   margin-top: 1%;
   margin-left: 3.5%;
 }
 
-/* line 1129, ../components/sass/_layout.scss */
+/* line 1139, ../components/sass/_layout.scss */
 #DetailPageMainContent #SidebarContent {
   border: 2px dashed #5f675d;
   background-color: #464c45;
   padding: 10px;
 }
-/* line 1133, ../components/sass/_layout.scss */
+/* line 1143, ../components/sass/_layout.scss */
 #DetailPageMainContent #SidebarContent .sidebar-section {
   padding: 15px 0 20px 0;
   border-bottom: 2px dashed #5f675d;
 }
-/* line 1137, ../components/sass/_layout.scss */
+/* line 1147, ../components/sass/_layout.scss */
 #DetailPageMainContent #SidebarContent .sidebar-section:last-child {
   border-bottom: none;
 }
 
 @media screen and (max-width: 460px) {
-  /* line 1146, ../components/sass/_layout.scss */
+  /* line 1156, ../components/sass/_layout.scss */
   #DetailPageHeader.portfolio-project-header .leftContainer {
     display: block;
     width: 100%;
   }
-  /* line 1151, ../components/sass/_layout.scss */
+  /* line 1161, ../components/sass/_layout.scss */
   #DetailPageHeader.portfolio-project-header .rightContainer {
     display: block;
     width: 100%;
@@ -1482,7 +1488,7 @@ and open the template in the editor.
 
 /* line 23, ../components/sass/_pagenav.scss */
 .nav.full-width {
-  float: initial;
+  float: none;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
@@ -1783,9 +1789,9 @@ and open the template in the editor.
   margin-bottom: 3%;
   text-align: justify;
   font-family: "zero-width";
-  font-size: 0;
+  font-size: 0.1px;
 }
-/* line 24, ../components/sass/_grid.scss */
+/* line 25, ../components/sass/_grid.scss */
 .grid li {
   font-family: sourceCodeProNormal, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
@@ -1799,34 +1805,34 @@ and open the template in the editor.
   border: 2px dashed #464c45;
   vertical-align: top;
 }
-/* line 37, ../components/sass/_grid.scss */
+/* line 39, ../components/sass/_grid.scss */
 .grid li h2, .grid li h3, .grid li p {
   text-align: left;
 }
-/* line 42, ../components/sass/_grid.scss */
+/* line 44, ../components/sass/_grid.scss */
 .grid li h2 {
   margin-bottom: .5em;
   color: #ABF381;
 }
-/* line 47, ../components/sass/_grid.scss */
+/* line 49, ../components/sass/_grid.scss */
 .grid li h3 {
   margin-bottom: .8em;
 }
-/* line 54, ../components/sass/_grid.scss */
+/* line 56, ../components/sass/_grid.scss */
 .grid li .email a {
   font-size: 1em;
   word-wrap: break-word;
 }
-/* line 60, ../components/sass/_grid.scss */
+/* line 62, ../components/sass/_grid.scss */
 .grid li .button {
   width: 100%;
 }
-/* line 63, ../components/sass/_grid.scss */
+/* line 65, ../components/sass/_grid.scss */
 .grid li .button a {
   width: 100%;
   padding: 7px 15px;
 }
-/* line 70, ../components/sass/_grid.scss */
+/* line 72, ../components/sass/_grid.scss */
 .grid .gap {
   width: 32%;
   height: 0;
@@ -1834,20 +1840,20 @@ and open the template in the editor.
   padding-bottom: 0 !important;
   border: 0;
 }
-/* line 77, ../components/sass/_grid.scss */
+/* line 79, ../components/sass/_grid.scss */
 .grid:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 87, ../components/sass/_grid.scss */
+/* line 88, ../components/sass/_grid.scss */
 .grid-contentHolder {
   font-size: 1rem;
   padding: 0px 25px;
   box-sizing: border-box;
 }
-/* line 92, ../components/sass/_grid.scss */
+/* line 93, ../components/sass/_grid.scss */
 .grid-contentHolder img {
   width: 12em;
   height: auto;
@@ -1855,35 +1861,35 @@ and open the template in the editor.
 }
 
 @media screen and (max-width: 639px) {
-  /* line 104, ../components/sass/_grid.scss */
+  /* line 105, ../components/sass/_grid.scss */
   .grid li {
     width: 100%;
     padding-top: 1%;
     margin-bottom: 2%;
     box-sizing: border-box;
   }
-  /* line 110, ../components/sass/_grid.scss */
+  /* line 111, ../components/sass/_grid.scss */
   .grid li h2 {
     margin-top: 1.3em;
     min-height: initial;
   }
-  /* line 115, ../components/sass/_grid.scss */
+  /* line 116, ../components/sass/_grid.scss */
   .grid li .sidebar-header {
     margin: 1.3em 15px .5em;
   }
-  /* line 119, ../components/sass/_grid.scss */
+  /* line 120, ../components/sass/_grid.scss */
   .grid li h3 {
     margin-bottom: .8em;
     min-height: initial;
   }
-  /* line 124, ../components/sass/_grid.scss */
+  /* line 125, ../components/sass/_grid.scss */
   .grid li p {
     display: inline-block;
     width: 100%;
     margin: 0;
     min-height: initial;
   }
-  /* line 133, ../components/sass/_grid.scss */
+  /* line 134, ../components/sass/_grid.scss */
   .grid li .button a {
     padding: 5px 10px;
     width: 100%;
@@ -1894,43 +1900,43 @@ and open the template in the editor.
     white-space: nowrap;
     font-size: 1.2em;
   }
-  /* line 145, ../components/sass/_grid.scss */
+  /* line 146, ../components/sass/_grid.scss */
   .grid li .grid-contentHolder {
     padding: 0px 15px 10px 15px;
   }
-  /* line 148, ../components/sass/_grid.scss */
+  /* line 149, ../components/sass/_grid.scss */
   .grid li .grid-contentHolder img {
     width: 11em;
     margin-top: 3%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  /* line 160, ../components/sass/_grid.scss */
+  /* line 161, ../components/sass/_grid.scss */
   .grid li {
-    width: 48%;
+    width: 49%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 169, ../components/sass/_grid.scss */
+  /* line 170, ../components/sass/_grid.scss */
   .grid li {
     width: 32%;
     padding-top: 3%;
     margin-bottom: 2%;
     box-sizing: border-box;
   }
-  /* line 175, ../components/sass/_grid.scss */
+  /* line 176, ../components/sass/_grid.scss */
   .grid li h2 {
     margin-bottom: .7em;
   }
-  /* line 180, ../components/sass/_grid.scss */
+  /* line 181, ../components/sass/_grid.scss */
   .grid li h3 {
     margin-bottom: .5em;
   }
-  /* line 185, ../components/sass/_grid.scss */
+  /* line 186, ../components/sass/_grid.scss */
   .grid li .button {
     width: 100%;
   }
-  /* line 187, ../components/sass/_grid.scss */
+  /* line 188, ../components/sass/_grid.scss */
   .grid li .button a {
     width: 100%;
     white-space: nowrap;
@@ -1939,16 +1945,16 @@ and open the template in the editor.
     box-sizing: border-box;
     clear: both;
   }
-  /* line 199, ../components/sass/_grid.scss */
+  /* line 200, ../components/sass/_grid.scss */
   .grid .gap {
     width: 32%;
   }
-  /* line 203, ../components/sass/_grid.scss */
+  /* line 204, ../components/sass/_grid.scss */
   .grid .grid-contentHolder {
     min-height: 156px;
     box-sizing: border-box;
   }
-  /* line 207, ../components/sass/_grid.scss */
+  /* line 208, ../components/sass/_grid.scss */
   .grid .grid-contentHolder img {
     padding-bottom: 15px;
   }
@@ -1956,12 +1962,12 @@ and open the template in the editor.
 /**** Default grid - end ****/
 /*=====================================================================================*/
 /********** CONTACT US PAGE - Stretched / full width / blog-section grid - beginning ***************/
-/* line 226, ../components/sass/_grid.scss */
+/* line 227, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout li {
   width: 32%;
   padding-bottom: 0%;
 }
-/* line 231, ../components/sass/_grid.scss */
+/* line 232, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout img {
   width: 100%;
   height: auto;
@@ -1969,27 +1975,27 @@ and open the template in the editor.
   float: none;
   display: block;
 }
-/* line 240, ../components/sass/_grid.scss */
+/* line 241, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder {
   width: 100%;
   padding: 0px 25px 11px 25px;
 }
-/* line 244, ../components/sass/_grid.scss */
+/* line 245, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder p.min-height-applied {
   min-height: 70px;
   box-sizing: border-box;
 }
-/* line 249, ../components/sass/_grid.scss */
+/* line 250, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .email {
   min-height: 60px;
   box-sizing: border-box;
 }
-/* line 253, ../components/sass/_grid.scss */
+/* line 254, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .socialIcons {
   padding: 5px;
   margin-bottom: 6%;
 }
-/* line 257, ../components/sass/_grid.scss */
+/* line 258, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout .grid-contentHolder .socialIcons img {
   width: 13%;
   height: auto;
@@ -1998,18 +2004,18 @@ and open the template in the editor.
   display: inline;
 }
 
-/* line 271, ../components/sass/_grid.scss */
+/* line 272, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child {
   border: 2px dashed #353a34;
   background-color: #464c45;
 }
 
-/* line 275, ../components/sass/_grid.scss */
+/* line 276, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li {
   background-color: #464c45;
 }
 
-/* line 280, ../components/sass/_grid.scss */
+/* line 281, ../components/sass/_grid.scss */
 .grid.grid-full-width > li {
   width: 100%;
   border-top: 0;
@@ -2019,17 +2025,17 @@ and open the template in the editor.
   padding-top: 15px;
 }
 
-/* line 289, ../components/sass/_grid.scss */
+/* line 290, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li:last-child {
   border-bottom: 0;
 }
 
-/* line 293, ../components/sass/_grid.scss */
+/* line 294, ../components/sass/_grid.scss */
 .grid.grid-full-width > li:first-child {
   padding-top: 0;
 }
 
-/* line 297, ../components/sass/_grid.scss */
+/* line 298, ../components/sass/_grid.scss */
 .grid.grid-stretched-layout > li > h2 {
   font-size: 1.7rem;
   line-height: 1.8rem;
@@ -2037,57 +2043,57 @@ and open the template in the editor.
   margin-bottom: 20px;
 }
 
-/* line 304, ../components/sass/_grid.scss */
+/* line 305, ../components/sass/_grid.scss */
 .grid-stretched-layout .grid-full-width.blog-section p.button a, .grid-stretched-layout .grid-full-width.blog-section button a {
   padding: 5px 10px;
 }
 
-/* line 309, ../components/sass/_grid.scss */
+/* line 310, ../components/sass/_grid.scss */
 .grid-full-width.blog-section {
   margin-bottom: 0px;
 }
-/* line 313, ../components/sass/_grid.scss */
+/* line 314, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li img {
   margin-bottom: 1.4em;
 }
-/* line 317, ../components/sass/_grid.scss */
+/* line 318, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li h3 {
   font-size: 1.3em;
   line-height: 1.3;
   margin-bottom: 1em;
 }
-/* line 323, ../components/sass/_grid.scss */
+/* line 324, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li h4 {
   font-size: 1.2em;
   line-height: 1.2;
   margin-bottom: 1em;
 }
-/* line 329, ../components/sass/_grid.scss */
+/* line 330, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li p {
   margin-bottom: 0.64em;
 }
-/* line 334, ../components/sass/_grid.scss */
+/* line 335, ../components/sass/_grid.scss */
 .grid-full-width.blog-section li .button a:hover {
   background-color: #3f443e;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 346, ../components/sass/_grid.scss */
+  /* line 347, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li {
     width: 49%;
   }
 
-  /* line 352, ../components/sass/_grid.scss */
+  /* line 353, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li:last-child {
     clear: both;
     width: 100%;
   }
 
-  /* line 357, ../components/sass/_grid.scss */
+  /* line 358, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li {
     width: 100%;
   }
-  /* line 360, ../components/sass/_grid.scss */
+  /* line 361, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li img {
     width: 50%;
     height: auto;
@@ -2097,17 +2103,17 @@ and open the template in the editor.
     padding-bottom: 0;
     margin-bottom: 1%;
   }
-  /* line 370, ../components/sass/_grid.scss */
+  /* line 371, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li p {
     clear: both;
   }
 }
 @media screen and (max-width: 639px) {
-  /* line 380, ../components/sass/_grid.scss */
+  /* line 381, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout {
     margin-bottom: 1%;
   }
-  /* line 384, ../components/sass/_grid.scss */
+  /* line 385, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li {
     clear: both;
     width: 100%;
@@ -2115,44 +2121,44 @@ and open the template in the editor.
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 392, ../components/sass/_grid.scss */
+  /* line 393, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder {
     padding: 0 15px;
   }
-  /* line 395, ../components/sass/_grid.scss */
+  /* line 396, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder img {
     width: 70%;
     margin: 4% auto;
   }
-  /* line 399, ../components/sass/_grid.scss */
+  /* line 400, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .email {
     min-height: initial;
     box-sizing: border-box;
   }
-  /* line 403, ../components/sass/_grid.scss */
+  /* line 404, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder p.min-height-applied {
     min-height: initial;
   }
-  /* line 406, ../components/sass/_grid.scss */
+  /* line 407, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .socialIcons {
     margin: 0 auto 1%;
     width: 70%;
   }
-  /* line 409, ../components/sass/_grid.scss */
+  /* line 410, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .socialIcons img {
     padding: 2%;
   }
-  /* line 415, ../components/sass/_grid.scss */
+  /* line 416, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout .grid-contentHolder .button a {
     font-size: 1.4em;
   }
 
-  /* line 422, ../components/sass/_grid.scss */
+  /* line 423, ../components/sass/_grid.scss */
   .grid.grid-full-width > li {
     padding-top: 0%;
   }
 
-  /* line 427, ../components/sass/_grid.scss */
+  /* line 428, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li .grid.grid-full-width > li img {
     padding-top: 0%;
     margin-top: 3%;
@@ -2160,20 +2166,20 @@ and open the template in the editor.
     margin-bottom: 4%;
   }
 
-  /* line 436, ../components/sass/_grid.scss */
+  /* line 437, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout > li > h2 {
     font-size: 1.9rem;
     padding: 5px 15px 20px 15px;
     margin-bottom: 0;
   }
 
-  /* line 442, ../components/sass/_grid.scss */
+  /* line 443, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li:last-child {
     padding-bottom: 1%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 451, ../components/sass/_grid.scss */
+  /* line 452, ../components/sass/_grid.scss */
   .grid.grid-stretched-layout li p.button a, .grid.grid-stretched-layout li button a {
     width: 100%;
     display: block;
@@ -2184,47 +2190,47 @@ and open the template in the editor.
 /**** CONTACT US PAGE - Stretched / full width / blog-section grid  - end ****/
 /*=====================================================================================*/
 /**** OUR BLOG - Our blog-posts - Default grid extension for our blog page - beginning ****/
-/* line 468, ../components/sass/_grid.scss */
+/* line 469, ../components/sass/_grid.scss */
 .blog-post h2 {
   min-height: 47px;
   margin-top: 3%;
 }
-/* line 473, ../components/sass/_grid.scss */
+/* line 474, ../components/sass/_grid.scss */
 .blog-post h3 {
   min-height: 53px;
 }
-/* line 476, ../components/sass/_grid.scss */
+/* line 477, ../components/sass/_grid.scss */
 .blog-post h2, .blog-post h3 {
   clear: both;
 }
-/* line 480, ../components/sass/_grid.scss */
+/* line 481, ../components/sass/_grid.scss */
 .blog-post .blog-summary {
   min-height: 106px;
 }
 
 @media screen and (max-width: 639px) {
-  /* line 487, ../components/sass/_grid.scss */
+  /* line 488, ../components/sass/_grid.scss */
   .blog-post .blog-summary {
     min-height: initial;
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 764px) {
-  /* line 496, ../components/sass/_grid.scss */
+  /* line 497, ../components/sass/_grid.scss */
   .blog-post h2, .blog-post h3 {
     min-height: 3em;
   }
-  /* line 500, ../components/sass/_grid.scss */
+  /* line 501, ../components/sass/_grid.scss */
   .blog-post .blog-summary {
     min-height: 9.3em;
   }
 }
 @media screen and (min-width: 765px) and (max-width: 1023px) {
-  /* line 509, ../components/sass/_grid.scss */
+  /* line 510, ../components/sass/_grid.scss */
   .blog-post h2, .blog-post h3 {
     min-height: 4em;
   }
-  /* line 513, ../components/sass/_grid.scss */
+  /* line 514, ../components/sass/_grid.scss */
   .blog-post .blog-summary {
     min-height: 12em;
   }
@@ -2359,7 +2365,7 @@ and open the template in the editor.
 .mixItUp-container {
   text-align: justify;
   font-family: "zero-width";
-  font-size: 0;
+  font-size: 0.1px;
   box-sizing: border-box;
   min-height: 200px;
   overflow: hidden;
@@ -2636,7 +2642,7 @@ and open the template in the editor.
 @media screen and (min-width: 482px) and (max-width: 551px) {
   /* line 333, ../components/sass/_mixitup.scss */
   #SkillsContainer .mix {
-    width: 48%;
+    width: 49%;
     min-height: 60px;
     margin-bottom: 6px;
   }
@@ -2648,7 +2654,7 @@ and open the template in the editor.
   }
   /* line 345, ../components/sass/_mixitup.scss */
   #SkillsContainer .gap {
-    width: 48%;
+    width: 49%;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 648px) {
@@ -2927,11 +2933,11 @@ and open the template in the editor.
 @media screen and (min-width: 320px) and (max-width: 639px) {
   /* line 695, ../components/sass/_mixitup.scss */
   #PortfolioContainer .gap {
-    width: 48%;
+    width: 49%;
   }
   /* line 699, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix {
-    width: 48%;
+    width: 49%;
   }
   /* line 707, ../components/sass/_mixitup.scss */
   #PortfolioContainer .portfoMix .button a {
