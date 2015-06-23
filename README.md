@@ -1,9 +1,12 @@
-# Barefoot in the park portfolio website project
+# Barefoot in the park 
+    portfolio website,
+    responsive design, front-automation project,
+    SASS, Gulp
 
 This is the portfolio website of Edit Olah and Peter Whyte.
 Here we gather information on what we are working on and what piques our interest.
 
-This website, in itself, is a portfolio project.
+This website, in itself, is a portfolio project of Edit Olah.
 
 _______________________________________________________
 
