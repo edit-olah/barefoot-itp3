@@ -2131,6 +2131,23 @@ $( document ).ready(function() {
     });
     
     // Page nav behaviour - incl. scrollTo:
+    
+	//Home page
+    
+    $('.pageNavLinkHome').click(function(e) {
+	//e.stopPropagation();
+	e.preventDefault();
+	// when clicked scroll to relevant section:
+	var divId = '#' + $(this).attr("href");	
+	$.scrollTo(divId, 1000,{offset: {top:0, left:0}});
+	e.preventDefault();
+	// make relevant page nav element appear current/selected:
+	$('.nav li').removeClass('current');
+	$(this).parent().addClass('current');
+	
+    });
+  
+	//Profile page
   
     $('.pageNavLink').click(function(e) {
 	//e.stopPropagation();
@@ -2138,7 +2155,7 @@ $( document ).ready(function() {
 	// when clicked scroll to relevant section:
 	var divId = '#' + $(this).attr("href");	
 	$.scrollTo(divId, 1000,{offset: {top:-160, left:0}});
-	e.preventDefault();
+	//e.preventDefault();
 	
 	// make relevant page nav element appear current/selected: 
 	$('.pageNavLink').parent().removeClass('current');
@@ -2174,6 +2191,8 @@ $( document ).ready(function() {
 	// when clicked scroll to div with 'Hero' id:
 	var divId = '#' + $(this).attr("href");	
 	$.scrollTo(divId, 1500,{offset: {top:-160, left:0}});
+	// unselect page nav item
+	$('.pageNavLink').parent().removeClass('current');
 	
     });
     
