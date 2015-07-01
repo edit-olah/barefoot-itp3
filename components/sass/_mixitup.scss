@@ -629,15 +629,16 @@
 	}
 
 	h3 {
-	    font-size: 1.4em;
+	    font-size: $defaultFontSize;
 	    line-height: 1.4;
 	    margin-top: 1%;
+	    margin-bottom: 1%;
 	    padding-bottom: 2%;
 	    min-height: 41px;
 	}
 
 	h4 {
-	    font-size: 1.3em;
+	    font-size: $smallFontSize;
 	    line-height: 1.3;
 	    margin-top: 1%;
 	    padding-bottom: 5%;
