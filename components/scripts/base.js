@@ -82,7 +82,6 @@ $( document ).ready(function() {
 	// when clicked scroll to relevant section:
 	var divId = '#' + $(this).attr("href");	
 	$.scrollTo(divId, 1000,{offset: {top:-160, left:0}});
-	//e.preventDefault();
 	
 	// make relevant page nav element appear current/selected: 
 	$('.pageNavLink').parent().removeClass('current');
