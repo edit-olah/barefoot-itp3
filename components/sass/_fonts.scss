@@ -9,6 +9,48 @@ and open the template in the editor.
 */
 
 
+// Font files have been added to the project to be able to work off-line. 
+// Uncomment this section and the relevant variables below, and don't include font files before production/going live takes place'
+
+    @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700);
+    @import url('//cdn.jsdelivr.net/font-zero-width/latest/zero-width.css');
+
+
+  //font with cdn links pulled from the Internet
+
+/*
+@font-face {
+    font-family: Source Code Pro;
+    src: url('http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face{
+    font-family: 'zero-width';
+    src: url('//cdn.jsdelivr.net/font-zero-width/1.0.0/zero-width.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'zero-width';
+    src: url(http://:/) format("No-IE-404"),
+         url('//cdn.jsdelivr.net/font-zero-width/1.0.0/zero-width.woff') format('woff'),
+         url('//cdn.jsdelivr.net/font-zero-width/1.0.0/zero-width.svg') format('svg'),
+         url('//cdn.jsdelivr.net/font-zero-width/1.0.0/zero-width.otf') format('opentype'),
+	 url('//cdn.jsdelivr.net/font-zero-width/1.0.0/zero-width.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/  
+ 
+    
+// fonts pulled in from document root for the development stage (allowing working off-line)
+
+
 @font-face {
     font-family: sourceCodeProNormal;
     src: url(./fonts/SourceCodePro-Regular.otf);
@@ -33,3 +75,4 @@ and open the template in the editor.
     font-weight: normal;
     font-style: normal;
 }
+
