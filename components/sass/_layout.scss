@@ -993,6 +993,8 @@ button {
 	    
 	    li {
 		border-bottom: 2px dashed lighten($primaryBG, 5);
+		margin-left: 0;
+		
 		&:last-child{
 		    border-bottom: none;
 		}
@@ -1005,6 +1007,18 @@ button {
 		    a {
 			font-size: 1em;
 			padding: 5px 8px;
+			color: darken($lightTurq,3);
+		    }
+		    a:hover{
+			@extend a:link;
+		    }
+
+		    a:active{
+			@extend a:link;
+		    }
+
+		    a.active{
+			@extend a:link;
 		    }
 		}
 		
