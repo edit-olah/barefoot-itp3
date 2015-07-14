@@ -279,7 +279,7 @@ and open the template in the editor.
 }
 .grid.grid-stretched-layout > li:last-child .grid.grid-full-width > li {
     background-color: lighten($primaryBG, 5);
-    
+    margin-left: 0;
 }
 
 .grid.grid-full-width > li {
